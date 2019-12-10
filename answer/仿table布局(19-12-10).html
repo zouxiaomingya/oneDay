@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .box {
+        margin: 100px;
+        height: 300px;
+        border: 1px solid red;
+        position: relative;
+    }
+
+    .left {
+        box-shadow: 6px 0 6px -4px rgba(0, 0, 0, 0.15);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 150px;
+    }
+
+    .mid {
+        width: calc(100% - 300);
+        margin: 0 150px;
+        height: 300px;
+        overflow: hidden;
+        overflow-x: auto;
+    }
+
+    .mid-child {
+        width: 2000px;
+    }
+
+    .right {
+        box-shadow: -6px 0 6px -4px rgba(0, 0, 0, 0.15);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 150px;
+    }
+
+    .none-shadow {
+        transition: box-shadow 1s ease;
+        box-shadow: none !important;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <div class="left none-shadow">left</div>
+        <div class="mid">
+            <div class="mid-child">
+                adadadadadsdadadadadadsdadadadadadsdadadadadadsdadadadadadsdada
+                dadadadsdadadadadadsdadadadadadsdadadadadadsdadadadadadsdadadada
+                dadsdadadadadadsdadadadadadsdadadadadadsdadadadadadsdadadadadads
+                dadadadadadsd
+            </div>
+        </div>
+        <div class="right">right</div>
+    </div>
+</body>
+
+<script>
+    const leftDom = document.getElementsByClassName("left")[0];
+    const midDom = document.getElementsByClassName("mid")[0];
+    const rightDom = document.getElementsByClassName("right")[0];
+    const warpWidth = midDom.offsetWidth;
+    const childWidth = midDom.children[0].offsetWidth;
+    const rightScrollWidth = childWidth - warpWidth;
+
+    midDom.addEventListener("scroll", () => {
+        leftDom.classList.remove("none-shadow");
+        rightDom.classList.remove("none-shadow");
+        if (midDom.scrollLeft === 0) {
+            leftDom.classList.add("none-shadow");
+        }
+        if (midDom.scrollLeft === rightScrollWidth) {
+            rightDom.classList.add("none-shadow");
+        }
+    });
+</script>
+
+</html>
