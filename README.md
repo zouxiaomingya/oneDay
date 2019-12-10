@@ -1,5 +1,16 @@
 <h1 align="center">One Day</h1>
 <p align="center">每天记录一点</p>
+
+
+
+### 实现如下布局
+
+中间部分溢出可以滚动，如下图 3 中情况所示
+
+[antd Table 来源](https://ant-design.gitee.io/components/table-cn/#components-table-demo-fixed-columns)
+
+
+
 ### 多数元素
 
 给定一个大小为 n 的数组，找到其中的多数元素。多数元素是指在数组中出现次数大于 ⌊ n/2 ⌋ 的元素。
