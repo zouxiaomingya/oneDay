@@ -2,13 +2,11 @@
 <p align="center">每天记录一点</p>
 
 
-
 ### 实现如下布局
 
 中间部分溢出可以滚动，如下图 3 中情况所示
 
 [antd Table 来源](https://ant-design.gitee.io/components/table-cn/#components-table-demo-fixed-columns)
-
 
 
 ### 多数元素
