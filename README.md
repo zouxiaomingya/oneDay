@@ -1,12 +1,17 @@
 <h1 align="center">One Day</h1>
 <p align="center">每天记录一点</p>
 
-
 ### 实现如下布局
 
 中间部分溢出可以滚动，如下图 3 中情况所示
 
 [antd Table 来源](https://ant-design.gitee.io/components/table-cn/#components-table-demo-fixed-columns)
+
+![](https://github.com/zouxiaomingya/oneDay/blob/master/img/left.png)
+
+![](https://github.com/zouxiaomingya/oneDay/blob/master/img/mid.png)
+
+![](https://github.com/zouxiaomingya/oneDay/blob/master/img/right.png)
 
 
 ### 多数元素
