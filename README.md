@@ -47,6 +47,17 @@
 
 ![](https://github.com/zouxiaomingya/oneDay/blob/master/img/right.png)
 
+### 数组转二叉树
+> 2019 年 12 月 7 日
+
+将 [1,2,2,3,4,4,3] 转成下面的二叉树
+```
+    	1
+       / \
+      2   2
+     / \ / \
+    3  4 4  3
+```
 
 ### 多数元素
 > 2019 年 12 月 6 日
