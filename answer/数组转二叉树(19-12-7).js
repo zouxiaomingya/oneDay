@@ -1,9 +1,9 @@
 // 按顺序插入
 // [1,2,3,4,5,6]
 /**
- *    1
- *  2   2
- * 3 4 5 6
+ *     1
+ *   2   2
+ *  3 4 5 6
  */
 function BinarySearchTree(keys) {
   let Node = function(key) {
@@ -47,7 +47,13 @@ const treeNode = BinarySearchTree(keys);
 console.log(treeNode);
 
 
-// 
+// [13, 21, 15, 29, 3, 55]
+/**
+ *      13
+ *    3     21
+ *        15  29
+ *              55
+ */
 function Node(data,left,right) {
     this.data = data;
     this.left = left;
