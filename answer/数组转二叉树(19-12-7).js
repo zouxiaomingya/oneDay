@@ -1,3 +1,10 @@
+// 按顺序插入
+// [1,2,3,4,5,6]
+/**
+ *    1
+ *  2   2
+ * 3 4 5 6
+ */
 function BinarySearchTree(keys) {
   let Node = function(key) {
     this.key = key;
@@ -38,3 +45,56 @@ function BinarySearchTree(keys) {
 const keys = [8, 3, 10, 1, 6, 14, 4, 7, 13];
 const treeNode = BinarySearchTree(keys);
 console.log(treeNode);
+
+
+// 
+function Node(data,left,right) {
+    this.data = data;
+    this.left = left;
+    this.right = right;
+}
+//定义插入对象
+function BST(){
+    this.root = null;
+    this.insert = insert;
+    this.show = ()=>{
+       console.log(this.root);
+    }
+}
+function insert(data) {
+    //实例化Node对象
+    let n = new Node(data,null,null);
+    //如果不存在节点，则此节点是根节点
+    if(this.root == null){
+        this.root = n;
+    }else{
+        //存在根节点时，定义current白能量等于根节点
+        let current = this.root;
+        let parent;
+        while(current){
+            parent = current;
+            //当插入的值小于根节点的值时，将值作为左节点插入
+            if(data<current.data) {
+                current = current.left;
+                if(current == null) {
+                    parent.left = n;
+                    break;
+                }
+            }else{
+                current = current.right;
+                if(current == null){
+                    parent.right = n;
+                    break;
+                }
+            }
+        } 
+    }
+}
+const bst = new BST();
+bst.insert(13);
+bst.insert(21);
+bst.insert(15);
+bst.insert(29);
+bst.insert(3);
+bst.insert(55);
+bst.show();
