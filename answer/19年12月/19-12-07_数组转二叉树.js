@@ -37,6 +37,7 @@ function BinarySearchTree(keys) {
   };
 
   keys.forEach(key => {
+    console.log(this);
     this.insert(key);
   });
 
