@@ -21,7 +21,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/house-robber/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/19-12-14_addTwoNumbers)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2019-12/19-12-14_addTwoNumbers.js)
 
 
 
