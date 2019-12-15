@@ -29,7 +29,7 @@ minStack.getMin();   --> 返回 -2.
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/min-stack/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2019-12/19-12-14_addTwoNumbers.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2019-12/19-12-15_MinStack)
 
 ### 两数相加
 
