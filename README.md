@@ -1,6 +1,36 @@
 <h1 align="center">One Day</h1>
 <p align="center">每天记录一点</p>
 
+
+### 最小栈
+
+> 2019 年 12 月 15 日
+
+设计一个支持 push，pop，top 操作，并能在常数时间内检索到最小元素的栈。
+
+- push(x) -- 将元素 x 推入栈中。
+- pop() -- 删除栈顶的元素。
+- top() -- 获取栈顶元素。
+- getMin() -- 检索栈中的最小元素。
+
+
+**示例:**
+
+```
+MinStack minStack = new MinStack();
+minStack.push(-2);
+minStack.push(0);
+minStack.push(-3);
+minStack.getMin();   --> 返回 -3.
+minStack.pop();
+minStack.top();      --> 返回 0.
+minStack.getMin();   --> 返回 -2.
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/min-stack/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2019-12/19-12-14_addTwoNumbers.js)
+
 ### 两数相加
 
 > 2019 年 12 月 14 日
