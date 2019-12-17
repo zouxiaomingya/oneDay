@@ -44,6 +44,7 @@
 ```
 所以根据这样的方法来寻找可以分解多少个 5 来看有多少个 0 
 
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2019-12/19-12-16_trailingZeroes.js)
 ### 无重复字符的最长子串
 
 > 2019 年 12 月 16 日
