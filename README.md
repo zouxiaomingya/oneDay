@@ -1,6 +1,31 @@
 <h1 align="center">One Day</h1>
 <p align="center">每天记录一点</p>
 
+### 无重复字符的最长子串
+
+> 2019 年 12 月 18 日
+
+给定一个二叉树，找出其最大深度。
+
+二叉树的深度为根节点到最远叶子节点的最长路径上的节点数。
+
+说明: 叶子节点是指没有子节点的节点。
+
+
+**示例:**
+给定二叉树 [3,9,20,null,null,15,7]，
+
+```
+    3
+   / \
+  9  20
+    /  \
+   15   7
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)
+
+
 ### 阶乘后面的零
 
 > 2019 年 12 月 17 日
@@ -45,6 +70,7 @@
 所以根据这样的方法来寻找可以分解多少个 5 来看有多少个 0 
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2019-12/19-12-16_trailingZeroes.js)
+
 ### 无重复字符的最长子串
 
 > 2019 年 12 月 16 日
