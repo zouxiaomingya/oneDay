@@ -1,7 +1,7 @@
 <h1 align="center">One Day</h1>
 <p align="center">每天记录一点</p>
 
-### 无重复字符的最长子串
+### 二叉树的最大深度
 
 > 2019 年 12 月 18 日
 
@@ -25,6 +25,8 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)
 
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/19-12-18_maxDepth)
 
 ### 阶乘后面的零
 
