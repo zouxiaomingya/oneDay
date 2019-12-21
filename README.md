@@ -37,7 +37,7 @@
  
 [原题 leetcode 链接](https://leetcode-cn.com/problems/count-and-say/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2019-12/19-12-20_isHappy.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2019-12/19-12-21_countAndSay.js)
 ### 快乐树
 
 > 2019 年 12 月 20 日
