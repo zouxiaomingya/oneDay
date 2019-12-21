@@ -1,19 +1,27 @@
 /**
  * @param {number} n
- * @return {boolean}
+ * @return {string}
  */
-var isHappy = function(n) {
-  function getSum(n) {
-    let sum = 0;
-    for (let i = 0; i < n.toString().length; i++) {
-      sum += n.toString()[i] ** 2;
+var countAndSay = function(n) {
+  if (n === 1) {
+    return "1";
+  }
+  var res = "1";
+  for (var i = 2; i <= n; i++) {
+    let tmp = "";
+    let c = 0;
+    for (var j = 0, len = res.length; j < len; j++) {
+      if (res[j] != res[j + 1]) {
+        tmp += `${c + 1}${res[j]}`;
+        c = 0;
+      } else {
+        c++;
+      }
     }
-    return sum;
+    if (c != 0) {
+      tmp += `${c}${res[res.length - 1]}`;
+    }
+    res = tmp;
   }
-  while (n !== 1) {
-    if ([4, 16, 37, 58, 89, 145, 42, 20].indexOf(n) !== -1) break;
-    n = getSum(n);
-  }
-
-  return n === 1 ? true : false;
+  return res;
 };
