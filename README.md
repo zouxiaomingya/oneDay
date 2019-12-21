@@ -22,6 +22,9 @@
 
 进阶:
 你可以迭代或递归地反转链表。你能否用两种方法解决这道题？
+[原题 leetcode 链接](https://leetcode-cn.com/problems/happy-number/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2019-12/19-12-20_isHappy.js)
 
 ### 反转链表
 
