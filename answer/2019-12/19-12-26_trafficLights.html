@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <style>
+      #red, #green, #yellow {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+      }
+      .box {
+        width: 400px;
+        height: 140px;
+        border: 1px solid #666;
+        border-radius: 20px;
+        background: #f7f7f7;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div id="red"></div>
+      <div id="green"></div>
+      <div id="yellow"></div>
+    </div>
+  </body>
+  <script>
+    function red() {
+      console.log("red");
+    }
+
+    function green() {
+      console.log("green");
+    }
+
+    function yellow() {
+      console.log("yellow");
+    }
+    function genPromise(func, timeout) {
+      return () => {
+        func();
+        return new Promise(resolve => setTimeout(resolve, timeout));
+      };
+    }
+    var redPromise = genPromise(red, 1000),
+      greenPromise = genPromise(green, 1000),
+      yellowPromise = genPromise(yellow, 1000);
+
+    let fn = () => {
+      console.log(22);
+    };
+    function step() {
+      greenPromise()
+        .then(yellowPromise)
+        .then(redPromise)
+        .then(step);
+    }
+
+    // 启动
+    step();
+  </script>
+  <script>
+    window.onload = () => {
+      let bg1 = document.getElementById("red");
+      let bg2 = document.getElementById("green");
+      let bg3 = document.getElementById("yellow");
+      let setColor = (color, duration, num) => {
+        return new Promise((res, rej) => {
+          colors(num, color);
+          setTimeout(res, duration);
+        });
+      };
+      let colors = (num, color) => {
+        if (num === 1) {
+          bg1.style.background = color;
+          bg2.style.background = "#E2DCDC";
+          bg3.style.background = "#E2DCDC";
+        }
+        if (num === 2) {
+          bg2.style.background = color;
+          bg1.style.background = "#E2DCDC";
+          bg3.style.background = "#E2DCDC";
+        }
+        if (num === 3) {
+          bg3.style.background = color;
+          bg2.style.background = "#E2DCDC";
+          bg1.style.background = "#E2DCDC";
+        }
+      };
+      async function sett() {
+        await setColor("green", 2000, 1);
+        console.log(1);
+        await setColor("yellow", 2000, 2);
+        console.log(2);
+        await setColor("red", 2000, 3);
+        console.log(3);
+        await sett();
+      }
+      sett();
+    };
+  </script>
+</html>
