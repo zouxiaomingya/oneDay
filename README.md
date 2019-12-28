@@ -20,9 +20,7 @@
 
 #### 解题思路
 这道题，我花的时间较长，开始思路一直有点问题并且复杂了。
-
-比如这样一串数字 1 3 9 5 8 7 6 2 
-下一个排序是什么，也就是仅仅比这个大一点是哪个，肉眼可以看出 1 2 9 
+[图文详解](https://leetcode-cn.com/problems/next-permutation/solution/xia-yi-ge-pai-lie-by-leetcode/)
 
 ### 最长公共子序列
 
