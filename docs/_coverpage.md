@@ -6,7 +6,8 @@
 
 > Improve every day
 
-- Not build static html files
+- good good study, day day up 
+
 
 [GitHub](https://github.com/zouxiaomingya/oneDay.git)
-[Get Started](?id=回文链表)
+[Started](?id=回文链表)
