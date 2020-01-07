@@ -1,7 +1,7 @@
 {
   "name": "oneDay",
   "version": "1.0.0",
-  "description": "<h1 align=\"center\">One Day</h1> <p align=\"center\">每天记录一点</p> <p align=\"center\"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>",
+  "description": "",
   "main": "index.js",
   "directories": {
     "doc": "docs"
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zouxiaomingya/oneDay.git"
+    "url": "https://github.com/zouxiaomingya/oneDay.git"
   },
   "keywords": [],
   "author": "",
