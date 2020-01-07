@@ -1,6 +1,3 @@
-<h1 align="center">One Day</h1>
-<p align="center">每天记录一点</p>
-<p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
 ### 回文链表
 
