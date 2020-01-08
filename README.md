@@ -24,6 +24,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/minimum-path-sum/)
 
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-08_minPathSum.js)
 
 ### 回文链表
 
@@ -42,6 +43,7 @@
   输入: 1->2->2->1
   输出: true
 ```
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-07_isPalindrome)
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/palindrome-linked-list/)
 
@@ -50,6 +52,7 @@
 
 > 2020 年 01 月 06 日
 
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-06_quickSort)
 
 ### 组合总和
 
@@ -87,6 +90,7 @@ candidates 中的数字可以无限制重复被选取。
   ]
 
 ```
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-04_combinationSum)
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/combination-sum/)
 
@@ -110,7 +114,7 @@ candidates 中的数字可以无限制重复被选取。
 ]
 
 ```
-
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-03_search)
 ### 四数之和
 
 > 2020 年 01 月 02 日
@@ -133,6 +137,7 @@ candidates 中的数字可以无限制重复被选取。
 ]
 
 ```
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-02_fourSum)
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/4sum/)
 
@@ -149,6 +154,7 @@ candidates 中的数字可以无限制重复被选取。
 与 target 最接近的三个数的和为 2. (-1 + 2 + 1 = 2).
 
 ```
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-01_threeSumClosest)
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/3sum-closest/)
 
