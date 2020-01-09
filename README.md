@@ -29,7 +29,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/subsets/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-08_minPathSum.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-09_subsets)
 
 ### 最小路径和
 > 2020 年 01 月 08 日
