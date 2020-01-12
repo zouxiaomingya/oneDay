@@ -19,7 +19,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/reverse-linked-list-ii/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-11_rotateRight)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-12_reverseBetween)
 
 ### 旋转链表
 > 2020 年 01 月 11 日
