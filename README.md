@@ -2,6 +2,26 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+### 最大数
+> 2020 年 01 月 13 日
+
+给定一组非负整数，重新排列它们的顺序使之组成一个最大的整数。
+
+**示例1:**
+```
+输入: [10,2]
+输出: 210
+```
+**示例2:**
+```
+输入: [3,30,34,5,9]
+输出: 9534330
+```
+**说明:** 输出结果可能非常大，所以你需要返回一个字符串而不是整数。
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/largest-number/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-12_reverseBetween)
 
 ### 反转链表 II
 > 2020 年 01 月 12 日
