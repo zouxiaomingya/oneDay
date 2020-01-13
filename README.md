@@ -21,7 +21,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/largest-number/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-12_reverseBetween)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-13_largestNumber)
 
 ### 反转链表 II
 > 2020 年 01 月 12 日
