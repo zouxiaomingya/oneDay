@@ -2,6 +2,29 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+### 不同的二叉搜索树
+> 2020 年 01 月 15 日
+
+给定一个整数 n，求以 1 ... n 为节点组成的二叉搜索树有多少种？
+
+**示例:**
+```
+输入: 3
+输出: 5
+解释:
+给定 n = 3, 一共有 5 种不同结构的二叉搜索树:
+
+   1         3     3      2      1
+    \       /     /      / \      \
+     3     2     1      1   3      2
+    /     /       \                 \
+   2     1         2                 3
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/unique-binary-search-trees/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-13_largestNumber)
+
 ### 合并区间
 > 2020 年 01 月 14 日
 
