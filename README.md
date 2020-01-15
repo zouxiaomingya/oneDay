@@ -23,7 +23,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/unique-binary-search-trees/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-13_largestNumber)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-15_numTrees)
 
 ### 合并区间
 > 2020 年 01 月 14 日
