@@ -1,25 +1,14 @@
 /**
- * @param {number[][]} intervals
- * @return {number[][]}
+ * @param {number} n
+ * @return {number}
  */
-var merge = function(intervals) {
-  let result = [];
-  let len = intervals.length;
-  if(len == 0){
-      return [];
-  }
-  // 按照数组的第一个大小来排序
-  intervals.sort( (a,b) => a[0] - b[0]);
-  let i = 0;
-  while( i < len){
-      let currLeft = intervals[i][0];
-      let currRight = intervals[i][1];
-      while(i < len - 1 && intervals[i+1][0] <= currRight){
-          i++;
-          currRight = Math.max(intervals[i][1],currRight);
-      }
-      result.push([currLeft,currRight]);
-      i++;
-  }
-  return result;
+var numTrees = function(n) {
+    var arr = [1, 1];
+    for(let i = 2; i <= n; i++){
+        arr[i] = 0;
+        for(let j = 1; j <= i; j++){
+            arr[i] += arr[j-1] * arr[i-j]
+        }
+    }
+    return arr[n]
 };
