@@ -1,15 +1,26 @@
-var coinChange = function(coins, amount) {
-  let dp = [0];
-  for (let i = 1; i < amount + 1; i++) {
-    dp[i] = Number.MAX_VALUE;
-    for (let coin of coins) {
-      if (i >= coin && dp[i - coin] !== -1) {
-        dp[i] = Math.min(dp[i - coin] + 1, dp[i]);
-      }
-    }
-    if (dp[i] === Number.MAX_VALUE) dp[i] = -1;
+/**
+ * @param {number} s
+ * @param {number[]} nums
+ * @return {number}
+ */
+
+var minSubArrayLen = function(s, nums) {
+  const len = nums.length;
+  if (len == 0) {
+      return 0;
   }
-  return dp[amount];
+  let left = 0;
+  let right = 0;
+  let sum = 0;
+  let min =  Number.MAX_VALUE;
+  while (right < len) {
+      sum += nums[right];
+      right++;
+      while (sum >= s) {
+          min = Math.min(min, right - left);
+          sum -= nums[left];
+          left++;
+      }
+  }
+  return min == Number.MAX_VALUE ? 0 : min;
 };
-const result = coinChange([1, 2, 5], 11);
-console.log(result);
