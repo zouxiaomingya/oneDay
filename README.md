@@ -2,6 +2,33 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+### 二叉树的层次遍历 II
+> 2020 年 01 月 18 日
+
+给定一个二叉树，返回其节点值自底向上的层次遍历。 （即按从叶子节点所在层到根节点所在的层，逐层从左向右遍历）
+**例如:**
+给定二叉树 [3,9,20,null,null,15,7],
+```
+    3
+   / \
+  9  20
+    /  \
+   15   7
+```
+返回其自底向上的层次遍历为：
+```
+[
+  [15,7],
+  [9,20],
+  [3]
+]
+```
+**进阶:**
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-16_coinChange)
+
 ### 长度最小的子数组
 > 2020 年 01 月 17 日
 
