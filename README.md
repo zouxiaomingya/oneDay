@@ -2,6 +2,25 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+### 最大连续1的个数
+> 2020 年 01 月 20 日
+
+给定一个二进制数组， 计算其中最大连续1的个数:
+
+**示例 1**
+
+```
+输入: 10
+输出: 4
+解释: 小于 10 的质数一共有 4 个, 它们是 2, 3, 5, 7 。
+```
+注意：
+
+输入的数组只包含 0 和1。
+输入数组的长度是正整数，且不超过 10,000。
+[原题 leetcode 链接](https://leetcode-cn.com/problems/max-consecutive-ones/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-20_findMaxConsecutiveOnes)
 
 ### 计数质数
 > 2020 年 01 月 19 日
