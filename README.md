@@ -20,7 +20,8 @@
 输入数组的长度是正整数，且不超过 10,000。
 [原题 leetcode 链接](https://leetcode-cn.com/problems/max-consecutive-ones/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-20_findMaxConsecutiveOnes)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-20_findMaxConsecutiveOnes.js)
+
 
 ### 计数质数
 > 2020 年 01 月 19 日
@@ -35,7 +36,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/count-primes/submissions/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-19_countPrimes)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-19_countPrimes.js)
 
 ### 二叉树的层次遍历 II
 > 2020 年 01 月 18 日
@@ -62,7 +63,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-18_levelOrderBottom)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-18_levelOrderBottom.js)
 
 ### 长度最小的子数组
 > 2020 年 01 月 17 日
@@ -81,7 +82,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/minimum-size-subarray-sum/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-16_coinChange)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-16_coinChange.js)
 
 ### 零钱兑换
 > 2020 年 01 月 16 日
@@ -97,7 +98,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/coin-change/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-16_coinChange)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-16_coinChange.js)
 
 ### 不同的二叉搜索树
 > 2020 年 01 月 15 日
@@ -120,7 +121,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/unique-binary-search-trees/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-15_numTrees)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-15_numTrees.js)
 
 ### 合并区间
 > 2020 年 01 月 14 日
@@ -142,7 +143,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/merge-intervals/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-13_largestNumber)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-13_largestNumber.js)
 
 ### 最大数
 > 2020 年 01 月 13 日
@@ -163,7 +164,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/largest-number/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-13_largestNumber)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-13_largestNumber.js)
 
 ### 反转链表 II
 > 2020 年 01 月 12 日
@@ -181,7 +182,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/reverse-linked-list-ii/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-12_reverseBetween)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-12_reverseBetween.js)
 
 ### 旋转链表
 > 2020 年 01 月 11 日
@@ -209,7 +210,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/rotate-list/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-11_rotateRight)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-11_rotateRight.js)
 
 ### 跳跃游戏
 > 2020 年 01 月 10 日
@@ -235,7 +236,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/jump-game/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-10_canJump)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-10_canJump.js)
 
 ### 子集
 > 2020 年 01 月 09 日
@@ -263,7 +264,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/subsets/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-09_subsets)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-09_subsets.js)
 
 ### 最小路径和
 > 2020 年 01 月 08 日
@@ -305,7 +306,7 @@
   输入: 1->2->2->1
   输出: true
 ```
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-07_isPalindrome)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-07_isPalindrome.js)
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/palindrome-linked-list/)
 
@@ -314,7 +315,7 @@
 
 > 2020 年 01 月 06 日
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-06_quickSort)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-06_quickSort.js)
 
 ### 组合总和
 
@@ -352,7 +353,7 @@ candidates 中的数字可以无限制重复被选取。
   ]
 
 ```
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-04_combinationSum)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-04_combinationSum.js)
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/combination-sum/)
 
@@ -376,7 +377,7 @@ candidates 中的数字可以无限制重复被选取。
 ]
 
 ```
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-03_search)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-03_search.js)
 ### 四数之和
 
 > 2020 年 01 月 02 日
@@ -399,7 +400,7 @@ candidates 中的数字可以无限制重复被选取。
 ]
 
 ```
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-02_fourSum)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-02_fourSum.js)
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/4sum/)
 
@@ -416,7 +417,7 @@ candidates 中的数字可以无限制重复被选取。
 与 target 最接近的三个数的和为 2. (-1 + 2 + 1 = 2).
 
 ```
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-01_threeSumClosest)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-01_threeSumClosest.js)
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/3sum-closest/)
 
