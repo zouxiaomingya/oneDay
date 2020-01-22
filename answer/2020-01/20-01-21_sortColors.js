@@ -2,6 +2,14 @@
  * @param {number[]} nums
  * @return {void} Do not return anything, modify nums in-place instead.
  */
+
+function test() {
+  let temp = 1;
+  const fn = () => {
+    return temp;
+  }
+  return fn;
+}
 var sortColors = function(nums) {
   let p0 = 0, curr = 0;
   // 对于所有 idx > k : nums[idx > k] = 2
