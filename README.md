@@ -2,6 +2,31 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+### 三个数的最大乘积
+> 2020 年 01 月 22 日
+
+给定一个整型数组，在数组中找出由三个数组成的最大乘积，并输出这个乘积。
+**示例 1**
+
+```
+输入: [1,2,3]
+输出: 6
+```
+**示例 2**
+
+```
+输入: [1,2,3,4]
+输出: 24
+```
+**注意：**
+
+1. 给定的整型数组长度范围是[3,104]，数组中所有的元素范围是[-1000, 1000]。
+2. 输入的数组中任意三个数的乘积不会超出32位有符号整数的范围。
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/maximum-product-of-three-numbers/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-20_findMaxConsecutiveOnes.js)
+
 
 ### 下一个更大元素 I
 > 2020 年 01 月 22 日
