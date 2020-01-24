@@ -2,6 +2,28 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+### 平方数之和
+> 2020 年 01 月 24 日
+
+给定一个非负整数 c ，你要判断是否存在两个整数 a 和 b，使得 a2 + b2 = c。
+**示例 1**
+
+```
+输入: 5
+输出: True
+解释: 1 * 1 + 2 * 2 = 5
+```
+**示例 2**
+
+```
+输入: 3
+输出: False
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/sum-of-square-numbers/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-20_findMaxConsecutiveOnes.js)
+
 ### 三个数的最大乘积
 > 2020 年 01 月 22 日
 
