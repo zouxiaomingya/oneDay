@@ -2,7 +2,7 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
-### 两句话中的不常见单词
+### 卡牌分组
 > 2020 年 01 月 29 日
 
 给定一副牌，每张牌上都写着一个整数。
@@ -89,7 +89,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/uncommon-words-from-two-sentences/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-28_uncommonFromSentences.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-29_hasGroupsSizeX.js)
 
 ### 数组中的第K个最大元素
 > 2020 年 01 月 25 日
