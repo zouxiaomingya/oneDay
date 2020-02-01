@@ -1,4 +1,421 @@
 
+### 最长回文子序列
+> 2020 年 01 月 30 日
+
+给定一个字符串s，找到其中最长的回文子序列。可以假设s的最大长度为1000。
+
+**示例 1**
+
+```
+输入:
+"bbbab"
+
+输出:
+4
+```
+**示例 2**
+
+```
+输入:
+"cbbd"
+
+输出:
+2
+```
+
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/longest-palindromic-subsequence/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-28_uncommonFromSentences.js)
+
+### 卡牌分组
+> 2020 年 01 月 29 日
+
+给定一副牌，每张牌上都写着一个整数。
+
+此时，你需要选定一个数字 X，使我们可以将整副牌按下述规则分成 1 组或更多组：
+
+每组都有 X 张牌。
+组内所有的牌上都写着相同的整数。
+仅当你可选的 X >= 2 时返回 true。
+
+**示例 1**
+
+```
+输入：[1,2,3,4,4,3,2,1]
+输出：true
+解释：可行的分组是 [1,1]，[2,2]，[3,3]，[4,4]
+```
+**示例 2**
+
+```
+输入：[1,1,1,2,2,2,3,3]
+输出：false
+解释：没有满足要求的分组。
+```
+
+**示例 3**
+
+```
+输入：[1]
+输出：false
+解释：没有满足要求的分组。
+```
+**示例 4**
+
+```
+输入：[1,1]
+输出：true
+解释：可行的分组是 [1,1]
+```
+
+**示例 5**
+
+```
+输入：[1,1,2,2,2,2]
+输出：true
+解释：可行的分组是 [1,1]，[2,2]，[2,2]
+```
+
+**提示：**
+- 1 <= deck.length <= 10000
+- 0 <= deck[i] < 10000
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/x-of-a-kind-in-a-deck-of-cards/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-28_uncommonFromSentences.js)
+
+### 两句话中的不常见单词
+> 2020 年 01 月 28 日
+
+给定两个句子 A 和 B 。 （句子是一串由空格分隔的单词。每个单词仅由小写字母组成。）
+
+如果一个单词在其中一个句子中只出现一次，在另一个句子中却没有出现，那么这个单词就是不常见的。
+
+返回所有不常用单词的列表。
+
+您可以按任何顺序返回列表。
+
+**示例 1**
+
+```
+输入：A = "this apple is sweet", B = "this apple is sour"
+输出：["sweet","sour"]
+```
+**示例 2**
+
+```
+输入：A = "apple apple", B = "banana"
+输出：["banana"]
+```
+**提示：**
+- 0 <= A.length <= 200
+- 0 <= B.length <= 200
+- A 和 B 都只包含空格和小写字母。
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/uncommon-words-from-two-sentences/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-29_hasGroupsSizeX.js)
+
+### 数组中的第K个最大元素
+> 2020 年 01 月 25 日
+
+在未排序的数组中找到第 k 个最大的元素。请注意，你需要找的是数组排序后的第 k 个最大的元素，而不是第 k 个不同的元素。
+**示例 1**
+
+```
+输入: [3,2,1,5,6,4] 和 k = 2
+输出: 5
+```
+**示例 2**
+
+```
+输入: [3,2,3,1,2,4,5,5,6] 和 k = 4
+输出: 4
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-20_findMaxConsecutiveOnes.js)
+
+### 平方数之和
+> 2020 年 01 月 24 日
+
+给定一个非负整数 c ，你要判断是否存在两个整数 a 和 b，使得 a2 + b2 = c。
+**示例 1**
+
+```
+输入: 5
+输出: True
+解释: 1 * 1 + 2 * 2 = 5
+```
+**示例 2**
+
+```
+输入: 3
+输出: False
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/sum-of-square-numbers/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-20_findMaxConsecutiveOnes.js)
+
+### 三个数的最大乘积
+> 2020 年 01 月 22 日
+
+给定一个整型数组，在数组中找出由三个数组成的最大乘积，并输出这个乘积。
+**示例 1**
+
+```
+输入: [1,2,3]
+输出: 6
+```
+**示例 2**
+
+```
+输入: [1,2,3,4]
+输出: 24
+```
+**注意：**
+
+1. 给定的整型数组长度范围是[3,104]，数组中所有的元素范围是[-1000, 1000]。
+2. 输入的数组中任意三个数的乘积不会超出32位有符号整数的范围。
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/maximum-product-of-three-numbers/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-20_findMaxConsecutiveOnes.js)
+
+
+### 下一个更大元素 I
+> 2020 年 01 月 22 日
+
+给定两个没有重复元素的数组 nums1 和 nums2 ，其中nums1 是 nums2 的子集。找到 nums1 中每个元素在 nums2 中的下一个比其大的值。
+
+nums1 中数字 x 的下一个更大元素是指 x 在 nums2 中对应位置的右边的第一个比 x 大的元素。如果不存在，对应位置输出-1。
+
+**示例 1**
+
+```
+输入: nums1 = [4,1,2], nums2 = [1,3,4,2].
+输出: [-1,3,-1]
+解释:
+    对于num1中的数字4，你无法在第二个数组中找到下一个更大的数字，因此输出 -1。
+    对于num1中的数字1，第二个数组中数字1右边的下一个较大数字是 3。
+    对于num1中的数字2，第二个数组中没有下一个更大的数字，因此输出 -1。
+```
+**示例 2**
+
+```
+输入: nums1 = [2,4], nums2 = [1,2,3,4].
+输出: [3,-1]
+解释:
+    对于num1中的数字2，第二个数组中的下一个较大数字是3。
+    对于num1中的数字4，第二个数组中没有下一个更大的数字，因此输出 -1。
+```
+**注意：**
+
+nums1和nums2中所有元素是唯一的。
+nums1和nums2 的数组大小都不超过1000。
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/next-greater-element-i/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-20_findMaxConsecutiveOnes.js)
+
+### 颜色分类
+> 2020 年 01 月 21 日
+
+给定一个包含红色、白色和蓝色，一共 n 个元素的数组，原地对它们进行排序，使得相同颜色的元素相邻，并按照红色、白色、蓝色顺序排列。
+
+此题中，我们使用整数 0、 1 和 2 分别表示红色、白色和蓝色。
+
+
+**注意:**
+
+不能使用代码库中的排序函数来解决这道题。
+
+**示例：**
+
+```
+输入: [2,0,2,1,1,0]
+输出: [0,0,1,1,2,2]
+```
+**进阶：**
+
+```
+一个直观的解决方案是使用计数排序的两趟扫描算法。
+首先，迭代计算出0、1 和 2 元素的个数，然后按照0、1、2的排序，重写当前数组。
+你能想出一个仅使用常数空间的一趟扫描算法吗？
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/sort-colors/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-20_findMaxConsecutiveOnes.js)
+
+
+### 最大连续1的个数
+> 2020 年 01 月 20 日
+
+给定一个二进制数组， 计算其中最大连续1的个数:
+
+**示例 1**
+
+```
+输入: 10
+输出: 4
+解释: 小于 10 的质数一共有 4 个, 它们是 2, 3, 5, 7 。
+```
+注意：
+
+输入的数组只包含 0 和1。
+输入数组的长度是正整数，且不超过 10,000。
+[原题 leetcode 链接](https://leetcode-cn.com/problems/max-consecutive-ones/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-20_findMaxConsecutiveOnes.js)
+
+
+### 计数质数
+> 2020 年 01 月 19 日
+统计所有小于非负整数 n 的质数的数量。
+
+**示例:**
+```
+输入: 10
+输出: 4
+解释: 小于 10 的质数一共有 4 个, 它们是 2, 3, 5, 7 。
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/count-primes/submissions/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-19_countPrimes.js)
+
+### 二叉树的层次遍历 II
+> 2020 年 01 月 18 日
+
+给定一个二叉树，返回其节点值自底向上的层次遍历。 （即按从叶子节点所在层到根节点所在的层，逐层从左向右遍历）
+**例如:**
+给定二叉树 [3,9,20,null,null,15,7],
+```
+    3
+   / \
+  9  20
+    /  \
+   15   7
+```
+返回其自底向上的层次遍历为：
+```
+[
+  [15,7],
+  [9,20],
+  [3]
+]
+```
+**进阶:**
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-18_levelOrderBottom.js)
+
+### 长度最小的子数组
+> 2020 年 01 月 17 日
+
+给定一个含有 n 个正整数的数组和一个正整数 s ，找出该数组中满足其和 ≥ s 的长度最小的连续子数组。如果不存在符合条件的连续子数组，返回 0。
+
+**示例:**
+```
+输入: s = 7, nums = [2,3,1,2,4,3]
+输出: 2
+解释: 子数组 [4,3] 是该条件下的长度最小的连续子数组。
+```
+**进阶:**
+
+如果你已经完成了O(n) 时间复杂度的解法, 请尝试 O(n log n) 时间复杂度的解法。
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/minimum-size-subarray-sum/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-16_coinChange.js)
+
+### 零钱兑换
+> 2020 年 01 月 16 日
+
+给定不同面额的硬币 coins 和一个总金额 amount。编写一个函数来计算可以凑成总金额所需的最少的硬币个数。如果没有任何一种硬币组合能组成总金额，返回 -1
+
+**示例:**
+```
+输入: coins = [1, 2, 5], amount = 11
+输出: 3 
+解释: 11 = 5 + 5 + 1
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/coin-change/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-16_coinChange.js)
+
+### 不同的二叉搜索树
+> 2020 年 01 月 15 日
+
+给定一个整数 n，求以 1 ... n 为节点组成的二叉搜索树有多少种？
+
+**示例:**
+```
+输入: 3
+输出: 5
+解释:
+给定 n = 3, 一共有 5 种不同结构的二叉搜索树:
+
+   1         3     3      2      1
+    \       /     /      / \      \
+     3     2     1      1   3      2
+    /     /       \                 \
+   2     1         2                 3
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/unique-binary-search-trees/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-15_numTrees.js)
+
+### 合并区间
+> 2020 年 01 月 14 日
+
+给出一个区间的集合，请合并所有重叠的区间。
+
+**示例1:**
+```
+输入: [[1,3],[2,6],[8,10],[15,18]]
+输出: [[1,6],[8,10],[15,18]]
+解释: 区间 [1,3] 和 [2,6] 重叠, 将它们合并为 [1,6].
+```
+**示例2:**
+```
+输入: [[1,4],[4,5]]
+输出: [[1,5]]
+解释: 区间 [1,4] 和 [4,5] 可被视为重叠区间。
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/merge-intervals/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-13_largestNumber.js)
+
+### 最大数
+> 2020 年 01 月 13 日
+
+给定一组非负整数，重新排列它们的顺序使之组成一个最大的整数。
+
+**示例1:**
+```
+输入: [10,2]
+输出: 210
+```
+**示例2:**
+```
+输入: [3,30,34,5,9]
+输出: 9534330
+```
+**说明:** 输出结果可能非常大，所以你需要返回一个字符串而不是整数。
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/largest-number/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-13_largestNumber.js)
+
 ### 反转链表 II
 > 2020 年 01 月 12 日
 
@@ -15,7 +432,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/reverse-linked-list-ii/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-12_reverseBetween)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-12_reverseBetween.js)
 
 ### 旋转链表
 > 2020 年 01 月 11 日
@@ -43,7 +460,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/rotate-list/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-11_rotateRight)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-11_rotateRight.js)
 
 ### 跳跃游戏
 > 2020 年 01 月 10 日
@@ -69,7 +486,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/jump-game/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-10_canJump)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-10_canJump.js)
 
 ### 子集
 > 2020 年 01 月 09 日
@@ -97,7 +514,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/subsets/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-09_subsets)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-09_subsets.js)
 
 ### 最小路径和
 > 2020 年 01 月 08 日
@@ -139,7 +556,7 @@
   输入: 1->2->2->1
   输出: true
 ```
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-07_isPalindrome)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-07_isPalindrome.js)
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/palindrome-linked-list/)
 
@@ -148,7 +565,7 @@
 
 > 2020 年 01 月 06 日
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-06_quickSort)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-06_quickSort.js)
 
 ### 组合总和
 
@@ -186,7 +603,7 @@ candidates 中的数字可以无限制重复被选取。
   ]
 
 ```
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-04_combinationSum)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-04_combinationSum.js)
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/combination-sum/)
 
@@ -210,7 +627,7 @@ candidates 中的数字可以无限制重复被选取。
 ]
 
 ```
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-03_search)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-03_search.js)
 ### 四数之和
 
 > 2020 年 01 月 02 日
@@ -233,7 +650,7 @@ candidates 中的数字可以无限制重复被选取。
 ]
 
 ```
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-02_fourSum)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-02_fourSum.js)
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/4sum/)
 
@@ -250,7 +667,7 @@ candidates 中的数字可以无限制重复被选取。
 与 target 最接近的三个数的和为 2. (-1 + 2 + 1 = 2).
 
 ```
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-01_threeSumClosest)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-01_threeSumClosest.js)
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/3sum-closest/)
 
