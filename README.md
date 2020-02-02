@@ -2,6 +2,32 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+### 回文子串
+> 2020 年 2 月 1 日
+
+给定一个字符串，你的任务是计算这个字符串中有多少个回文子串。
+
+具有不同开始位置或结束位置的子串，即使是由相同的字符组成，也会被计为是不同的子串。
+
+**示例 1**
+
+```
+输入: "abc"
+输出: 3
+解释: 三个回文子串: "a", "b", "c".
+```
+**示例 2**
+
+```
+输入: "aaa"
+输出: 6
+说明: 6个回文子串: "a", "a", "a", "aa", "aa", "aaa".
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/palindromic-substrings/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-28_uncommonFromSentences.js)
+
 ### 最长回文子序列
 > 2020 年 01 月 30 日
 

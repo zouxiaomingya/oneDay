@@ -27,3 +27,5 @@ var longestPalindromeSubseq = function(s) {
   }
   return dp[0][length-1];
 };
+
+longestPalindromeSubseq('baa')
