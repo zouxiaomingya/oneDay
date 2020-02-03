@@ -26,7 +26,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/palindromic-substrings/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-28_uncommonFromSentences.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-02-01_countSubstrings)
 
 ### 最长回文子序列
 > 2020 年 01 月 30 日
