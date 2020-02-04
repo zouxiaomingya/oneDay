@@ -2,8 +2,36 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+### 删除回文子序列
+> 2020 年 2 月 3 日
+
+给定一个非负整数，你至多可以交换一次数字中的任意两位。返回你能得到的最大值。
+
+**示例 1**
+
+```
+输入: 2736
+输出: 7236
+解释: 交换数字2和数字7。
+```
+**示例 2**
+
+```
+输入: 9973
+输出: 9973
+解释: 不需要交换。
+```
+**注意**
+
+```
+给定数字的范围是 [0, 108]
+```
+[原题 leetcode 链接](https://leetcode-cn.com/problems/maximum-swap/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-02-01_countSubstrings)
+
 ### 最大交换
-> 2020 年 2 月 4 日
+> 2020 年 2 月 2 日
 
 给定一个非负整数，你至多可以交换一次数字中的任意两位。返回你能得到的最大值。
 
