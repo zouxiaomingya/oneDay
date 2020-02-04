@@ -1,22 +1,15 @@
 /**
- * @param {number} num
+ * @param {string} s
  * @return {number}
  */
-var maximumSwap = function(num) {
-    var signArr = String(num).split('');
-    var len = signArr.length
-    var sortArr = String(num).split('').sort((a,b)=>b-a);
-    const getLastIndex = (target) => {
-        for(let i = len - 1; i >= 0; i--){
-            if(target === signArr[i]) return i;
+var removePalindromeSub = function(s) {
+    let len = s.toString().length;
+    if(len === 0) return 0;
+    for(let i = 0; i < len; i++){
+        if(s[i] != s[len-1-i]) {
+            return 2
         }
     }
-    for(let i = 0; i <= len; i++){
-        if(sortArr[i] === signArr[i]) continue;
-        const tempIndex = getLastIndex(sortArr[i]);
-        signArr[tempIndex] = signArr[i]; 
-        signArr[i] = sortArr[i];
-        break;
-    }
-    return Number(signArr.join(''));
+    return 1;
+
 };
