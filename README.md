@@ -2,6 +2,63 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+### 最大交换
+> 2020 年 2 月 4 日
+
+给定一个非负整数，你至多可以交换一次数字中的任意两位。返回你能得到的最大值。
+
+**示例 1**
+
+```
+输入: 2736
+输出: 7236
+解释: 交换数字2和数字7。
+```
+**示例 2**
+
+```
+输入: 9973
+输出: 9973
+解释: 不需要交换。
+```
+**注意**
+
+```
+给定数字的范围是 [0, 108]
+```
+[原题 leetcode 链接](https://leetcode-cn.com/problems/maximum-swap/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-02-01_countSubstrings)
+
+### 最长回文子序列
+> 2020 年 01 月 30 日
+
+给定一个字符串s，找到其中最长的回文子序列。可以假设s的最大长度为1000。
+
+**示例 1**
+
+```
+输入:
+"bbbab"
+
+输出:
+4
+```
+**示例 2**
+
+```
+输入:
+"cbbd"
+
+输出:
+2
+```
+
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/longest-palindromic-subsequence/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-28_uncommonFromSentences.js)
+
 ### 回文子串
 > 2020 年 2 月 1 日
 
