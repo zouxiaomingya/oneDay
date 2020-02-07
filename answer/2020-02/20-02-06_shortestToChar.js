@@ -1,38 +1,28 @@
 /**
- * @param {number[]} nums
- * @return {number}
+ * @param {string} S
+ * @param {character} C
+ * @return {number[]}
  */
-var rob = function(nums) {
-  if (nums.length == 1) {
-    return nums[0];
-  } else if (nums.length == 0) {
-    return 0;
+var shortestToChar = function(S, C) {
+  //当S[i]左右两侧都有C，当只有左侧有C，当只有右侧有C，当本身为C，分四种情况处理即可
+  var res = [];
+  var left, right, leftIdx, rightIdx;
+  for(var i=0;i<S.length;i++){
+      if(S[i] === C){
+          res.push(0);
+      }else{
+          left = S.slice(0,i);
+          right = S.slice(i);
+          leftIdx = left.lastIndexOf(C);
+          rightIdx = right.indexOf(C);
+          if(leftIdx > -1 && rightIdx > -1){
+              res.push(Math.min(Math.abs(i-leftIdx), Math.abs(rightIdx)));
+          }else if(leftIdx === -1 && rightIdx > -1){
+              res.push(Math.abs(S.indexOf(C)-i))
+          }else if(leftIdx > -1 && rightIdx === -1){
+              res.push(Math.abs(i-S.lastIndexOf(C)));
+          }
+      }
   }
-
-  var dp = [];
-  dp[0] = nums[0];
-  dp[1] = nums[0] > nums[1] ? nums[0] : nums[1];
-  dp[2] = Math.max(nums[0], nums[1], nums[2]);
-  let one, two;
-  for (let i = 3; i < nums.length; i++) {
-    one = nums.slice(1, i - 1);
-    two = nums.slice(0, i - 2);
-    dp[i] = Math.max(nums[i] + mild(one), nums[i - 1] + mild(two));
-  }
-
-  //函数作用是，不考虑循环的，最大利益。即打家劫舍1.
-  function mild(arr) {
-    if (arr.length == 1) {
-      return arr[0];
-    }
-    var d = [];
-    d[0] = arr[0];
-    d[1] = Math.max(arr[0], arr[1]);
-
-    for (let j = 2; j < arr.length; j++) {
-      d[j] = Math.max(d[j - 1], d[j - 2] + arr[j]);
-    }
-    return d[arr.length - 1];
-  }
-  return Math.max(dp[nums.length - 1], dp[nums.length - 2]);
+  return res;
 };
