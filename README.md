@@ -3,6 +3,30 @@
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
 ### 打家劫舍 III
+> 2020 年 02 月 6 日
+
+给定一个字符串 S 和一个字符 C。返回一个代表字符串 S 中每个字符到字符串 S 中的字符 C 的最短距离的数组。
+
+**示例 1**
+
+```
+输入: S = "loveleetcode", C = 'e'
+输出: [3, 2, 1, 0, 1, 0, 0, 1, 2, 2, 1, 0]
+
+```
+**说明**
+```
+字符串 S 的长度范围为 [1, 10000]。
+C 是一个单字符，且保证是字符串 S 里的字符。
+S 和 C 中的所有字母均为小写字母。
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/shortest-distance-to-a-character/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-02-04_rob)
+
+
+### 打家劫舍 III
 > 2020 年 02 月 4 日
 
 你是一个专业的小偷，计划偷窃沿街的房屋，每间房内都藏有一定的现金。这个地方所有的房屋都围成一圈，这意味着第一个房屋和最后一个房屋是紧挨着的。同时，相邻的房屋装有相互连通的防盗系统，如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警。
@@ -27,7 +51,7 @@
 ```
 [原题 leetcode 链接](https://leetcode-cn.com/problems/house-robber-ii/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-28_uncommonFromSentences.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-02-04_rob)
 
 ### 删除回文子序列
 > 2020 年 2 月 3 日
