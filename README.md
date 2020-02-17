@@ -2,6 +2,35 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+
+### 面试题03. 数组中重复的数字
+
+> 2020 年 02 月 14 日
+
+找出数组中重复的数字。
+
+
+在一个长度为 n 的数组 nums 里的所有数字都在 0～n-1 的范围内。数组中某些数字是重复的，但不知道有几个数字重复了，也不知道每个数字重复了几次。请找出数组中任意一个重复的数字。
+
+**示例 1**
+
+```
+输入：
+[2, 3, 1, 0, 2, 5, 3]
+输出：2 或 3 
+
+```
+
+**限制**
+
+```
+2 <= n <= 100000
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/reverse-string-ii/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-02-12_reverseStr)
+
 ### 将反转字符串 II
 
 > 2020 年 02 月 12 日
