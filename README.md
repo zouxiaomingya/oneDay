@@ -22,7 +22,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/reverse-string-ii/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-02-08_sortedArrayToBST)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-02-12_reverseStr)
 
 ### 将有序数组转换为二叉搜索树
 
