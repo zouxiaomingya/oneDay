@@ -3,6 +3,33 @@
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
 
+### 面试题43. 1～n整数中1出现的次数
+
+> 2020 年 02 月 16 日
+
+输入一个整数 n ，求1～n这n个整数的十进制表示中1出现的次数。
+
+例如，输入12，1～12这些整数中包含1 的数字有1、10、11和12，1一共出现了5次。
+
+**示例 1**
+
+```
+输入：n = 12
+输出：5
+
+```
+
+**限制**
+
+```
+输入：n = 13
+输出：6
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/1nzheng-shu-zhong-1chu-xian-de-ci-shu-lcof/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-02-12_reverseStr)
+
 ### 面试题03. 数组中重复的数字
 
 > 2020 年 02 月 14 日
