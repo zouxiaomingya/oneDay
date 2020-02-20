@@ -2,6 +2,28 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+### 两数相加 II
+
+> 2020 年 02 月 17 日
+
+给定两个非空链表来代表两个非负整数。数字最高位位于链表开始位置。它们的每个节点只存储单个数字。将这两数相加会返回一个新的链表。
+
+你可以假设除了数字 0 之外，这两个数字都不会以零开头。
+
+**进阶:**
+
+如果输入链表不能修改该如何处理？换句话说，你不能对列表中的节点进行翻转。
+
+**示例:**
+
+```
+输入: (7 -> 2 -> 4 -> 3) + (5 -> 6 -> 4)
+输出: 7 -> 8 -> 0 -> 7
+
+```
+[原题 leetcode 链接](https://leetcode-cn.com/problems/add-two-numbers-ii/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-02-12_reverseStr)
 
 ### 面试题43. 1～n整数中1出现的次数
 
