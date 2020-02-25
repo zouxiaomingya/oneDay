@@ -2,6 +2,11 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+### 实现一个比较完整的 Promise
+> 2020 年 02 月 19 日
+
+[promise 标准](https://promisesaplus.com/)
+
 ### node url
 > 2020 年 02 月 18 日
 
