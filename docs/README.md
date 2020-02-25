@@ -1,3 +1,402 @@
+<h1 align="center">One Day</h1>
+<p align="center">每天记录一点</p>
+<p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
+
+
+### 两数相加 II
+
+> 2020 年 02 月 20 日
+
+给定两个字符串形式的非负整数 num1 和num2 ，计算它们的和。
+
+**注意:**
+
+```
+num1 和num2 的长度都小于 5100.
+num1 和num2 都只包含数字 0-9.
+num1 和num2 都不包含任何前导零。
+你不能使用任何內建 BigInteger 库， 也不能直接将输入的字符串转换为整数形式。
+
+```
+[原题 leetcode 链接](https://leetcode-cn.com/problems/add-strings/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-02-12_reverseStr)
+
+### 实现一个比较完整的 Promise
+> 2020 年 02 月 19 日
+
+[promise 标准](https://promisesaplus.com/)
+
+### node url
+> 2020 年 02 月 18 日
+
+讲讲 node 的 urL 模块
+
+### 两数相加 II
+
+> 2020 年 02 月 17 日
+
+给定两个非空链表来代表两个非负整数。数字最高位位于链表开始位置。它们的每个节点只存储单个数字。将这两数相加会返回一个新的链表。
+
+你可以假设除了数字 0 之外，这两个数字都不会以零开头。
+
+**进阶:**
+
+如果输入链表不能修改该如何处理？换句话说，你不能对列表中的节点进行翻转。
+
+**示例:**
+
+```
+输入: (7 -> 2 -> 4 -> 3) + (5 -> 6 -> 4)
+输出: 7 -> 8 -> 0 -> 7
+
+```
+[原题 leetcode 链接](https://leetcode-cn.com/problems/add-two-numbers-ii/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-02-12_reverseStr)
+
+### 面试题43. 1～n整数中1出现的次数
+
+> 2020 年 02 月 16 日
+
+输入一个整数 n ，求1～n这n个整数的十进制表示中1出现的次数。
+
+例如，输入12，1～12这些整数中包含1 的数字有1、10、11和12，1一共出现了5次。
+
+**示例 1**
+
+```
+输入：n = 12
+输出：5
+
+```
+
+**限制**
+
+```
+输入：n = 13
+输出：6
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/1nzheng-shu-zhong-1chu-xian-de-ci-shu-lcof/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-02-12_reverseStr)
+
+### 面试题03. 数组中重复的数字
+
+> 2020 年 02 月 14 日
+
+找出数组中重复的数字。
+
+
+在一个长度为 n 的数组 nums 里的所有数字都在 0～n-1 的范围内。数组中某些数字是重复的，但不知道有几个数字重复了，也不知道每个数字重复了几次。请找出数组中任意一个重复的数字。
+
+**示例 1**
+
+```
+输入：
+[2, 3, 1, 0, 2, 5, 3]
+输出：2 或 3 
+
+```
+
+**限制**
+
+```
+2 <= n <= 100000
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/reverse-string-ii/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-02-12_reverseStr)
+
+### 将反转字符串 II
+
+> 2020 年 02 月 12 日
+
+给定一个字符串和一个整数 k，你需要对从字符串开头算起的每个 2k 个字符的前k个字符进行反转。如果剩余少于 k 个字符，则将剩余的所有全部反转。如果有小于 2k 但大于或等于 k 个字符，则反转前 k 个字符，并将剩余的字符保持原样。
+
+**示例**
+
+```
+输入: s = "abcdefg", k = 2
+输出: "bacdfeg"
+
+```
+
+**要求**
+1. 该字符串只包含小写的英文字母。
+2. 给定字符串的长度和 k 在[1, 10000]范围内。
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/reverse-string-ii/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-02-12_reverseStr)
+
+### 将有序数组转换为二叉搜索树
+
+> 2020 年 02 月 11 日
+
+有效括号字符串为空 ("")、"(" + A + ")" 或 A + B，其中 A 和 B 都是有效的括号字符串，+ 代表字符串的连接。例如，""，"()"，"(())()" 和 "(()(()))" 都是有效的括号字符串。
+
+如果有效字符串 S 非空，且不存在将其拆分为 S = A+B 的方法，我们称其为原语（primitive），其中 A 和 B 都是非空有效括号字符串。
+
+给出一个非空有效字符串 S，考虑将其进行原语化分解，使得：S = P_1 + P_2 + ... + P_k，其中 P_i 是有效括号字符串原语。
+
+对 S 进行原语化分解，删除分解中每个原语字符串的最外层括号，返回 S 。
+
+**示例 1**
+
+```
+输入："(()())(())"
+输出："()()()"
+解释：
+输入字符串为 "(()())(())"，原语化分解得到 "(()())" + "(())"，
+删除每个部分中的最外层括号后得到 "()()" + "()" = "()()()"。
+
+```
+**示例 2**
+
+```
+输入："(()())(())(()(()))"
+输出："()()()()(())"
+解释：
+输入字符串为 "(()())(())(()(()))"，原语化分解得到 "(()())" + "(())" + "(()(()))"，
+删除每隔部分中的最外层括号后得到 "()()" + "()" + "()(())" = "()()()()(())"。
+
+```
+
+**示例 3**
+
+```
+输入："()()"
+输出：""
+解释：
+输入字符串为 "()()"，原语化分解得到 "()" + "()"，
+删除每个部分中的最外层括号后得到 "" + "" = ""。
+
+```
+
+**提示**
+
+```
+1.S.length <= 10000
+2.S[i] 为 "(" 或 ")"
+3.S 是一个有效括号字符串
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/remove-outermost-parentheses/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-02-08_sortedArrayToBST)
+
+### 将有序数组转换为二叉搜索树
+
+> 2020 年 02 月 08 日
+
+将一个按照升序排列的有序数组，转换为一棵高度平衡二叉搜索树。
+
+本题中，一个高度平衡二叉树是指一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过 1。
+
+**示例**
+
+```
+
+给定有序数组: [-10,-3,0,5,9],
+
+一个可能的答案是：[0,-3,9,-10,null,5]，它可以表示下面这个高度平衡二叉搜索树：
+
+      0
+     / \
+   -3   9
+   /   /
+ -10  5
+
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-02-08_sortedArrayToBST)
+
+### 聊聊二维码登陆
+> 2020 年 02 月 07 日
+
+### 打家劫舍 III
+> 2020 年 02 月 06 日
+
+给定一个字符串 S 和一个字符 C。返回一个代表字符串 S 中每个字符到字符串 S 中的字符 C 的最短距离的数组。
+
+**示例 1**
+
+```
+输入: S = "loveleetcode", C = 'e'
+输出: [3, 2, 1, 0, 1, 0, 0, 1, 2, 2, 1, 0]
+
+```
+**说明**
+```
+字符串 S 的长度范围为 [1, 10000]。
+C 是一个单字符，且保证是字符串 S 里的字符。
+S 和 C 中的所有字母均为小写字母。
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/shortest-distance-to-a-character/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-02-04_rob)
+
+
+### 打家劫舍 III
+> 2020 年 02 月 04 日
+
+你是一个专业的小偷，计划偷窃沿街的房屋，每间房内都藏有一定的现金。这个地方所有的房屋都围成一圈，这意味着第一个房屋和最后一个房屋是紧挨着的。同时，相邻的房屋装有相互连通的防盗系统，如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警。
+
+给定一个代表每个房屋存放金额的非负整数数组，计算你在不触动警报装置的情况下，能够偷窃到的最高金额。
+
+**示例 1**
+
+```
+输入: [2,3,2]
+输出: 3
+解释: 你不能先偷窃 1 号房屋（金额 = 2），然后偷窃 3 号房屋（金额 = 2）, 因为他们是相邻的。
+
+```
+**示例 2**
+
+```
+输入: [1,2,3,1]
+输出: 4
+解释: 你可以先偷窃 1 号房屋（金额 = 1），然后偷窃 3 号房屋（金额 = 3）。
+     偷窃到的最高金额 = 1 + 3 = 4 。
+```
+[原题 leetcode 链接](https://leetcode-cn.com/problems/house-robber-ii/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-02-04_rob)
+
+### 删除回文子序列
+> 2020 年 02 月 03 日
+
+给你一个字符串 s，它仅由字母 'a' 和 'b' 组成。每一次删除操作都可以从 s 中删除一个回文 子序列。
+
+返回删除给定字符串中所有字符（字符串为空）的最小删除次数。
+
+「子序列」定义：如果一个字符串可以通过删除原字符串某些字符而不改变原字符顺序得到，那么这个字符串就是原字符串的一个子序列。
+
+「回文」定义：如果一个字符串向后和向前读是一致的，那么这个字符串就是一个回文。
+
+**示例 1**
+```
+输入：s = "ababa"
+输出：1
+解释：字符串本身就是回文序列，只需要删除一次。
+```
+**示例 2**
+
+```
+输入：s = "abb"
+输出：2
+解释："abb" -> "bb" -> "". 
+先删除回文子序列 "a"，然后再删除 "bb"。
+```
+**示例 3**
+```
+输入：s = "baabb"
+输出：2
+解释："baabb" -> "b" -> "". 
+先删除回文子序列 "baab"，然后再删除 "b"。
+```
+**示例 4**
+```
+输入：s = ""
+输出：0
+```
+**提示**
+
+- 0 <= s.length <= 1000
+- s 仅包含字母 'a'  和 'b'
+[原题 leetcode 链接](https://leetcode-cn.com/problems/remove-palindromic-subsequences/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-02-01_countSubstrings)
+
+### 最大交换
+> 2020 年 02 月 02 日
+
+给定一个非负整数，你至多可以交换一次数字中的任意两位。返回你能得到的最大值。
+
+**示例 1**
+
+```
+输入: 2736
+输出: 7236
+解释: 交换数字2和数字7。
+```
+**示例 2**
+
+```
+输入: 9973
+输出: 9973
+解释: 不需要交换。
+```
+**注意**
+
+```
+给定数字的范围是 [0, 108]
+```
+[原题 leetcode 链接](https://leetcode-cn.com/problems/maximum-swap/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-02-01_countSubstrings)
+
+### 最长回文子序列
+> 2020 年 01 月 30 日
+
+给定一个字符串s，找到其中最长的回文子序列。可以假设s的最大长度为1000。
+
+**示例 1**
+
+```
+输入:
+"bbbab"
+
+输出:
+4
+```
+**示例 2**
+
+```
+输入:
+"cbbd"
+
+输出:
+2
+```
+
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/longest-palindromic-subsequence/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-01-28_uncommonFromSentences.js)
+
+### 回文子串
+> 2020 年 2 月 1 日
+
+给定一个字符串，你的任务是计算这个字符串中有多少个回文子串。
+
+具有不同开始位置或结束位置的子串，即使是由相同的字符组成，也会被计为是不同的子串。
+
+**示例 1**
+
+```
+输入: "abc"
+输出: 3
+解释: 三个回文子串: "a", "b", "c".
+```
+**示例 2**
+
+```
+输入: "aaa"
+输出: 6
+说明: 6个回文子串: "a", "a", "a", "aa", "aa", "aaa".
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/palindromic-substrings/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-01/20-02-01_countSubstrings)
 
 ### 最长回文子序列
 > 2020 年 01 月 30 日
