@@ -5,6 +5,36 @@
 
 ### 1103. 分糖果 II
 
+> 2020 年 02 月 28 日
+
+根据一棵树的前序遍历与中序遍历构造二叉树。
+
+注意:
+你可以假设树中没有重复的元素。
+
+例如，给出
+
+```
+前序遍历 preorder = [3,9,20,15,7]
+中序遍历 inorder = [9,3,15,20,7]
+
+```
+返回如下二叉树
+···
+
+    3
+   / \
+  9  20
+    /  \
+   15   7
+
+···
+[原题 leetcode 链接](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-02-26_distributeCandies.js)
+
+### 1103. 分糖果 II
+
 > 2020 年 02 月 26 日
 
 排排坐，分糖果。
@@ -45,7 +75,7 @@
 ```
 [原题 leetcode 链接](https://leetcode-cn.com/problems/distribute-candies-to-people/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-02-21_fourSumCount.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-02-26_distributeCandies.js)
 
 ### 四数之和
 
