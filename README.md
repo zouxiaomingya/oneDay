@@ -31,7 +31,7 @@
 ···
 [原题 leetcode 链接](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-02-26_distributeCandies.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-02-28_buildTree.js)
 
 ### 1103. 分糖果 II
 
