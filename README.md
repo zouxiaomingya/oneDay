@@ -2,7 +2,35 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
-### 57-II. 和为s的连续正数序列(测试_fork)
+
+###  二叉树的直径
+
+> 2020 年 03 月 3 日
+
+给定一棵二叉树，你需要计算它的直径长度。一棵二叉树的直径长度是任意两个结点路径长度中的最大值。这条路径可能穿过根结点。
+
+示例 :
+给定二叉树
+**示例 :**
+
+```
+          1
+         / \
+        2   3
+       / \     
+      4   5    
+
+```
+
+返回 3, 它的长度是路径 [4,2,1,3] 或者 [5,2,1,3]。
+
+**注意:** 两结点之间的路径长度是以它们之间边的数目表示。
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/diameter-of-binary-tree/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-02-28_buildTree.js)
+
+### 57-II. 和为s的连续正数序列
 
 > 2020 年 03 月 1 日
 
