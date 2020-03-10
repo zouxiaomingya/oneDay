@@ -28,7 +28,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/diameter-of-binary-tree/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-02-28_buildTree.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-01_findContinuousSequence.js)
 
 ### 57-II. 和为s的连续正数序列
 
@@ -60,7 +60,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-02-28_buildTree.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-01_findContinuousSequence.js)
 
 ### 从前序与中序遍历序列构造二叉树
 
