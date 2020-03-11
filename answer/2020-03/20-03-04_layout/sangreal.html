@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+      }
+      .content {
+        overflow: hidden;
+        padding: 0 100px;
+      }
+
+      .middle {
+        position: relative;
+        width: 100%;
+        float: left;
+        height: 80px;
+        background: green;
+      }
+
+      .left {
+        position: relative;
+        width: 100px;
+        float: left;
+        left: -100px;
+        height: 80px;
+        margin-left: -100%;
+        background: yellow;
+      }
+
+      .right {
+        position: relative;
+        width: 100px;
+        float: left;
+        right: -100px;
+        height: 80px;
+        margin-left: -100px;
+        background: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="middle">1</div>
+      <div class="left">2</div>
+      <div class="right">3</div>
+    </div>
+  </body>
+</html>
