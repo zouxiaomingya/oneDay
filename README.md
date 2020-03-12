@@ -2,10 +2,33 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+###  礼物的最大价值
+
+> 2020 年 03 月 08 日
+
+ 在一个 m*n 的棋盘的每一格都放有一个礼物，每个礼物都有一定的价值（价值大于 0）。你可以从棋盘的左上角开始拿格子里的礼物，并每次向右或者向下移动一格、直到到达棋盘的右下角。给定一个棋盘及其上面的礼物的价值，请计算你最多能拿到多少价值的礼物？
+
+**示例 1:**
+
+```
+输入: 
+[
+  [1,3,1],
+  [1,5,1],
+  [4,2,1]
+]
+输出: 12
+解释: 路径 1→3→5→2→1 可以拿到最多价值的礼物
+
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-08_maxValue.js)
 
 ###  股票的最大利润
 
-> 2020 年 03 月 05 日
+> 2020 年 03 月 07 日
 
 假设把某股票的价格按照时间先后顺序存储在数组中，请问买卖该股票一次可能获得的最大利润是多少？
  
@@ -28,7 +51,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/gu-piao-de-zui-da-li-run-lcof/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-01_findContinuousSequence.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-07_maxProfit.js)
 
 ###  将数组分成和相等的三个部分
 
