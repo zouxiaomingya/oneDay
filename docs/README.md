@@ -2,10 +2,282 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+### 字符串的最大公因子
+
+> 2020 年 03 月 10 日
+
+  对于字符串 S 和 T，只有在 S = T + ... + T（T 与自身连接 1 次或多次）时，我们才认定 “T 能除尽 S”。
+  返回最长字符串 X，要求满足 X 能除尽 str1 且 X 能除尽 str2。
+
+**示例 1:**
+
+```
+输入：str1 = "ABCABC", str2 = "ABC"
+输出："ABC"
+```
+
+**示例 2:**
+
+```
+输入：str1 = "ABABAB", str2 = "ABAB"
+输出："AB"
+```
+
+**示例 3:**
+
+```
+输入：str1 = "LEET", str2 = "CODE"
+输出：""
+```
+
+**提示:**
+
+```
+1 <= str1.length <= 1000
+1 <= str2.length <= 1000
+str1[i] 和 str2[i] 为大写英文字母
+```
+
+
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/greatest-common-divisor-of-strings/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-08_maxValue.js)
+
+###  礼物的最大价值
+
+> 2020 年 03 月 08 日
+
+ 在一个 m*n 的棋盘的每一格都放有一个礼物，每个礼物都有一定的价值（价值大于 0）。你可以从棋盘的左上角开始拿格子里的礼物，并每次向右或者向下移动一格、直到到达棋盘的右下角。给定一个棋盘及其上面的礼物的价值，请计算你最多能拿到多少价值的礼物？
+
+**示例 1:**
+
+```
+输入: 
+[
+  [1,3,1],
+  [1,5,1],
+  [4,2,1]
+]
+输出: 12
+解释: 路径 1→3→5→2→1 可以拿到最多价值的礼物
+
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-08_maxValue.js)
+
+###  股票的最大利润
+
+> 2020 年 03 月 07 日
+
+假设把某股票的价格按照时间先后顺序存储在数组中，请问买卖该股票一次可能获得的最大利润是多少？
+ 
+**示例 1:**
+
+```
+输入: [7,1,5,3,6,4]
+输出: 5
+解释: 在第 2 天（股票价格 = 1）的时候买入，在第 5 天（股票价格 = 6）的时候卖出，最大利润 = 6-1 = 5 。
+     注意利润不能是 7-1 = 6, 因为卖出价格需要大于买入价格。
+
+```
+
+**示例 2:**
+```
+输入: [7,6,4,3,1]
+输出: 0
+解释: 在这种情况下, 没有交易完成, 所以最大利润为 0。
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/gu-piao-de-zui-da-li-run-lcof/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-07_maxProfit.js)
+
+###  将数组分成和相等的三个部分
+
+> 2020 年 03 月 05 日
+
+给你一个整数数组 A，只有可以将其划分为三个和相等的非空部分时才返回 true，否则返回 false。
+
+形式上，如果可以找出索引 i+1 < j 且满足 (A[0] + A[1] + ... + A[i] == A[i+1] + A[i+2] + ... + A[j-1] == A[j] + A[j-1] + ... + A[A.length - 1]) 就可以将数组三等分。
+
+**示例 1:**
+
+```
+输出：[0,2,1,-6,6,-7,9,1,2,0,1]
+输出：true
+解释：0 + 2 + 1 = -6 + 6 - 7 + 9 + 1 = 2 + 0 + 1
+
+```
+
+**示例 2:**
+```
+输入：[0,2,1,-6,6,7,9,-1,2,0,1]
+输出：false
+```
+
+**示例 3:**
+```
+输入：[3,3,6,5,-2,2,5,1,-9,4]
+输出：true
+解释：3 + 3 = 6 = 5 - 2 + 2 + 5 + 1 - 9 + 4
+```
+
+提示：
+
+3 <= A.length <= 50000
+-10^4 <= A[i] <= 10^4
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/partition-array-into-three-parts-with-equal-sum/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-01_findContinuousSequence.js)
+
+###  常用的经典布局
+
+> 2020 年 03 月 04 日
+
+双飞翼布局
+圣杯布局
+两栏布局
+
+###  二叉树的直径
+
+> 2020 年 03 月 03 日
+
+给定一棵二叉树，你需要计算它的直径长度。一棵二叉树的直径长度是任意两个结点路径长度中的最大值。这条路径可能穿过根结点。
+
+示例 :
+给定二叉树
+**示例 :**
+
+```
+          1
+         / \
+        2   3
+       / \     
+      4   5    
+
+```
+
+返回 3, 它的长度是路径 [4,2,1,3] 或者 [5,2,1,3]。
+
+**注意:** 两结点之间的路径长度是以它们之间边的数目表示。
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/diameter-of-binary-tree/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-01_findContinuousSequence.js)
+
+### 57-II. 和为s的连续正数序列
+
+> 2020 年 03 月 01 日
+
+
+输入一个正整数 target ，输出所有和为 target 的连续正整数序列（至少含有两个数）。
+
+序列内的数字由小到大排列，不同序列按照首个数字从小到大排列。
+
+**示例 1:**
+
+```
+输入：target = 9
+输出：[[2,3,4],[4,5]]
+
+```
+
+**示例 2:**
+```
+输入：target = 15
+输出：[[1,2,3,4,5],[4,5,6],[7,8]]
+```
+
+**限制：**
+```
+1 <= target <= 10^5
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-01_findContinuousSequence.js)
+
+### 从前序与中序遍历序列构造二叉树
+
+> 2020 年 02 月 28 日
+
+根据一棵树的前序遍历与中序遍历构造二叉树。
+
+注意:
+你可以假设树中没有重复的元素。
+
+例如，给出
+
+```
+前序遍历 preorder = [3,9,20,15,7]
+中序遍历 inorder = [9,3,15,20,7]
+
+```
+返回如下二叉树
+···
+
+    3
+   / \
+  9  20
+    /  \
+   15   7
+
+···
+[原题 leetcode 链接](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-02-28_buildTree.js)
+
+### 1103. 分糖果 II
+
+> 2020 年 02 月 26 日
+
+排排坐，分糖果。
+
+我们买了一些糖果 candies，打算把它们分给排好队的 n = num_people 个小朋友。
+
+给第一个小朋友 1 颗糖果，第二个小朋友 2 颗，依此类推，直到给最后一个小朋友 n 颗糖果。
+
+然后，我们再回到队伍的起点，给第一个小朋友 n + 1 颗糖果，第二个小朋友 n + 2 颗，依此类推，直到给最后一个小朋友 2 * n 颗糖果。
+
+重复上述过程（每次都比上一次多给出一颗糖果，当到达队伍终点后再次从队伍起点开始），直到我们分完所有的糖果。注意，就算我们手中的剩下糖果数不够（不比前一次发出的糖果多），这些糖果也会全部发给当前的小朋友。
+
+返回一个长度为 num_people、元素之和为 candies 的数组，以表示糖果的最终分发情况（即 ans[i] 表示第 i 个小朋友分到的糖果数）。
+
+**例如1:**
+
+```
+输入：candies = 7, num_people = 4
+输出：[1,2,3,1]
+解释：
+第一次，ans[0] += 1，数组变为 [1,0,0,0]。
+第二次，ans[1] += 2，数组变为 [1,2,0,0]。
+第三次，ans[2] += 3，数组变为 [1,2,3,0]。
+第四次，ans[3] += 1（因为此时只剩下 1 颗糖果），最终数组变为 [1,2,3,1]。
+
+```
+**例如2:**
+
+```
+输入：candies = 10, num_people = 3
+输出：[5,2,3]
+解释：
+第一次，ans[0] += 1，数组变为 [1,0,0]。
+第二次，ans[1] += 2，数组变为 [1,2,0]。
+第三次，ans[2] += 3，数组变为 [1,2,3]。
+第四次，ans[0] += 4，最终数组变为 [5,2,3]。
+
+```
+[原题 leetcode 链接](https://leetcode-cn.com/problems/distribute-candies-to-people/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-02-26_distributeCandies.js)
 
 ### 四数之和
 
-> 2020 年 02 月 27 日
+> 2020 年 02 月 21 日
 
 给定四个包含整数的数组列表 A , B , C , D ,计算有多少个元组 (i, j, k, l) ，使得 A[i] + B[j] + C[k] + D[l] = 0。
 
