@@ -2,6 +2,33 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+###  最长上升子序列
+
+> 2020 年 03 月 11 日
+  给定一个无序的整数数组，找到其中最长上升子序列的长度。
+
+**示例 :**
+
+```
+输入: [10,9,2,5,3,7,101,18]
+输出: 4 
+解释: 最长的上升子序列是 [2,3,7,101]，它的长度是 4。
+```
+
+**说明 :**
+
+```
+可能会有多种最长上升子序列的组合，你只需要输出对应的长度即可。
+你算法的时间复杂度应该为 O(n2) 。
+```
+进阶: 你能将算法的时间复杂度降低到 O(n log n) 吗?
+
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/longest-increasing-subsequence/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-08_maxValue.js)
+
+
 ### 字符串的最大公因子
 
 > 2020 年 03 月 10 日
@@ -42,7 +69,7 @@ str1[i] 和 str2[i] 为大写英文字母
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/greatest-common-divisor-of-strings/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-08_maxValue.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-10_gcdOfStrings.js)
 
 ###  礼物的最大价值
 
