@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script src="test1.js" async></script>
+  <script src="./test2.js" defer></script>
+  <script >
+    var i = 0;
+    while (i < 1000000000) {
+      i++;
+      if (i === 10) {
+        console.log('~~~~~');
+      }
+    }
+  </script>
+  <!-- <script src="./test3.js"></script> -->
+  <script>console.log('normal');</script>
+  <body>
+
+    <div class="">000</div>
+  </body>
+
+</html>
