@@ -39,7 +39,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-15_sumNums.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-16_isSymmetric.js)
 
 
 ### 求1+2+…+n
