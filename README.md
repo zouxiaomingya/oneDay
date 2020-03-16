@@ -23,7 +23,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/qiu-12n-lcof/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-14_compressString.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-15_sumNums.js)
 
 
 ### 字符串压缩
