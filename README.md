@@ -2,6 +2,30 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+### 求1+2+…+n
+
+> 2020 年 03 月 15 日
+
+求 1+2+...+n ，要求不能使用乘除法、for、while、if、else、switch、case等关键字及条件判断语句（A?B:C）。
+**示例1 :**
+
+```
+输入: n = 3
+输出: 6
+```
+
+**示例2 :**
+
+```
+输入: n = 9
+输出: 45
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/qiu-12n-lcof/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-14_compressString.js)
+
+
 ### 字符串压缩
 
 > 2020 年 03 月 14 日
@@ -31,7 +55,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/compress-string-lcci/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-08_maxValue.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-14_compressString.js)
 
 
 ### 路径总和
@@ -59,7 +83,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/path-sum/description/?utm_source=LCUS&utm_medium=ip_redirect_q_uns&utm_campaign=transfer2china)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-08_maxValue.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-13_hasPathSum.js)
 
 
 ###  自定义布局
@@ -92,7 +116,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/longest-increasing-subsequence/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-08_maxValue.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-11_lengthOfLIS.js)
 
 
 ### 字符串的最大公因子
