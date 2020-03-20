@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    let template = "我是，性别{{list[0]}}";
+    let data = {
+      name: "姓名",
+      age: 18,
+      list: [1]
+    };
+    const reg = /\{\{(.+?)\}\}/; // 模板字符串正则
+    const name = reg.exec(template);
+    console.log(name);
+  </script>
+</html>
