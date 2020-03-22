@@ -2,9 +2,173 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+
+### 使数组唯一的最小增量
+
+> 2020 年 03 月 23 日
+
+给定整数数组 A，每次 move 操作将会选择任意 A[i]，并将其递增 1。
+
+返回使 A 中的每个值都是唯一的最少操作次数。
+
+**示例1 :**
+```
+输入：[1,2,2]
+输出：1
+解释：经过一次 move 操作，数组将变为 [1, 2, 3]。
+```
+
+**示例2 :**
+```
+输入：[3,2,1,2,1,7]
+输出：6
+解释：经过 6 次 move 操作，数组将变为 [3, 4, 1, 2, 5, 7]。
+可以看出 5 次或 5 次以下的 move 操作是不能让数组的每个值唯一的。
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/minimum-increment-to-make-array-unique/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-23_minIncrementForUnique.js)
+
+> 2020 年 03 月 19 日
+### 阿里笔试题目
+
+> 2020 年 03 月 19 日
+
+``` javascript
+// =========================
+// 题目：编写一个简单的事件监听处理器，要求具备 on 方法绑定、off 方法解绑
+// 编写一个简单的事件监听处理器
+// 1. 具备 on 方法绑定事件
+// 2. 具备 off 方法解绑事件
+
+function EventEmitter () {
+  // todo
+}
+
+// test
+var emitter = new EventEmitter();
+
+emitter.on('foo', function (e) {
+  console.log('foo event: ', e);
+});
+
+emitter.on('*', function (e, type) {
+  console.log('some event: ', e, type);
+});
+
+
+function onBar (e) {
+  console.log('bar event: ', e);
+}
+
+emitter.on('bar', onBar);
+
+
+emitter.emit('foo', { name: 'John' });
+emitter.emit('bar', { name: 'John' });
+
+emitter.off('bar', onBar);
+emitter.emit('foo', { name: 'John' });
+emitter.emit('bar', { name: 'John' });
+
+
+// =========================
+// 题目：请通过代码实现大整数（可能比Number.MAX_VALUE大）相加运算。
+// 请通过代码实现大整数（可能比Number.MAX_VALUE大）相加运算
+class BigInt() {
+  constructor(str) {
+  }
+  
+  plus(bigInt) {
+    
+  }
+  
+  toString() {
+  }
+}
+
+// usage
+const big1 = new BigInt('1234232453525454546445451434342153453454545454545454');
+const big2 = new BigInt('1234232453525454546445451434342153453454545454545454');
+console.log(bigint1.plus(bigint2));
+
+// =========================
+// 题目：实现一个可以缓存其他函数的高阶函数memoize。能够实现：当入参相同时，可以不经过计算，直接返回结果。
+/** 求平方根 */
+function sqrt(n) { return Math.sqrt(n) }
+
+const memoize = fn => {
+  // 实现
+}
+const cachedSqrt = memoize(sqrt)
+cachedSqrt(4) // 2
+cachedSqrt(4) // 不经过计算，直接输出结果2
+
+// =========================
+// 题目：实现快速排序
+
+function quicksort(array) {
+	// TODO 
+}
+
+// test
+var array = [4, 7, 87, 34, 56, 69, 19, 26, 7, 9, 33];
+var result = quicksort(array);
+
+
+// =========================
+// 实现多叉树的广度度优先搜索
+function bfs(tree, name){
+  // TODO: 你的代码
+}
+
+var tree = {
+  name : '中国',
+  children : [
+    {
+      name : '北京',
+      children : [
+        {
+          name : '朝阳群众'
+        },
+        {
+          name : '海淀区'
+        },
+                {
+          name : '昌平区'
+        }
+      ]
+    },
+    {
+      name : '浙江省',
+      children : [
+        {
+          name : '杭州市',
+          code : 0571,
+        },
+        {
+          name : '嘉兴市'
+        },
+        {
+          name : '绍兴市'
+        },
+        {
+          name : '宁波市'
+        }
+      ]
+    }
+  ]
+};
+
+var node = bfs(tree, '杭州市');
+console.log(node);    // { name: '杭州市', code: 0571 }
+
+```
+
 ### 矩形重叠
 
-> 2020 年 03 月 17 日
+> 2020 年 03 月 18 日
 
 矩形以列表 [x1, y1, x2, y2] 的形式表示，其中 (x1, y1) 为左下角的坐标，(x2, y2) 是右上角的坐标。
 
@@ -31,7 +195,7 @@
 
 ### 拼写单词
 
-> 2020 年 03 月 16 日
+> 2020 年 03 月 17 日
 
 给你一份『词汇表』（字符串数组） words 和一张『字母表』（字符串） chars。
 
