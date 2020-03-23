@@ -2,6 +2,463 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+### K 个一组翻转链表
+
+> 2020 年 03 月 25 日
+
+给你一个链表，每 k 个节点一组进行翻转，请你返回翻转后的链表。
+
+k 是一个正整数，它的值小于或等于链表的长度。
+
+如果节点总数不是 k 的整数倍，那么请将最后剩余的节点保持原有顺序。
+
+**示例**
+```
+给你这个链表：1->2->3->4->5
+
+当 k = 2 时，应当返回: 2->1->4->3->5
+
+当 k = 3 时，应当返回: 3->2->1->4->5
+
+```
+**说明： :**
+
+你的算法只能使用常数的额外空间。
+你不能只是单纯的改变节点内部的值，而是需要实际进行节点交换。
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-25_reverseKGroup.js)
+
+
+### 链表的中间结点
+
+> 2020 年 03 月 24 日
+
+给定一个带有头结点 head 的非空单链表，返回链表的中间结点。
+
+如果有两个中间结点，则返回第二个中间结点。
+
+**示例1 :**
+```
+输入：[1,2,3,4,5]
+输出：此列表中的结点 3 (序列化形式：[3,4,5])
+返回的结点值为 3 。 (测评系统对该结点序列化表述是 [3,4,5])。
+注意，我们返回了一个 ListNode 类型的对象 ans，这样：
+ans.val = 3, ans.next.val = 4, ans.next.next.val = 5, 以及 ans.next.next.next = NULL.
+
+```
+
+**示例2 :**
+```
+输入：[1,2,3,4,5,6]
+输出：此列表中的结点 4 (序列化形式：[4,5,6])
+由于该列表有两个中间结点，值分别为 3 和 4，我们返回第二个结点。
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/middle-of-the-linked-list/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-23_minIncrementForUnique.js)
+
+
+### 使数组唯一的最小增量
+
+> 2020 年 03 月 23 日
+
+给定整数数组 A，每次 move 操作将会选择任意 A[i]，并将其递增 1。
+
+返回使 A 中的每个值都是唯一的最少操作次数。
+
+**示例1 :**
+```
+输入：[1,2,2]
+输出：1
+解释：经过一次 move 操作，数组将变为 [1, 2, 3]。
+```
+
+**示例2 :**
+```
+输入：[3,2,1,2,1,7]
+输出：6
+解释：经过 6 次 move 操作，数组将变为 [3, 4, 1, 2, 5, 7]。
+可以看出 5 次或 5 次以下的 move 操作是不能让数组的每个值唯一的。
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/minimum-increment-to-make-array-unique/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-23_minIncrementForUnique.js)
+
+### 面试题
+> 2020 年 03 月 21 日
+
+实现下面模版字符串的方法
+
+``` javascript
+let template = '我是{{name}}，年龄{{age}}，性别{{list[0]}}';
+let data = {
+  name: '姓名',
+  age: 18,
+  list: [1],
+}
+var a = render(template, data); // 我是姓名，年龄18，性别undefined
+```
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-21_模版字符串解析.js)
+
+> 2020 年 03 月 19 日
+### 阿里笔试题目
+
+> 2020 年 03 月 19 日
+
+``` javascript
+// =========================
+// 题目：编写一个简单的事件监听处理器，要求具备 on 方法绑定、off 方法解绑
+// 编写一个简单的事件监听处理器
+// 1. 具备 on 方法绑定事件
+// 2. 具备 off 方法解绑事件
+
+function EventEmitter () {
+  // todo
+}
+
+// test
+var emitter = new EventEmitter();
+
+emitter.on('foo', function (e) {
+  console.log('foo event: ', e);
+});
+
+emitter.on('*', function (e, type) {
+  console.log('some event: ', e, type);
+});
+
+
+function onBar (e) {
+  console.log('bar event: ', e);
+}
+
+emitter.on('bar', onBar);
+
+
+emitter.emit('foo', { name: 'John' });
+emitter.emit('bar', { name: 'John' });
+
+emitter.off('bar', onBar);
+emitter.emit('foo', { name: 'John' });
+emitter.emit('bar', { name: 'John' });
+
+
+// =========================
+// 题目：请通过代码实现大整数（可能比Number.MAX_VALUE大）相加运算。
+// 请通过代码实现大整数（可能比Number.MAX_VALUE大）相加运算
+class BigInt() {
+  constructor(str) {
+  }
+  
+  plus(bigInt) {
+    
+  }
+  
+  toString() {
+  }
+}
+
+// usage
+const big1 = new BigInt('1234232453525454546445451434342153453454545454545454');
+const big2 = new BigInt('1234232453525454546445451434342153453454545454545454');
+console.log(bigint1.plus(bigint2));
+
+// =========================
+// 题目：实现一个可以缓存其他函数的高阶函数memoize。能够实现：当入参相同时，可以不经过计算，直接返回结果。
+/** 求平方根 */
+function sqrt(n) { return Math.sqrt(n) }
+
+const memoize = fn => {
+  // 实现
+}
+const cachedSqrt = memoize(sqrt)
+cachedSqrt(4) // 2
+cachedSqrt(4) // 不经过计算，直接输出结果2
+
+// =========================
+// 题目：实现快速排序
+
+function quicksort(array) {
+	// TODO 
+}
+
+// test
+var array = [4, 7, 87, 34, 56, 69, 19, 26, 7, 9, 33];
+var result = quicksort(array);
+
+
+// =========================
+// 实现多叉树的广度度优先搜索
+function bfs(tree, name){
+  // TODO: 你的代码
+}
+
+var tree = {
+  name : '中国',
+  children : [
+    {
+      name : '北京',
+      children : [
+        {
+          name : '朝阳群众'
+        },
+        {
+          name : '海淀区'
+        },
+                {
+          name : '昌平区'
+        }
+      ]
+    },
+    {
+      name : '浙江省',
+      children : [
+        {
+          name : '杭州市',
+          code : 0571,
+        },
+        {
+          name : '嘉兴市'
+        },
+        {
+          name : '绍兴市'
+        },
+        {
+          name : '宁波市'
+        }
+      ]
+    }
+  ]
+};
+
+var node = bfs(tree, '杭州市');
+console.log(node);    // { name: '杭州市', code: 0571 }
+
+```
+
+### 矩形重叠
+
+> 2020 年 03 月 18 日
+
+矩形以列表 [x1, y1, x2, y2] 的形式表示，其中 (x1, y1) 为左下角的坐标，(x2, y2) 是右上角的坐标。
+
+如果相交的面积为正，则称两矩形重叠。需要明确的是，只在角或边接触的两个矩形不构成重叠。
+
+给出两个矩形，判断它们是否重叠并返回结果。
+
+**示例1 :**
+```
+输入：rec1 = [0,0,2,2], rec2 = [1,1,3,3]
+输出：true
+
+```
+
+**示例2 :**
+```
+输入：rec1 = [0,0,1,1], rec2 = [1,0,2,1]
+输出：false
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/rectangle-overlap/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-16_isSymmetric.js)
+
+### 拼写单词
+
+> 2020 年 03 月 17 日
+
+给你一份『词汇表』（字符串数组） words 和一张『字母表』（字符串） chars。
+
+假如你可以用 chars 中的『字母』（字符）拼写出 words 中的某个『单词』（字符串），那么我们就认为你掌握了这个单词。
+
+注意：每次拼写时，chars 中的每个字母都只能用一次。
+
+返回词汇表 words 中你掌握的所有单词的 长度之和。
+
+**示例1 :**
+```
+输入：words = ["cat","bt","hat","tree"], chars = "atach"
+输出：6
+解释： 
+可以形成字符串 "cat" 和 "hat"，所以答案是 3 + 3 = 6。
+
+```
+
+**示例2 :**
+```
+输入：words = ["hello","world","leetcode"], chars = "welldonehoneyr"
+输出：10
+解释：
+可以形成字符串 "hello" 和 "world"，所以答案是 5 + 5 = 10。
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/find-words-that-can-be-formed-by-characters/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-16_isSymmetric.js)
+
+
+### 对称的二叉树
+
+> 2020 年 03 月 16 日
+
+请实现一个函数，用来判断一棵二叉树是不是对称的。如果一棵二叉树和它的镜像一样，那么它是对称的。
+
+例如，二叉树 [1,2,2,3,4,4,3] 是对称的。
+
+```
+    1
+   / \
+  2   2
+ / \ / \
+3  4 4  3
+```
+
+但是下面这个 [1,2,2,null,3,null,3] 则不是镜像对称的:
+```
+    1
+   / \
+  2   2
+   \   \
+   3    3
+```
+**示例1 :**
+```
+输入：root = [1,2,2,3,4,4,3]
+输出：true
+```
+
+**示例2 :**
+```
+输入：root = [1,2,2,null,3,null,3]
+输出：false
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-16_isSymmetric.js)
+
+
+### 求1+2+…+n
+
+> 2020 年 03 月 15 日
+
+求 1+2+...+n ，要求不能使用乘除法、for、while、if、else、switch、case等关键字及条件判断语句（A?B:C）。
+**示例1 :**
+
+```
+输入: n = 3
+输出: 6
+```
+
+**示例2 :**
+
+```
+输入: n = 9
+输出: 45
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/qiu-12n-lcof/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-15_sumNums.js)
+
+
+### 字符串压缩
+
+> 2020 年 03 月 14 日
+
+字符串压缩。利用字符重复出现的次数，编写一种方法，实现基本的字符串压缩功能。比如，字符串aabcccccaaa会变为a2b1c5a3。若“压缩”后的字符串没有变短，则返回原先的字符串。你可以假设字符串中只包含大小写英文字母（a至z）。
+
+**示例1 :**
+
+```
+ 输入："aabcccccaaa"
+ 输出："a2b1c5a3"
+```
+
+**示例2 :**
+
+```
+ 输入："abbccd"
+ 输出："abbccd"
+ 解释："abbccd"压缩后为"a1b2c2d1"，比原字符串长度更长。
+```
+
+**提示：**
+
+```
+字符串长度在[0, 50000]范围内。
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/compress-string-lcci/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-14_compressString.js)
+
+
+### 路径总和
+
+> 2020 年 03 月 13 日
+
+给定一个二叉树和一个目标和，判断该树中是否存在根节点到叶子节点的路径，这条路径上所有节点值相加等于目标和。
+
+说明: 叶子节点是指没有子节点的节点。
+
+示例: 
+给定如下二叉树，以及目标和 sum = 22，
+
+```
+              5
+             / \
+            4   8
+           /   / \
+          11  13  4
+         /  \      \
+        7    2      1
+
+```
+返回 true, 因为存在目标和为 22 的根节点到叶子节点的路径 5->4->11->2。
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/path-sum/description/?utm_source=LCUS&utm_medium=ip_redirect_q_uns&utm_campaign=transfer2china)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-13_hasPathSum.js)
+
+
+###  自定义布局
+
+> 2020 年 03 月 12 日
+  css 复习： 圣杯布局，双飞翼布局，左侧自适应-两栏布局
+
+
+###  最长上升子序列
+
+> 2020 年 03 月 11 日
+  给定一个无序的整数数组，找到其中最长上升子序列的长度。
+
+**示例 :**
+
+```
+输入: [10,9,2,5,3,7,101,18]
+输出: 4 
+解释: 最长的上升子序列是 [2,3,7,101]，它的长度是 4。
+```
+
+**说明 :**
+
+```
+可能会有多种最长上升子序列的组合，你只需要输出对应的长度即可。
+你算法的时间复杂度应该为 O(n2) 。
+```
+进阶: 你能将算法的时间复杂度降低到 O(n log n) 吗?
+
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/longest-increasing-subsequence/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-11_lengthOfLIS.js)
+
+
 ### 字符串的最大公因子
 
 > 2020 年 03 月 10 日
@@ -42,7 +499,7 @@ str1[i] 和 str2[i] 为大写英文字母
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/greatest-common-divisor-of-strings/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-08_maxValue.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-10_gcdOfStrings.js)
 
 ###  礼物的最大价值
 
