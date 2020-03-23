@@ -28,7 +28,7 @@ k 是一个正整数，它的值小于或等于链表的长度。
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-23_minIncrementForUnique.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-25_reverseKGroup.js)
 
 
 ### 链表的中间结点
