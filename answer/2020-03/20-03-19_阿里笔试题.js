@@ -81,27 +81,26 @@ function quicksort(array) {
 }
 
 // 5. 实现多叉树的广度度优先搜索
-function bfs(tree, name) {
-  if (tree.name === name) return { name, code: tree.name };
-  function deep(list) {
-    if (list.length < 1) return null;
-    var childTree = [];
-    var obj = { name };
-    for (let item of list) {
-      if (item.name === name) {
-        obj.code = item.code;
-        break;
-      } else {
-        childTree.concat(item.children);
-      }
+function bfs(source, goal) {
+  // 深拷贝原始数据
+  var res = [source];
+  // 每一层的数据都 push 进 res
+  // res 动态增加长度
+  for (var i = 0; i < res.length; i++) {
+    var curData = res[i];
+    // 匹配成功
+    if (curData.name === goal) {
+      // 返回当前对象及其父节点所组成的结果
+      return res[i].id;
     }
-    if (obj.code) {
-      return obj;
-    } else {
-      return deep(childTree);
+    // console.log(curData.name);
+    // 如果有 children 则 push 进 res 中待搜索
+    if (curData.children) {
+      res.push(...curData.children);
     }
   }
-  return deep(tree.children);
+  // 没有搜索到结果，默认返回空数组
+  return [];
 }
 var tree = {
   name: "中国",

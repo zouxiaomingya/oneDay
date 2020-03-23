@@ -30,6 +30,22 @@
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-23_minIncrementForUnique.js)
 
+> 2020 年 03 月 21 日
+### 面试题
+
+实现下面模版字符串的方法
+
+``` javascript
+let template = '我是{{name}}，年龄{{age}}，性别{{list[0]}}';
+let data = {
+  name: '姓名',
+  age: 18,
+  list: [1],
+}
+var a = render(template, data); // 我是姓名，年龄18，性别undefined
+```
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-21_模版字符串解析.js)
+
 > 2020 年 03 月 19 日
 ### 阿里笔试题目
 
