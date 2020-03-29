@@ -2,6 +2,33 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+### 圆圈中最后剩下的数字
+
+> 2020 年 03 月 30 日
+
+0,1,,n-1这n个数字排成一个圆圈，从数字0开始，每次从这个圆圈里删除第m个数字。求出这个圆圈里剩下的最后一个数字。
+
+例如，0、1、2、3、4这5个数字组成一个圆圈，从数字0开始每次删除第3个数字，则删除的前4个数字依次是2、0、4、1，因此最后剩下的数字是3。
+
+ 
+**示例1**
+```
+输入: n = 5, m = 3
+输出: 3
+
+```
+
+**示例2**
+```
+输入: n = 10, m = 17
+输出: 2
+
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-03-28_minimumLengthEncoding.js)
+
 ### 单词的压缩编码
 
 > 2020 年 03 月 28 日
