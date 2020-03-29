@@ -27,7 +27,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-03-28_minimumLengthEncoding.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-03-30_lastRemaining.js)
 
 ### 单词的压缩编码
 
