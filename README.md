@@ -2,6 +2,30 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+### 排序数组
+
+> 2020 年 03 月 31 日
+
+给你一个整数数组 nums，请你将该数组升序排列。
+ 
+**示例1**
+```
+输入：nums = [5,2,3,1]
+输出：[1,2,3,5]
+
+```
+
+**示例2**
+```
+输入：nums = [5,1,1,2,0,0]
+输出：[0,0,1,1,2,5]
+
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/sort-an-array/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-03-30_lastRemaining.js)
+
 ### 圆圈中最后剩下的数字
 
 > 2020 年 03 月 30 日
