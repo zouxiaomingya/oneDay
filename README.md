@@ -36,7 +36,7 @@ cost 的长度将会在 [2, 1000]。
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/min-cost-climbing-stairs/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-04-01_trap.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-04-02_minCostClimbingStairs.js)
 
 
 ### 排序数组
