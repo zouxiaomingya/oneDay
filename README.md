@@ -2,6 +2,19 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+### 实现 add 方法
+
+> 2020 年 04 月 04 日
+
+如下调用输出对应的结果
+
+```
+add(1)(2,3)(4).value()   
+输出： 10
+```
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-04-04_add.js)
+
 
 ### 使用最小花费爬楼梯
 
