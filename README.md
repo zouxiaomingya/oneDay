@@ -5,6 +5,30 @@
 
 ### 使用最小花费爬楼梯
 
+> 2020 年 04 月 03 日
+
+给出 n 代表生成括号的对数，请你写出一个函数，使其能够生成所有可能的并且有效的括号组合。
+
+例如，给出 n = 3，生成结果为：
+
+```
+[
+  "((()))",
+  "(()())",
+  "(())()",
+  "()(())",
+  "()()()"
+]
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/generate-parentheses/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-04-03_generateParenthesis.js)
+
+
+
+### 使用最小花费爬楼梯
+
 > 2020 年 04 月 02 日
 
 数组的每个索引做为一个阶梯，第 i个阶梯对应着一个非负数的体力花费值 cost[i](索引从0开始)。
