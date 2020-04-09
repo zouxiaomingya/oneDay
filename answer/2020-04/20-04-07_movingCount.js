@@ -21,7 +21,6 @@ var movingCount = function (m, n, k) {
   return step.size;
 };
 
-
 // 位数之和 的两个数字之和
 // 如 num = 12  num2 = 73
 // --->     3     +    10 = 13
@@ -35,3 +34,5 @@ function digitSum(num, num2) {
   }
   return sum;
 }
+
+console.log(movingCount(2,4,2));
