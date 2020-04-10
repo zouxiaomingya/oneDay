@@ -9,6 +9,7 @@ var generateParenthesis = function(n) {
       res.push(str);
       return;
     }
+    
     // 只要 ( 还有剩，那么递归 (
     if (left > 0) {
       dfs(left - 1, right, str + "(");
