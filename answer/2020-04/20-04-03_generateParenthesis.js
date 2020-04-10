@@ -4,15 +4,11 @@
  */
 var generateParenthesis = function(n) {
   let res = [];
-  let a = 0;
   const dfs = (left, right, str) => {
-    console.log(left, right, "<<<");
-
     if (left === 0 && right === 0) {
       res.push(str);
       return;
     }
-    debugger;
     // 只要 ( 还有剩，那么递归 (
     if (left > 0) {
       dfs(left - 1, right, str + "(");

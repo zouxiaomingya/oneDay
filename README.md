@@ -2,6 +2,145 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+### 有效的数独
+
+> 2020 年 04 月 09 日
+
+判断一个 9x9 的数独是否有效。只需要根据以下规则，验证已经填入的数字是否有效即可。
+
+数字 1-9 在每一行只能出现一次。
+数字 1-9 在每一列只能出现一次。
+数字 1-9 在每一个以粗实线分隔的 3x3 宫内只能出现一次。
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sudoku-by-L2G-20050714.svg/250px-Sudoku-by-L2G-20050714.svg.png)
+
+**示例1**
+```
+输入:
+[
+  ["5","3",".",".","7",".",".",".","."],
+  ["6",".",".","1","9","5",".",".","."],
+  [".","9","8",".",".",".",".","6","."],
+  ["8",".",".",".","6",".",".",".","3"],
+  ["4",".",".","8",".","3",".",".","1"],
+  ["7",".",".",".","2",".",".",".","6"],
+  [".","6",".",".",".",".","2","8","."],
+  [".",".",".","4","1","9",".",".","5"],
+  [".",".",".",".","8",".",".","7","9"]
+]
+输出: true
+
+```
+
+**示例2**
+```
+输入:
+[
+  ["8","3",".",".","7",".",".",".","."],
+  ["6",".",".","1","9","5",".",".","."],
+  [".","9","8",".",".",".",".","6","."],
+  ["8",".",".",".","6",".",".",".","3"],
+  ["4",".",".","8",".","3",".",".","1"],
+  ["7",".",".",".","2",".",".",".","6"],
+  [".","6",".",".",".",".","2","8","."],
+  [".",".",".","4","1","9",".",".","5"],
+  [".",".",".",".","8",".",".","7","9"]
+]
+输出: false
+解释: 除了第一行的第一个数字从 5 改为 8 以外，空格内其他数字均与 示例1 相同。
+     但由于位于左上角的 3x3 宫内有两个 8 存在, 因此这个数独是无效的。
+
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/valid-sudoku/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-04-07_movingCount.js)
+
+
+### 位运算实际场景
+
+[运算符优先级](https://github.com/xhlwill/blog/issues/16)
+
+> 2020 年 04 月 08 日
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-04-03_generateParenthesis.js)
+
+
+### 机器人的运动范围
+
+> 2020 年 04 月 07 日
+
+地上有一个m行n列的方格，从坐标 [0,0] 到坐标 [m-1,n-1] 。一个机器人从坐标 [0, 0] 的格子开始移动，它每次可以向左、右、上、下移动一格（不能移动到方格外），也不能进入行坐标和列坐标的数位之和大于k的格子。例如，当k为18时，机器人能够进入方格 [35, 37] ，因为3+5+3+7=18。但它不能进入方格 [35, 38]，因为3+5+3+8=19。请问该机器人能够到达多少个格子？
+
+
+**示例1**
+```
+输入：m = 2, n = 3, k = 1
+输出：3
+```
+
+**示例2**
+```
+输入：m = 2, n = 3, k = 1
+输出：3
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-04-07_movingCount.js)
+
+
+
+
+### LFU缓存
+
+> 2020 年 04 月 05 日
+
+设计并实现最不经常使用（LFU）缓存的数据结构。它应该支持以下操作：get 和 put。
+
+get(key) - 如果键存在于缓存中，则获取键的值（总是正数），否则返回 -1。
+put(key, value) - 如果键不存在，请设置或插入值。当缓存达到其容量时，它应该在插入新项目之前，使最不经常使用的项目无效。在此问题中，当存在平局（即两个或更多个键具有相同使用频率）时，最近最少使用的键将被去除。
+
+进阶：
+你是否可以在 O(1) 时间复杂度内执行两项操作？
+
+示例：
+```
+LFUCache cache = new LFUCache( 2 /* capacity (缓存容量) */ );
+
+cache.put(1, 1);
+cache.put(2, 2);
+cache.get(1);       // 返回 1
+cache.put(3, 3);    // 去除 key 2
+cache.get(2);       // 返回 -1 (未找到key 2)
+cache.get(3);       // 返回 3
+cache.put(4, 4);    // 去除 key 1
+cache.get(1);       // 返回 -1 (未找到 key 1)
+cache.get(3);       // 返回 3
+cache.get(4);       // 返回 4
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/lfu-cache/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-04-03_generateParenthesis.js)
+
+
+
+### 实现 add 方法
+
+> 2020 年 04 月 04 日
+
+如下调用输出对应的结果
+
+```
+add(1)(2,3)(4).value()   
+输出： 10
+```
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-04-04_add.js)
+
 
 ### 使用最小花费爬楼梯
 
