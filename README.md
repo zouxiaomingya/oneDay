@@ -6,6 +6,8 @@
 
 > 2020 年 04 月 11 日
 
+> TODO 未解答出来
+
 你将获得 K 个鸡蛋，并可以使用一栋从 1 到 N  共有 N 层楼的建筑。
 
 每个蛋的功能都是一样的，如果一个蛋碎了，你就不能再把它掉下去。
@@ -42,8 +44,6 @@
 ```
 [原题 leetcode 链接](https://leetcode-cn.com/problems/super-egg-drop/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-04-07_movingCount.js)
-
 
 ### 翻转字符串里的单词
 
@@ -72,7 +72,7 @@
 ```
 [原题 leetcode 链接](https://leetcode-cn.com/problems/reverse-words-in-a-string/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-04-07_movingCount.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-04-10_reverseWords.js)
 
 
 ### 有效的数独
@@ -127,7 +127,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/valid-sudoku/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-04-07_movingCount.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-04-09_isValidSudoku.js)
 
 
 ### 位运算实际场景
@@ -138,7 +138,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-04-03_generateParenthesis.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-04-08_ bitOperation.js)
 
 
 ### 机器人的运动范围
@@ -171,6 +171,8 @@
 
 > 2020 年 04 月 05 日
 
+> TODO 未解答
+
 设计并实现最不经常使用（LFU）缓存的数据结构。它应该支持以下操作：get 和 put。
 
 get(key) - 如果键存在于缓存中，则获取键的值（总是正数），否则返回 -1。
@@ -197,7 +199,7 @@ cache.get(4);       // 返回 4
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/lfu-cache/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-04-03_generateParenthesis.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-04-05_LFUCache.js)
 
 
 
