@@ -2,6 +2,30 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+
+### 鸡蛋掉落
+
+> 2020 年 04 月 12 日
+
+给定一个只包含 '(' 和 ')' 的字符串，找出最长的包含有效括号的子串的长度
+
+**示例1**
+```
+输入: "(()"
+输出: 2
+解释: 最长有效括号子串为 "()"
+```
+
+**示例2**
+```
+输入: ")()())"
+输出: 4
+解释: 最长有效括号子串为 "()()"
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/longest-valid-parentheses/)
+
+
 ### 鸡蛋掉落
 
 > 2020 年 04 月 11 日
