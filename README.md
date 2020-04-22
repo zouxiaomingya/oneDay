@@ -2,6 +2,29 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+### 二叉树的右视图
+
+> 2020 年 04 月 22 日
+
+
+**示例 1**
+
+```
+输入: [1,2,3,null,5,null,4]
+输出: [1, 3, 4]
+解释:
+
+   1            <---
+ /   \
+2     3         <---
+ \     \
+  5     4       <---
+
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/binary-tree-right-side-view/)
+
+
 ### 寻找重复数
 
 > 2020 年 04 月 20 日
