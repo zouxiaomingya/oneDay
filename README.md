@@ -25,7 +25,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-04-10_reverseWords.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-04-27_singleNumbers.js)
 
 
 ### 二叉树的右视图 
