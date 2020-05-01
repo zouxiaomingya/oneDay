@@ -1,41 +1,26 @@
-/**
- * @param {number[]} nums
- * @param {number} target
- * @return {number[]}
- */
-
-var a = searchRange([1], 1);
-
-function searchRange(nums, target) {
-  let res = [-1, -1];
-  low = 0;
-  high = nums.length - 1;
-  (left = 0), (right = 0);
-  if (!nums.length || nums[0] > target || nums[nums.length - 1] < target) {
-    return res;
+var searchRange = function(nums, target) {
+  if(!nums.length) return [-1,-1];
+  let left = 0;
+  let right = nums.length -1;
+  let start = -1;
+  let end = -1;
+  while(left <=right) {
+      let mid = left + Math.floor((right -left)/2);
+      if(nums[mid] === target) {
+          start = mid;
+          end = mid 
+          while(start > left && nums[start-1] === target) {
+              start--;
+          }
+          while(end < right && nums[end+1] === target) {
+              end++;
+          }
+          return [start,end]
+      } else if(nums[mid] > target) {
+          right = mid - 1;
+      } else {
+          left = left + 1;
+      }
   }
-  
-  while (low < high) {
-    var mid = (low + high) >> 1;
-    if (nums[mid] === target) break;
-    nums[mid] > target ? (high = mid - 1) : (low = mid + 1);
-  }
-  console.log(mid, '>>>');
-
-  if (nums[mid] != target) {
-    console.log(1);
-    
-    return res;
-  }
-  left = right = mid;
-
-  while (nums[left - 1] === target) {
-    left -= 1;
-  }
-  while (nums[right + 1] === target) {
-    right += 1;
-  }
-  return [left, right];
-}
-
-console.log(a);
+  return [-1,-1]
+};
