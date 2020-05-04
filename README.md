@@ -2,6 +2,32 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+### 全排列
+
+> 2020 年 05 月 04 日
+
+给定一个 没有重复 数字的序列，返回其所有可能的全排列。
+
+**示例**
+
+```
+输入: [1,2,3]
+输出:
+[
+  [1,2,3],
+  [1,3,2],
+  [2,1,3],
+  [2,3,1],
+  [3,1,2],
+  [3,2,1]
+]
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/permutations/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-05/20-05-04_permute.js)
+
+
 ### 在排序数组中查找元素的第一个和最后一个位置
 
 > 2020 年 04 月 30 日
@@ -27,7 +53,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-04-30_searchRange.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-04/20-04-30_searchRange.js)
 
 
 
@@ -53,7 +79,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-04-27_singleNumbers.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-04/20-04-27_singleNumbers.js)
 
 
 ### 二叉树的右视图 
@@ -304,7 +330,7 @@
 ```
 [原题 leetcode 链接](https://leetcode-cn.com/problems/reverse-words-in-a-string/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-04-10_reverseWords.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-04/20-04-10_reverseWords.js)
 
 
 ### 有效的数独
@@ -359,7 +385,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/valid-sudoku/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-04-09_isValidSudoku.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-04/20-04-09_isValidSudoku.js)
 
 
 ### 位运算实际场景
@@ -370,7 +396,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-04-08_ bitOperation.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-04/20-04-08_ bitOperation.js)
 
 
 ### 机器人的运动范围
@@ -394,7 +420,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-04-07_movingCount.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-04/20-04-07_movingCount.js)
 
 
 
@@ -431,7 +457,7 @@ cache.get(4);       // 返回 4
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/lfu-cache/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-04-05_LFUCache.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-04/20-04-05_LFUCache.js)
 
 
 
@@ -446,7 +472,7 @@ add(1)(2,3)(4).value()
 输出： 10
 ```
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-04-04_add.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-04/20-04-04_add.js)
 
 
 ### 使用最小花费爬楼梯
@@ -469,7 +495,7 @@ add(1)(2,3)(4).value()
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/generate-parentheses/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-04-03_generateParenthesis.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-04/20-04-03_generateParenthesis.js)
 
 
 
@@ -506,7 +532,7 @@ cost 的长度将会在 [2, 1000]。
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/min-cost-climbing-stairs/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-04-02_minCostClimbingStairs.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-04/20-04-02_minCostClimbingStairs.js)
 
 
 ### 排序数组
@@ -528,7 +554,7 @@ cost 的长度将会在 [2, 1000]。
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/trapping-rain-water/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-04-01_trap.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-04/20-04-01_trap.js)
 
 
 
@@ -554,7 +580,7 @@ cost 的长度将会在 [2, 1000]。
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/sort-an-array/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-03-30_lastRemaining.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-30_lastRemaining.js)
 
 ### 圆圈中最后剩下的数字
 
@@ -581,7 +607,7 @@ cost 的长度将会在 [2, 1000]。
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-03-30_lastRemaining.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-30_lastRemaining.js)
 
 ### 单词的压缩编码
 
@@ -606,7 +632,7 @@ cost 的长度将会在 [2, 1000]。
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/short-encoding-of-words/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-03-28_minimumLengthEncoding.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-28_minimumLengthEncoding.js)
 
 
 ### K 个一组翻转链表
@@ -635,7 +661,7 @@ k 是一个正整数，它的值小于或等于链表的长度。
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-03-25_reverseKGroup.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-25_reverseKGroup.js)
 
 
 ### 链表的中间结点
@@ -665,7 +691,7 @@ ans.val = 3, ans.next.val = 4, ans.next.next.val = 5, 以及 ans.next.next.next 
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/middle-of-the-linked-list/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-03-23_minIncrementForUnique.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-23_minIncrementForUnique.js)
 
 
 ### 使数组唯一的最小增量
@@ -709,7 +735,7 @@ let data = {
 }
 var a = render(template, data); // 我是姓名，年龄18，性别undefined
 ```
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-03-21_模版字符串解析.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-21_模版字符串解析.js)
 
 > 2020 年 03 月 19 日
 ### 阿里笔试题目
@@ -872,7 +898,7 @@ console.log(node);    // { name: '杭州市', code: 0571 }
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/rectangle-overlap/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-03-16_isSymmetric.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-16_isSymmetric.js)
 
 ### 拼写单词
 
@@ -905,7 +931,7 @@ console.log(node);    // { name: '杭州市', code: 0571 }
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/find-words-that-can-be-formed-by-characters/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-03-16_isSymmetric.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-16_isSymmetric.js)
 
 
 ### 对称的二叉树
@@ -946,7 +972,7 @@ console.log(node);    // { name: '杭州市', code: 0571 }
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-03-16_isSymmetric.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-16_isSymmetric.js)
 
 
 ### 求1+2+…+n
@@ -970,7 +996,7 @@ console.log(node);    // { name: '杭州市', code: 0571 }
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/qiu-12n-lcof/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-03-15_sumNums.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-15_sumNums.js)
 
 
 ### 字符串压缩
@@ -1002,7 +1028,7 @@ console.log(node);    // { name: '杭州市', code: 0571 }
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/compress-string-lcci/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-03-14_compressString.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-14_compressString.js)
 
 
 ### 路径总和
@@ -1030,7 +1056,7 @@ console.log(node);    // { name: '杭州市', code: 0571 }
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/path-sum/description/?utm_source=LCUS&utm_medium=ip_redirect_q_uns&utm_campaign=transfer2china)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-03-13_hasPathSum.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-13_hasPathSum.js)
 
 
 ###  自定义布局
@@ -1063,7 +1089,7 @@ console.log(node);    // { name: '杭州市', code: 0571 }
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/longest-increasing-subsequence/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-03-11_lengthOfLIS.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-11_lengthOfLIS.js)
 
 
 ### 字符串的最大公因子
@@ -1106,7 +1132,7 @@ str1[i] 和 str2[i] 为大写英文字母
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/greatest-common-divisor-of-strings/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-03-10_gcdOfStrings.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-10_gcdOfStrings.js)
 
 ###  礼物的最大价值
 
@@ -1130,7 +1156,7 @@ str1[i] 和 str2[i] 为大写英文字母
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-03-08_maxValue.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-08_maxValue.js)
 
 ###  股票的最大利润
 
@@ -1157,7 +1183,7 @@ str1[i] 和 str2[i] 为大写英文字母
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/gu-piao-de-zui-da-li-run-lcof/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-03-07_maxProfit.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-07_maxProfit.js)
 
 ###  将数组分成和相等的三个部分
 
@@ -1196,7 +1222,7 @@ str1[i] 和 str2[i] 为大写英文字母
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/partition-array-into-three-parts-with-equal-sum/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-03-01_findContinuousSequence.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-01_findContinuousSequence.js)
 
 ###  常用的经典布局
 
@@ -1231,7 +1257,7 @@ str1[i] 和 str2[i] 为大写英文字母
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/diameter-of-binary-tree/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-03-01_findContinuousSequence.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-01_findContinuousSequence.js)
 
 ### 57-II. 和为s的连续正数序列
 
@@ -1263,7 +1289,7 @@ str1[i] 和 str2[i] 为大写英文字母
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-03-01_findContinuousSequence.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-01_findContinuousSequence.js)
 
 ### 从前序与中序遍历序列构造二叉树
 
