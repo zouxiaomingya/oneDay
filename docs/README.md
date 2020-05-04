@@ -2,6 +2,639 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+### 全排列
+
+> 2020 年 05 月 04 日
+
+给定一个 没有重复 数字的序列，返回其所有可能的全排列。
+
+**示例**
+
+```
+输入: [1,2,3]
+输出:
+[
+  [1,2,3],
+  [1,3,2],
+  [2,1,3],
+  [2,3,1],
+  [3,1,2],
+  [3,2,1]
+]
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/permutations/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-05/20-05-04_permute.js)
+
+
+### 在排序数组中查找元素的第一个和最后一个位置
+
+> 2020 年 04 月 30 日
+
+给定一个按照升序排列的整数数组 nums，和一个目标值 target。找出给定目标值在数组中的开始位置和结束位置。
+
+你的算法时间复杂度必须是 O(log n) 级别。
+
+如果数组中不存在目标值，返回 [-1, -1]。
+
+**示例 1**
+
+```
+输入: nums = [5,7,7,8,8,10], target = 8
+输出: [3,4]
+```
+**示例 1**
+
+```
+输入: nums = [5,7,7,8,8,10], target = 6
+输出: [-1,-1]
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-04/20-04-30_searchRange.js)
+
+
+
+### 面试题56 - I. 数组中数字出现的次数 
+
+> 2020 年 04 月 27 日
+
+一个整型数组 nums 里除两个数字之外，其他数字都出现了两次。请写程序找出这两个只出现一次的数字。要求时间复杂度是O(n)，空间复杂度是O(1)。
+
+**示例 1**
+
+```
+输入：nums = [4,1,4,6]
+输出：[1,6] 或 [6,1]
+
+```
+**示例 1**
+
+```
+输入：nums = [1,2,10,4,1,4,3,3]
+输出：[2,10] 或 [10,2]
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-04/20-04-27_singleNumbers.js)
+
+
+### 二叉树的右视图 
+
+> 2020 年 04 月 22 日
+
+
+**示例 1**
+
+```
+输入: [1,2,3,null,5,null,4]
+输出: [1, 3, 4]
+解释:
+
+   1            <---
+ /   \
+2     3         <---
+ \     \
+  5     4       <---
+
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/binary-tree-right-side-view/)
+
+
+### 寻找重复数
+
+> 2020 年 04 月 20 日
+
+两个数组的交集 II
+
+**示例 1**
+
+```
+输入: nums1 = [1,2,2,1], nums2 = [2,2]
+输出: [2,2]
+```
+
+**示例 2**
+```
+输入: nums1 = [4,9,5], nums2 = [9,4,9,8,4]
+输出: [4,9]
+```
+
+说明:
+输出结果中每个元素出现的次数，应与元素在两个数组中出现的次数一致。
+我们可以不考虑输出结果的顺序。
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/)
+
+
+
+### 寻找重复数
+
+> 2020 年 04 月 19 日
+
+给定一个包含 n + 1 个整数的数组 nums，其数字都在 1 到 n 之间（包括 1 和 n），可知至少存在一个重复的整数。假设只有一个重复的整数，找出这个重复的数。
+
+**示例 1**
+
+```
+输入: [1,3,4,2,2]
+输出: 2
+```
+
+**示例 2**
+
+```
+输入: [1,3,4,2,2]
+输出: 2
+```
+说明:
+1. 不能更改原数组（假设数组是只读的）。
+2. 只能使用额外的 O(1) 的空间。
+3. 时间复杂度小于 O(n2) 。
+4. 数组中只有一个重复的数字，但它可能不止重复出现一次。
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/move-zeroes/)
+
+
+### 移动零
+
+> 2020 年 04 月 18 日
+
+给定一个数组 nums，编写一个函数将所有 0 移动到数组的末尾，同时保持非零元素的相对顺序。
+
+**示例**
+
+```
+输入: [0,1,0,3,12]
+输出: [1,3,12,0,0]
+```
+
+说明:
+
+必须在原数组上操作，不能拷贝额外的数组。
+尽量减少操作次数。
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/move-zeroes/)
+
+
+### 两数相加 II
+
+> 2020 年 04 月 16 日
+
+给出集合 [1,2,3,…,n]，其所有元素共有 n! 种排列。
+
+按大小顺序列出所有排列情况，并一一标记，当 n = 3 时, 所有排列如下：
+
+"123"
+"132"
+"213"
+"231"
+"312"
+"321"
+给定 n 和 k，返回第 k 个排列。
+
+**示例 1**
+
+```
+输入: n = 3, k = 3
+输出: "213"
+```
+
+**示例 2**
+```
+输入: n = 4, k = 9
+输出: "2314"
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/permutation-sequence/)
+
+
+
+### 两数相加 II
+
+> 2020 年 04 月 14 日
+
+给你两个 非空 链表来代表两个非负整数。数字最高位位于链表开始位置。它们的每个节点只存储一位数字。将这两数相加会返回一个新的链表。
+
+你可以假设除了数字 0 之外，这两个数字都不会以零开头。
+
+
+进阶：
+
+如果输入链表不能修改该如何处理？换句话说，你不能对列表中的节点进行翻转。
+
+**示例**
+
+```
+输入：(7 -> 2 -> 4 -> 3) + (5 -> 6 -> 4)
+输出：7 -> 8 -> 0 -> 7
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/add-two-numbers-ii/)
+
+
+### 最长有效括号
+
+> 2020 年 04 月 12 日
+
+给定一个只包含 '(' 和 ')' 的字符串，找出最长的包含有效括号的子串的长度
+
+**示例1**
+```
+输入: "(()"
+输出: 2
+解释: 最长有效括号子串为 "()"
+```
+
+**示例2**
+```
+输入: ")()())"
+输出: 4
+解释: 最长有效括号子串为 "()()"
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/longest-valid-parentheses/)
+
+
+### 鸡蛋掉落
+
+> 2020 年 04 月 11 日
+
+> TODO 未解答出来
+
+你将获得 K 个鸡蛋，并可以使用一栋从 1 到 N  共有 N 层楼的建筑。
+
+每个蛋的功能都是一样的，如果一个蛋碎了，你就不能再把它掉下去。
+
+你知道存在楼层 F ，满足 0 <= F <= N 任何从高于 F 的楼层落下的鸡蛋都会碎，从 F 楼层或比它低的楼层落下的鸡蛋都不会破。
+
+每次移动，你可以取一个鸡蛋（如果你有完整的鸡蛋）并把它从任一楼层 X 扔下（满足 1 <= X <= N）。
+
+你的目标是确切地知道 F 的值是多少。
+
+无论 F 的初始值如何，你确定 F 的值的最小移动次数是多少？
+
+**示例1**
+```
+输入：K = 1, N = 2
+输出：2
+解释：
+鸡蛋从 1 楼掉落。如果它碎了，我们肯定知道 F = 0 。
+否则，鸡蛋从 2 楼掉落。如果它碎了，我们肯定知道 F = 1 。
+如果它没碎，那么我们肯定知道 F = 2 。
+因此，在最坏的情况下我们需要移动 2 次以确定 F 是多少。
+```
+
+**示例2**
+```
+输入：K = 2, N = 6
+输出：3
+```
+
+**示例3**
+```
+输入：K = 3, N = 14
+输出：4
+```
+[原题 leetcode 链接](https://leetcode-cn.com/problems/super-egg-drop/)
+
+
+### 翻转字符串里的单词
+
+> 2020 年 04 月 10 日
+
+给定一个字符串，逐个翻转字符串中的每个单词。
+
+**示例1**
+```
+输入: "the sky is blue"
+输出: "blue is sky the"
+```
+
+**示例2**
+```
+输入: "  hello world!  "
+输出: "world! hello"
+解释: 输入字符串可以在前面或者后面包含多余的空格，但是反转后的字符不能包括。
+```
+
+**示例3**
+```
+输入: "a good   example"
+输出: "example good a"
+解释: 如果两个单词间有多余的空格，将反转后单词间的空格减少到只含一个。
+```
+[原题 leetcode 链接](https://leetcode-cn.com/problems/reverse-words-in-a-string/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-04/20-04-10_reverseWords.js)
+
+
+### 有效的数独
+
+> 2020 年 04 月 09 日
+
+判断一个 9x9 的数独是否有效。只需要根据以下规则，验证已经填入的数字是否有效即可。
+
+数字 1-9 在每一行只能出现一次。
+数字 1-9 在每一列只能出现一次。
+数字 1-9 在每一个以粗实线分隔的 3x3 宫内只能出现一次。
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sudoku-by-L2G-20050714.svg/250px-Sudoku-by-L2G-20050714.svg.png)
+
+**示例1**
+```
+输入:
+[
+  ["5","3",".",".","7",".",".",".","."],
+  ["6",".",".","1","9","5",".",".","."],
+  [".","9","8",".",".",".",".","6","."],
+  ["8",".",".",".","6",".",".",".","3"],
+  ["4",".",".","8",".","3",".",".","1"],
+  ["7",".",".",".","2",".",".",".","6"],
+  [".","6",".",".",".",".","2","8","."],
+  [".",".",".","4","1","9",".",".","5"],
+  [".",".",".",".","8",".",".","7","9"]
+]
+输出: true
+
+```
+
+**示例2**
+```
+输入:
+[
+  ["8","3",".",".","7",".",".",".","."],
+  ["6",".",".","1","9","5",".",".","."],
+  [".","9","8",".",".",".",".","6","."],
+  ["8",".",".",".","6",".",".",".","3"],
+  ["4",".",".","8",".","3",".",".","1"],
+  ["7",".",".",".","2",".",".",".","6"],
+  [".","6",".",".",".",".","2","8","."],
+  [".",".",".","4","1","9",".",".","5"],
+  [".",".",".",".","8",".",".","7","9"]
+]
+输出: false
+解释: 除了第一行的第一个数字从 5 改为 8 以外，空格内其他数字均与 示例1 相同。
+     但由于位于左上角的 3x3 宫内有两个 8 存在, 因此这个数独是无效的。
+
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/valid-sudoku/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-04/20-04-09_isValidSudoku.js)
+
+
+### 位运算实际场景
+
+[运算符优先级](https://github.com/xhlwill/blog/issues/16)
+
+> 2020 年 04 月 08 日
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-04/20-04-08_ bitOperation.js)
+
+
+### 机器人的运动范围
+
+> 2020 年 04 月 07 日
+
+地上有一个m行n列的方格，从坐标 [0,0] 到坐标 [m-1,n-1] 。一个机器人从坐标 [0, 0] 的格子开始移动，它每次可以向左、右、上、下移动一格（不能移动到方格外），也不能进入行坐标和列坐标的数位之和大于k的格子。例如，当k为18时，机器人能够进入方格 [35, 37] ，因为3+5+3+7=18。但它不能进入方格 [35, 38]，因为3+5+3+8=19。请问该机器人能够到达多少个格子？
+
+
+**示例1**
+```
+输入：m = 2, n = 3, k = 1
+输出：3
+```
+
+**示例2**
+```
+输入：m = 2, n = 3, k = 1
+输出：3
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-04/20-04-07_movingCount.js)
+
+
+
+
+### LFU缓存
+
+> 2020 年 04 月 05 日
+
+> TODO 未解答
+
+设计并实现最不经常使用（LFU）缓存的数据结构。它应该支持以下操作：get 和 put。
+
+get(key) - 如果键存在于缓存中，则获取键的值（总是正数），否则返回 -1。
+put(key, value) - 如果键不存在，请设置或插入值。当缓存达到其容量时，它应该在插入新项目之前，使最不经常使用的项目无效。在此问题中，当存在平局（即两个或更多个键具有相同使用频率）时，最近最少使用的键将被去除。
+
+进阶：
+你是否可以在 O(1) 时间复杂度内执行两项操作？
+
+示例：
+```
+LFUCache cache = new LFUCache( 2 /* capacity (缓存容量) */ );
+
+cache.put(1, 1);
+cache.put(2, 2);
+cache.get(1);       // 返回 1
+cache.put(3, 3);    // 去除 key 2
+cache.get(2);       // 返回 -1 (未找到key 2)
+cache.get(3);       // 返回 3
+cache.put(4, 4);    // 去除 key 1
+cache.get(1);       // 返回 -1 (未找到 key 1)
+cache.get(3);       // 返回 3
+cache.get(4);       // 返回 4
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/lfu-cache/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-04/20-04-05_LFUCache.js)
+
+
+
+### 实现 add 方法
+
+> 2020 年 04 月 04 日
+
+如下调用输出对应的结果
+
+```
+add(1)(2,3)(4).value()   
+输出： 10
+```
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-04/20-04-04_add.js)
+
+
+### 使用最小花费爬楼梯
+
+> 2020 年 04 月 03 日
+
+给出 n 代表生成括号的对数，请你写出一个函数，使其能够生成所有可能的并且有效的括号组合。
+
+例如，给出 n = 3，生成结果为：
+
+```
+[
+  "((()))",
+  "(()())",
+  "(())()",
+  "()(())",
+  "()()()"
+]
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/generate-parentheses/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-04/20-04-03_generateParenthesis.js)
+
+
+
+### 使用最小花费爬楼梯
+
+> 2020 年 04 月 02 日
+
+数组的每个索引做为一个阶梯，第 i个阶梯对应着一个非负数的体力花费值 cost[i](索引从0开始)。
+
+每当你爬上一个阶梯你都要花费对应的体力花费值，然后你可以选择继续爬一个阶梯或者爬两个阶梯。
+
+您需要找到达到楼层顶部的最低花费。在开始时，你可以选择从索引为 0 或 1 的元素作为初始阶梯。
+
+**示例1**
+```
+输入: cost = [10, 15, 20]
+输出: 15
+解释: 最低花费是从cost[1]开始，然后走两步即可到阶梯顶，一共花费15。
+
+```
+
+**示例2**
+```
+输入: cost = [1, 100, 1, 1, 1, 100, 1, 1, 100, 1]
+输出: 6
+解释: 最低花费方式是从cost[0]开始，逐个经过那些1，跳过cost[3]，一共花费6。
+
+```
+
+**注意：**
+
+cost 的长度将会在 [2, 1000]。
+每一个 cost[i] 将会是一个Integer类型，范围为 [0, 999]。
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/min-cost-climbing-stairs/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-04/20-04-02_minCostClimbingStairs.js)
+
+
+### 排序数组
+
+> 2020 年 04 月 01 日
+
+给定 n 个非负整数表示每个宽度为 1 的柱子的高度图，计算按此排列的柱子，下雨之后能接多少雨水。
+ 
+![](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/10/22/rainwatertrap.png)
+
+上面是由数组 [0,1,0,2,1,0,1,3,2,1,2,1] 表示的高度图，在这种情况下，可以接 6 个单位的雨水（蓝色部分表示雨水）。 感谢 Marcos 贡献此图。
+
+**示例**
+```
+输入: [0,1,0,2,1,0,1,3,2,1,2,1]
+输出: 6
+
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/trapping-rain-water/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-04/20-04-01_trap.js)
+
+
+
+### 排序数组
+
+> 2020 年 03 月 31 日
+
+给你一个整数数组 nums，请你将该数组升序排列。
+ 
+**示例1**
+```
+输入：nums = [5,2,3,1]
+输出：[1,2,3,5]
+
+```
+
+**示例2**
+```
+输入：nums = [5,1,1,2,0,0]
+输出：[0,0,1,1,2,5]
+
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/sort-an-array/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-30_lastRemaining.js)
+
+### 圆圈中最后剩下的数字
+
+> 2020 年 03 月 30 日
+
+0,1,,n-1这n个数字排成一个圆圈，从数字0开始，每次从这个圆圈里删除第m个数字。求出这个圆圈里剩下的最后一个数字。
+
+例如，0、1、2、3、4这5个数字组成一个圆圈，从数字0开始每次删除第3个数字，则删除的前4个数字依次是2、0、4、1，因此最后剩下的数字是3。
+
+ 
+**示例1**
+```
+输入: n = 5, m = 3
+输出: 3
+
+```
+
+**示例2**
+```
+输入: n = 10, m = 17
+输出: 2
+
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-30_lastRemaining.js)
+
+### 单词的压缩编码
+
+> 2020 年 03 月 28 日
+
+给定一个单词列表，我们将这个列表编码成一个索引字符串 S 与一个索引列表 A。
+
+例如，如果这个列表是 ["time", "me", "bell"]，我们就可以将其表示为 S = "time#bell#" 和 indexes = [0, 2, 5]。
+
+对于每一个索引，我们可以通过从字符串 S 中索引的位置开始读取字符串，直到 "#" 结束，来恢复我们之前的单词列表。
+
+那么成功对给定单词列表进行编码的最小字符串长度是多少呢？
+
+
+**示例**
+```
+输入: words = ["time", "me", "bell"]
+输出: 10
+说明: S = "time#bell#" ， indexes = [0, 2, 5] 。
+
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/short-encoding-of-words/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-28_minimumLengthEncoding.js)
+
+
 ### K 个一组翻转链表
 
 > 2020 年 03 月 25 日
@@ -28,7 +661,7 @@ k 是一个正整数，它的值小于或等于链表的长度。
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-25_reverseKGroup.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-25_reverseKGroup.js)
 
 
 ### 链表的中间结点
@@ -58,7 +691,7 @@ ans.val = 3, ans.next.val = 4, ans.next.next.val = 5, 以及 ans.next.next.next 
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/middle-of-the-linked-list/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-23_minIncrementForUnique.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-23_minIncrementForUnique.js)
 
 
 ### 使数组唯一的最小增量
@@ -102,7 +735,7 @@ let data = {
 }
 var a = render(template, data); // 我是姓名，年龄18，性别undefined
 ```
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-21_模版字符串解析.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-21_模版字符串解析.js)
 
 > 2020 年 03 月 19 日
 ### 阿里笔试题目
@@ -265,7 +898,7 @@ console.log(node);    // { name: '杭州市', code: 0571 }
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/rectangle-overlap/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-16_isSymmetric.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-16_isSymmetric.js)
 
 ### 拼写单词
 
@@ -298,7 +931,7 @@ console.log(node);    // { name: '杭州市', code: 0571 }
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/find-words-that-can-be-formed-by-characters/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-16_isSymmetric.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-16_isSymmetric.js)
 
 
 ### 对称的二叉树
@@ -339,7 +972,7 @@ console.log(node);    // { name: '杭州市', code: 0571 }
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-16_isSymmetric.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-16_isSymmetric.js)
 
 
 ### 求1+2+…+n
@@ -363,7 +996,7 @@ console.log(node);    // { name: '杭州市', code: 0571 }
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/qiu-12n-lcof/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-15_sumNums.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-15_sumNums.js)
 
 
 ### 字符串压缩
@@ -395,7 +1028,7 @@ console.log(node);    // { name: '杭州市', code: 0571 }
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/compress-string-lcci/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-14_compressString.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-14_compressString.js)
 
 
 ### 路径总和
@@ -423,7 +1056,7 @@ console.log(node);    // { name: '杭州市', code: 0571 }
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/path-sum/description/?utm_source=LCUS&utm_medium=ip_redirect_q_uns&utm_campaign=transfer2china)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-13_hasPathSum.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-13_hasPathSum.js)
 
 
 ###  自定义布局
@@ -456,7 +1089,7 @@ console.log(node);    // { name: '杭州市', code: 0571 }
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/longest-increasing-subsequence/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-11_lengthOfLIS.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-11_lengthOfLIS.js)
 
 
 ### 字符串的最大公因子
@@ -499,7 +1132,7 @@ str1[i] 和 str2[i] 为大写英文字母
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/greatest-common-divisor-of-strings/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-10_gcdOfStrings.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-10_gcdOfStrings.js)
 
 ###  礼物的最大价值
 
@@ -523,7 +1156,7 @@ str1[i] 和 str2[i] 为大写英文字母
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-08_maxValue.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-08_maxValue.js)
 
 ###  股票的最大利润
 
@@ -550,7 +1183,7 @@ str1[i] 和 str2[i] 为大写英文字母
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/gu-piao-de-zui-da-li-run-lcof/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-07_maxProfit.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-07_maxProfit.js)
 
 ###  将数组分成和相等的三个部分
 
@@ -589,7 +1222,7 @@ str1[i] 和 str2[i] 为大写英文字母
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/partition-array-into-three-parts-with-equal-sum/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-01_findContinuousSequence.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-01_findContinuousSequence.js)
 
 ###  常用的经典布局
 
@@ -624,7 +1257,7 @@ str1[i] 和 str2[i] 为大写英文字母
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/diameter-of-binary-tree/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-01_findContinuousSequence.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-01_findContinuousSequence.js)
 
 ### 57-II. 和为s的连续正数序列
 
@@ -656,7 +1289,7 @@ str1[i] 和 str2[i] 为大写英文字母
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-03-01_findContinuousSequence.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-03/20-03-01_findContinuousSequence.js)
 
 ### 从前序与中序遍历序列构造二叉树
 
@@ -686,7 +1319,7 @@ str1[i] 和 str2[i] 为大写英文字母
 ···
 [原题 leetcode 链接](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-02-28_buildTree.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-02-28_buildTree.js)
 
 ### 1103. 分糖果 II
 
@@ -730,7 +1363,7 @@ str1[i] 和 str2[i] 为大写英文字母
 ```
 [原题 leetcode 链接](https://leetcode-cn.com/problems/distribute-candies-to-people/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-02-26_distributeCandies.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-02/20-02-26_distributeCandies.js)
 
 ### 四数之和
 
