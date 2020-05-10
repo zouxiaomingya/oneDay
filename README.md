@@ -30,7 +30,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/powx-n/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-05/20-05-08_mySqrt.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-05/20-05-011_myPow.js)
 
 
 ### x 的平方根
