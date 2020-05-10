@@ -2,6 +2,37 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+### Pow(x, n)
+
+> 2020 年 05 月 11 日
+
+实现 pow(x, n) ，即计算 x 的 n 次幂函数。
+
+**示例 1**
+
+```
+输入: 2.00000, 10
+输出: 1024.00000
+```
+
+**示例 2**
+```
+输入: 2.10000, 3
+输出: 9.26100
+```
+**示例 3**
+```
+输入: 2.00000, -2
+输出: 0.25000
+解释: 2-2 = 1/22 = 1/4 = 0.25
+```
+
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/powx-n/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-05/20-05-08_mySqrt.js)
+
+
 ### x 的平方根
 
 > 2020 年 05 月 08 日
