@@ -2,6 +2,29 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+
+### 二叉树的层序遍历)
+
+> 2020 年 05 月 13 日
+
+给你一个二叉树，请你返回其按 层序遍历 得到的节点值。 （即逐层地，从左到右访问所有节点）。
+ 
+**示例**
+二叉树：[3,9,20,null,null,15,7],
+```
+   3
+   / \
+  9  20
+    /  \
+   15   7
+```
+
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-05/20-05-011_myPow.js)
+
+
 ### Pow(x, n)
 
 > 2020 年 05 月 11 日
