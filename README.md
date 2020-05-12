@@ -22,7 +22,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-05/20-05-011_myPow.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-05/20-05-13_levelOrder.js)
 
 
 ### Pow(x, n)
