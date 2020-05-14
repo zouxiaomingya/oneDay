@@ -3,6 +3,33 @@
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
 
+### 只出现一次的数字
+
+> 2020 年 05 月 14 日
+
+给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。
+ 
+**说明**
+
+你的算法应该具有线性时间复杂度。 你可以不使用额外空间来实现吗？
+
+**示例**
+```
+输入: [2,2,1]
+输出: 1
+```
+**示例**
+```
+输入: [4,1,2,1,2]
+输出: 4
+```
+
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/single-number/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-05/20-05-14_singleNumber.js)
+
+
 ### 二叉树的层序遍历)
 
 > 2020 年 05 月 13 日
