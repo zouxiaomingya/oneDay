@@ -2,42 +2,93 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+### 只出现一次的数字
+
+> 2020 年 05 月 16 日
+
+你将获得  K  个鸡蛋，并可以使用一栋从  1  到  N   共有 N  层楼的建筑。
+
+每个蛋的功能都是一样的，如果一个蛋碎了，你就不能再把它掉下去。
+
+你知道存在楼层  F ，满足  0 <= F <= N 任何从高于 F  的楼层落下的鸡蛋都会碎，从  F  楼层或比它低的楼层落下的鸡蛋都不会破。
+
+每次移动，你可以取一个鸡蛋（如果你有完整的鸡蛋）并把它从任一楼层  X  扔下（满足  1 <= X <= N）。
+
+你的目标是确切地知道 F 的值是多少。
+
+无论 F 的初始值如何，你确定 F 的值的最小移动次数是多少？
+
+**说明**
+
+你的算法应该具有线性时间复杂度。 你可以不使用额外空间来实现吗？
+
+**示例 1**
+
+```
+输入：K = 1, N = 2
+输出：2
+解释：
+鸡蛋从 1 楼掉落。如果它碎了，我们肯定知道 F = 0 。
+否则，鸡蛋从 2 楼掉落。如果它碎了，我们肯定知道 F = 1 。
+如果它没碎，那么我们肯定知道 F = 2 。
+因此，在最坏的情况下我们需要移动 2 次以确定 F 是多少。
+```
+
+**示例 2**
+
+```
+输入：K = 2, N = 6
+输出：3
+```
+
+**示例 3**
+
+```
+输入：K = 3, N = 14
+输出：4
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/super-egg-drop/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-05/20-05-14_singleNumber.js)
 
 ### 只出现一次的数字
 
 > 2020 年 05 月 14 日
 
 给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。
- 
+
 **说明**
 
 你的算法应该具有线性时间复杂度。 你可以不使用额外空间来实现吗？
 
 **示例**
+
 ```
 输入: [2,2,1]
 输出: 1
 ```
+
 **示例**
+
 ```
 输入: [4,1,2,1,2]
 输出: 4
 ```
 
-
 [原题 leetcode 链接](https://leetcode-cn.com/problems/single-number/)
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-05/20-05-14_singleNumber.js)
-
 
 ### 二叉树的层序遍历)
 
 > 2020 年 05 月 13 日
 
 给你一个二叉树，请你返回其按 层序遍历 得到的节点值。 （即逐层地，从左到右访问所有节点）。
- 
+
 **示例**
 二叉树：[3,9,20,null,null,15,7],
+
 ```
    3
    / \
@@ -46,11 +97,9 @@
    15   7
 ```
 
-
 [原题 leetcode 链接](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-05/20-05-13_levelOrder.js)
-
 
 ### Pow(x, n)
 
@@ -66,31 +115,31 @@
 ```
 
 **示例 2**
+
 ```
 输入: 2.10000, 3
 输出: 9.26100
 ```
+
 **示例 3**
+
 ```
 输入: 2.00000, -2
 输出: 0.25000
 解释: 2-2 = 1/22 = 1/4 = 0.25
 ```
 
-
 [原题 leetcode 链接](https://leetcode-cn.com/problems/powx-n/)
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-05/20-05-011_myPow.js)
-
 
 ### x 的平方根
 
 > 2020 年 05 月 08 日
 
+实现  int sqrt(int x)  函数。
 
-实现 int sqrt(int x) 函数。
-
-计算并返回 x 的平方根，其中 x 是非负整数。
+计算并返回  x  的平方根，其中  x 是非负整数。
 
 由于返回类型是整数，结果只保留整数的部分，小数部分将被舍去。
 
@@ -102,10 +151,11 @@
 ```
 
 **示例 2**
+
 ```
 输入: 8
 输出: 2
-说明: 8 的平方根是 2.82842..., 
+说明: 8 的平方根是 2.82842...,
      由于返回类型是整数，小数部分将被舍去。
 ```
 
@@ -113,13 +163,11 @@
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-05/20-05-08_mySqrt.js)
 
-
 ### 全排列 II
 
 > 2020 年 05 月 06 日
 
 给定一个可包含重复数字的序列，返回所有不重复的全排列。
-
 
 **示例 1**
 
