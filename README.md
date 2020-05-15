@@ -78,7 +78,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/single-number/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-05/20-05-14_singleNumber.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-05/20-05-16_superEggDrop.js)
 
 ### 二叉树的层序遍历)
 
