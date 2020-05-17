@@ -4,6 +4,25 @@
  * @return {number}
  */
 
+// 没有备忘录的算法。时间复杂度非常高
+// const dp = (egg, floor) => {
+//   if (floor == 0 || floor == 1 || egg == 1) {
+//     return floor;
+//   }
+//   let minimun = floor;
+//   for (let i = 1; i <= floor; i++) {
+//     let tMin = Math.max(dp(egg - 1, i - 1), dp(egg, floor - i));
+//     minimun = Math.min(minimun, 1 + tMin);
+//   }
+//   return minimun;
+// };
+// var superEggDrop2 = (K, N) => {
+//   return dp(K, N);
+// };
+
+
+
+// 备忘录 + 二分法
 var superEggDrop = function (K, N) {
   var memo = new Map();
   function dp(egg, floor) {
@@ -40,5 +59,5 @@ var superEggDrop = function (K, N) {
   }
   return dp(K, N);
 };
-var num = superEggDrop(2, 100);
+var num = superEggDrop2(2, 20);
 console.log(num);
