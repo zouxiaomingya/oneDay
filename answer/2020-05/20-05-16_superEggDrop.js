@@ -9,31 +9,29 @@ var superEggDrop = function (K, N) {
   function dp(egg, floor) {
     if (!memo.has(`${egg}-${floor}`)) {
       let result;
-      if (floor === 0) {
-        result = 0;
-      } else if (egg === 1) {
+      if (floor === 0 || floor === 1 || egg === 1) {
         result = floor;
       } else {
-        let lo = 1;
-        let hi = floor;
-        while (lo + 1 < hi) {
-          let x = ((lo + hi) / 2) | 0;
+        let left = 1;
+        let right = floor;
+        while (left + 1 < right) {
+          let x = ((left + right) / 2) | 0;
           let t1 = dp(egg - 1, x - 1);
           let t2 = dp(egg, floor - x);
 
           if (t1 < t2) {
-            lo = x;
+            left = x;
           } else if (t1 > t2) {
-            hi = x;
+            right = x;
           } else {
-            lo = hi = x;
+            left = right = x;
           }
         }
         result =
           1 +
           Math.min(
-            Math.max(dp(egg - 1, lo - 1), dp(egg, floor - lo)),
-            Math.max(dp(egg - 1, hi - 1), dp(egg, floor - hi))
+            Math.max(dp(egg - 1, left - 1), dp(egg, floor - left)),
+            Math.max(dp(egg - 1, right - 1), dp(egg, floor - right))
           );
       }
       memo.set(`${egg}-${floor}`, result);
