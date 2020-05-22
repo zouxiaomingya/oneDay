@@ -2,6 +2,39 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+### 组合总和 III
+
+> 2020 年 05 月 22 日
+
+找出所有相加之和为 n 的 k 个数的组合。组合中只允许含有 1 - 9 的正整数，并且每种组合中不存在重复的数字。
+
+注意：
+
+你可以假设胃口值为正。
+一个小朋友最多只能拥有一块饼干。
+
+**示例1**
+
+```
+输入: k = 3, n = 7
+输出: [[1,2,4]]
+
+```
+
+**示例2**
+
+```
+输入: k = 3, n = 9
+输出: [[1,2,6], [1,3,5], [2,3,4]]
+
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/combination-sum-iii/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-05/20-05-22_combinationSum3.js)
+
+
+
 ### 分发饼干
 
 > 2020 年 05 月 21 日
