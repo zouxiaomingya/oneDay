@@ -29,7 +29,6 @@
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-06-14_summaryRanges.js)
 
-
 ### 密钥格式化
 
 > 2020 年 06 月 09 日
