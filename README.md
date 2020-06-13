@@ -59,7 +59,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/heaters/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-06-14_summaryRanges.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-06-12_findRadius.js)
 
 
 ### 密钥格式化
