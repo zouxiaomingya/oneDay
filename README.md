@@ -4,6 +4,29 @@
 
 ### 汇总区间
 
+> 2020 年 06 月 20 日
+
+给定一个包含非负整数的数组，你的任务是统计其中可以组成三角形三条边的三元组个数。
+
+**示例 1**
+
+```
+输入: [2,2,3,4]
+输出: 3
+解释:
+有效的组合是: 
+2,3,4 (使用第一个 2)
+2,3,4 (使用第二个 2)
+2,2,3
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/valid-triangle-number/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-06-14_summaryRanges.js)
+
+
+### 汇总区间
+
 > 2020 年 06 月 14 日
 
 给定一个无重复元素的有序整数数组，返回数组区间范围的汇总。
