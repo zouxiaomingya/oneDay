@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    html,body,ul,li,div,input{
+      padding: 0;
+      margin: 0;
+    }
+    #header {
+      background: red;
+    }
+    #input{
+      display: inline-block;
+      width: 80%;
+      height: 30px;
+    }
+    #submit {
+      display: inline-block;
+      width: 16%;
+      height: 30px;
+    }
+    #article {
+      position: relative;
+      height: calc(100vh - 34px);
+      overflow:scroll;
+    }
+    #list {
+      position: relative;
+      list-style: none;
+      width: 100%;
+      top: 0px;
+    }
+    /* 刷新 */
+    #refresh {
+      position: absolute;
+      top: -50px;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      overflow: hidden;
+      color: #969799;
+      font-size: 14px;
+      line-height: 50px;
+      text-align: center;
+    }
+    #text {
+      border: none;
+      line-height: 30px;
+      height: 30px;
+      text-align: center;
+    }
+    .li{
+      display: flex;
+      justify-content: center;
+      line-height: 80px;
+      height:80px;
+      border-bottom: 1px solid #999;
+    }
+    .load-icon{
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      background: #f0f3f6;
+    }
+    #loading {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <header id="header">
+      <input type="text" id="input">
+      <input type="submit" id="submit">
+    </header>
+    <article id="article">
+      <div class="list" id="list">
+        <div class="load-icon" id="refresh">
+          <span class="text">下拉即可刷新...</span>
+        </div>
+        <ul id="ul">
+          <li class="li">1</li>
+          <li class="li">2</li>
+          <li class="li">3</li>
+          <li class="li">4</li>
+          <li class="li">5</li>
+          <li class="li">6</li>
+          <li class="li">7</li>
+          <li class="li">8</li>
+          <li class="li">9</li>
+          <li class="li">10</li>
+        </ul>
+        <div class="load-icon" id="loading">
+          <span class="text">加载更多</span>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <script>
+    let article = document.getElementById('article'), // 获取包裹ul列表的div
+        list = document.getElementById("list"), // 列表
+        loadingDom = document.getElementById("loading"), // 加载dom
+        loadingText = loadingDom.querySelector('.text'),  // 写着“加载更多”的元素
+
+        // 下拉刷新变量
+        refreshDom = document.getElementById("refresh"), // 刷新dom
+        refreshText = refreshDom.querySelector('.text'),  // 写着“下拉刷新”的元素
+        start = null,  // 辅助变量：触摸开始时，相对于文档顶部的Y坐标
+        refresh = false;  // 辅助变量：是否刷新
+
+    let num = 11; // 要添加的li文本，可自定义
+    let finish = false; // 是否继续加载
+    let loading = false; // 是否正在加载
+
+    // 追加li的方法，可自定义
+    function addLi() {  
+      let fragment = document.createDocumentFragment();
+      loading = true;
+      for(let i=0;i<10;i++) {
+        let li = document.createElement('li');
+        li.className = 'li';
+        li.innerHTML = num++;
+        fragment.appendChild(li); // 用DocumentFragment提高渲染速度
+      }
+      setTimeout(function(){
+        ul.appendChild(fragment);
+        finish = true; // 设置加载到最低了
+        loadingText.innerHTML = "已经到底了~";
+        loading = false
+      },2000)
+    }
+
+    // 拷贝数组
+    var toConsumableArray = function (arr) {
+      if (Array.isArray(arr)) {
+        for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) arr2[i] = arr[i];
+
+        return arr2;
+      } else {
+        return Array.from(arr);
+      }
+    };
+
+    // 事件注册
+    function eventMixin(BScroll) {
+      // 注册事件
+      BScroll.prototype.on = function (type, fn) {
+        var context = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : this;
+
+        if (!this._events[type]) {
+          this._events[type] = [];
+        }
+
+        this._events[type].push([fn, context]);
+      };
+      
+      // 销毁事件
+      BScroll.prototype.off = function (type, fn) {
+        var _events = this._events[type];
+        if (!_events) {
+          return;
+        }
+
+        var count = _events.length;
+        while (count--) {
+          if (_events[count][0] === fn) {
+            _events[count][0] = undefined;
+          }
+        }
+      };
+
+    }
+
+
+    /**
+    * new Bscroll(this.$refs.wrapper, {})
+    * 参数1：滚动外层dom
+    * 参数2：配置条件
+    */
+    function BScroll(dom,{}){
+      let that = this;
+      this._events = {}; // init private custom events
+      this.x = 0; // 水平轴移动距离(水平功能暂不考虑，目前只玩y轴)
+      this.y = 0; // 纵轴移动距离
+      
+      //获取元素滚动条卷曲的高度 
+      this.getScrollTop = function(ele) {
+        return ele.scrollTop || 0;
+      }
+
+      //获取当前可视范围的高度
+      this.getClientHeight = function(ele) {
+        return ele.clientHeight || 0;
+      }
+      
+      //获取文档完整的高度
+      this.getScrollHeight = function(ele){
+    　　return ele.clientHeight || 0;
+      }
+      
+      // 触发touchmove事件
+      this.touchmoveHandle = function(){
+        this.trigger('touchmove',{
+          x: this.x,
+          y: this.y
+        })
+      }
+      
+      // 触发touchend事件
+      this.touchendHandle = function(){
+        this.trigger('touchend',{
+          x: this.x,
+          y: this.y
+        })
+      }
+      
+      
+      // 滑动开始
+      article.addEventListener('touchstart',function(event){
+        let touch = event.touches[0];
+        start = touch.pageY;  // 辅助变量：触摸开始时，相对于文档顶部的Y坐标
+      },false);
+      
+      
+      // 监听滑动事件
+      article.addEventListener('touchmove',function(event){
+        // 下拉刷新
+        let touch = event.touches[0];
+        // console.log(article.scrollTop)
+        // 下拉
+        if(article.scrollTop<=0){
+          console.log("下拉")
+          // 如果ul列表到顶部，修改ul列表的偏移,显示“下拉刷新”，并准备触发下拉刷新功能，可自定义
+          let diff = list.offsetTop + touch.pageY - start;
+          diff = diff >= 0 ? diff : 0;
+
+          list.style.top = diff +'px'; // ul.style.top = ul.offsetTop + 'px'
+          start = touch.pageY;
+          // console.log("list.style.top:",list.style.top)
+          
+          // 若ul偏移量过大,则修改文字,refresh置为true,配合'touchend'刷新
+          if(list.offsetTop>=50) {
+            refreshText.innerHTML = "释放刷新";
+            refresh = true;
+          }
+        }else{
+          // 上拉
+          console.log("上拉")
+          // console.log("getScrollHeight:",that.getScrollHeight(list))
+          // console.log("getScrollTop:",that.getScrollTop(this))
+          // console.log("getClientHeight:",that.getClientHeight(this))
+          that.y = that.getScrollHeight(list) - that.getScrollTop(this) - that.getClientHeight(this);
+
+          // 滚动触发touchmove事件
+          that.touchmoveHandle();
+
+          // 触底touchend事件
+          if(that.y <= 10) {
+            //这里向后台进行数据请求（第一页数据就是1，第二页就是2，然后将请求回来的数组（处理成数组）拼接起来）
+            console.log("到底了！！")
+            // addLi();
+            // 触发滚动结束事件
+            that.touchendHandle();
+          }
+        }
+      },false);
+      
+      // 滑动结束
+      article.addEventListener('touchend',function(event){
+        // 若'touchend'时，ul偏移,用setInterval循环恢复ul的偏移量
+        // 距离刷新有个20的距离
+        if(list.offsetTop>=20) {
+          refreshText.innerHTML = "加载中...";
+          // 若恢复时'refresh===true',刷新页面
+          if(refresh){
+            // 设置刷新
+            refreshDom.style.position = "static"; // 站位
+            list.style.top = 0;
+            setTimeout(() => {
+              location.reload();
+            }, 2000);
+          }
+        }
+      },false);
+
+    }
+    
+    // 事件触发
+    BScroll.prototype.trigger = function (type) {
+      var events = this._events[type];
+      if (!events) {
+        return;
+      }
+      
+      var len = events.length;
+      var eventsCopy = [].concat(toConsumableArray(events));
+      for (var i = 0; i < len; i++) {
+        var event = eventsCopy[i];
+        // console.log("event:",event)
+        
+        var fn = event[0],
+            context = event[1];
+
+        if (fn) {
+          fn.apply(context, [].slice.call(arguments, 1));
+        }
+      }
+    };
+    
+    // 初始化工作
+    eventMixin(BScroll);
+  
+    let scroll = new BScroll(article,{}) // 创建实例  
+    
+    // 监听滚动到底
+    scroll.on("touchend",(pos)=>{
+      // 继续加载更多
+      if(!finish ){
+        // 正在加载
+        if(loading){
+          return false;
+        }
+        loadingDom.style.display = "block";
+        addLi();  // 加载第二页数据
+      }else{
+        // 已记载完成
+        loadingDom.style.display = "block";
+        loadingDom.querySelector(".text").innerHTML = "已经到底了~"
+      }
+    }) 
+  </script>
+</body>
+</html>
