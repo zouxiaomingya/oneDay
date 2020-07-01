@@ -42,7 +42,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/valid-parenthesis-string/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-06-20_triangleNumber.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-07-01_checkValidString)
 
 ### 不同路径
 
