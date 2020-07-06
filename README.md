@@ -2,6 +2,34 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+### 对角线遍历
+
+> 2020 年 07 月 06 日
+
+给定一个含有 M x N 个元素的矩阵（M 行，N 列），请以对角线遍历的顺序返回这个矩阵中的所有元素，对角线遍历如下图所示。
+
+
+**示例 1**
+
+```
+输入:
+[
+ [ 1, 2, 3 ],
+ [ 4, 5, 6 ],
+ [ 7, 8, 9 ]
+]
+
+输出:  [1,2,4,7,5,3,6,8,9]
+
+```
+![](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/10/12/diagonal_traverse.png)
+
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/diagonal-traverse/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-07-01_checkValidString)
+
+
 ### 二叉树着色游戏
 
 > 2020 年 07 月 05 日
@@ -44,7 +72,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/binary-tree-coloring-game/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-07-01_checkValidString)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-07/20-07-05_btreeGameWinningMove)
 
 ### 有效的括号字符串
 
@@ -86,7 +114,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/valid-parenthesis-string/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-07-01_checkValidString)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-07/20-07-01_checkValidString)
 
 ### 不同路径
 
