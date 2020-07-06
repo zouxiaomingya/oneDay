@@ -11,6 +11,7 @@ interface User {
   cup: string;
 }
 
+// 这种的意义在于 User 接口类型可能都不是你定义的，所以这样写，就不用管之前的类型是什么。你直接拿来使用
 // User_Man 类型 没有罩杯
 type User_Man = Pick<User, "age" | "name">;
 
@@ -24,6 +25,7 @@ const xiaoming: User_Man = {
 };
 
 
+//  cup 这个属性就一定需要有，不然 ts 就会报错。
 const xiaohong: User_Woman = {
   name: "小红",
   age: 19,
