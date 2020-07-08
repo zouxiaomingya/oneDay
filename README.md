@@ -2,6 +2,32 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+### 重构字符串
+
+> 2020 年 07 月 08 日
+
+给定一个字符串S，检查是否能重新排布其中的字母，使得两相邻的字符不同。
+
+若可行，输出任意可行的结果。若不可行，返回空字符串。
+
+**示例 1**
+
+```
+输入: S = "aab"
+输出: "aba"
+```
+
+**示例 2**
+
+```
+输入: S = "aaab"
+输出: ""
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/reorganize-string/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-07-01_checkValidString)
+
 ### 对角线遍历
 
 > 2020 年 07 月 06 日
