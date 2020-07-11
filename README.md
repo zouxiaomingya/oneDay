@@ -25,7 +25,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/combinations/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-07-07_reorganizeString)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-07-11_combine)
 
 
 ### 重构字符串
