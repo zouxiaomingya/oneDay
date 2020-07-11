@@ -2,6 +2,265 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+### 组合
+
+> 2020 年 07 月 11 日
+
+给定两个整数 n 和 k，返回 1 ... n 中所有可能的 k 个数的组合。
+
+**示例 1**
+
+```
+输入: n = 4, k = 2
+输出:
+[
+  [2,4],
+  [3,4],
+  [2,3],
+  [1,2],
+  [1,3],
+  [1,4],
+]
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/combinations/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-07-07_reorganizeString)
+
+
+### 重构字符串
+
+> 2020 年 07 月 08 日
+
+给定一个字符串S，检查是否能重新排布其中的字母，使得两相邻的字符不同。
+
+若可行，输出任意可行的结果。若不可行，返回空字符串。
+
+**示例 1**
+
+```
+输入: S = "aab"
+输出: "aba"
+```
+
+**示例 2**
+
+```
+输入: S = "aaab"
+输出: ""
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/reorganize-string/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-07-07_reorganizeString)
+
+### 对角线遍历
+
+> 2020 年 07 月 06 日
+
+给定一个含有 M x N 个元素的矩阵（M 行，N 列），请以对角线遍历的顺序返回这个矩阵中的所有元素，对角线遍历如下图所示。
+
+
+**示例 1**
+
+```
+输入:
+[
+ [ 1, 2, 3 ],
+ [ 4, 5, 6 ],
+ [ 7, 8, 9 ]
+]
+
+输出:  [1,2,4,7,5,3,6,8,9]
+
+```
+![](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/10/12/diagonal_traverse.png)
+
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/diagonal-traverse/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-07-01_checkValidString)
+
+
+### 二叉树着色游戏
+
+> 2020 年 07 月 05 日
+
+有两位极客玩家参与了一场「二叉树着色」的游戏。游戏中，给出二叉树的根节点  root，树上总共有 n 个节点，且 n 为奇数，其中每个节点上的值从  1 到  n  各不相同。
+
+游戏从「一号」玩家开始（「一号」玩家为红色，「二号」玩家为蓝色），最开始时，
+
+「一号」玩家从 [1, n]  中取一个值  x（1 <= x <= n）；
+
+「二号」玩家也从  [1, n]  中取一个值  y（1 <= y <= n）且  y != x。
+
+「一号」玩家给值为  x  的节点染上红色，而「二号」玩家给值为  y  的节点染上蓝色。
+
+之后两位玩家轮流进行操作，每一回合，玩家选择一个他之前涂好颜色的节点，将所选节点一个 未着色 的邻节点（即左右子节点、或父节点）进行染色。
+
+如果当前玩家无法找到这样的节点来染色时，他的回合就会被跳过。
+
+若两个玩家都没有可以染色的节点时，游戏结束。着色节点最多的那位玩家获得胜利 ✌️。
+
+现在，假设你是「二号」玩家，根据所给出的输入，假如存在一个  y  值可以确保你赢得这场游戏，则返回  true；若无法获胜，就请返回 false。
+
+**示例 1**
+![](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2019/08/04/1480-binary-tree-coloring-game.png)
+
+```
+输入：root = [1,2,3,4,5,6,7,8,9,10,11], n = 11, x = 3
+输出：True
+解释：第二个玩家可以选择值为 2 的节点。
+
+```
+
+**示例 2**
+
+```
+输入: "(*)"
+输出: True
+```
+
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/binary-tree-coloring-game/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-07/20-07-05_btreeGameWinningMove)
+
+### 有效的括号字符串
+
+> 2020 年 07 月 01 日
+
+给定一个只包含三种字符的字符串：（ ，）  和 \*，写一个函数来检验这个字符串是否为有效字符串。有效字符串具有如下规则：
+
+任何左括号 (  必须有相应的右括号 )。
+任何右括号 )  必须有相应的左括号 ( 。
+左括号 ( 必须在对应的右括号之前 )。
+\*  可以被视为单个右括号 ) ，或单个左括号 ( ，或一个空字符串。
+一个空字符串也被视为有效字符串。
+
+**示例 1**
+
+```
+输入: "()"
+输出: True
+
+```
+
+**示例 2**
+
+```
+输入: "(*)"
+输出: True
+```
+
+**示例 2**
+
+```
+输入: "(*))"
+输出: True
+```
+
+注意:
+
+字符串大小将在 [1，100] 范围内。
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/valid-parenthesis-string/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-07/20-07-01_checkValidString)
+
+### 不同路径
+
+> 2020 年 06 月 28 日
+
+一个机器人位于一个 m x n 网格的左上角 （起始点在下图中标记为“Start” ）。
+
+机器人每次只能向下或者向右移动一步。机器人试图达到网格的右下角（在下图中标记为“Finish”）。
+
+问总共有多少条不同的路径？
+
+**示例 1**
+
+```
+输入: m = 3, n = 2
+输出: 3
+解释:
+从左上角开始，总共有 3 条路径可以到达右下角。
+1. 向右 -> 向右 -> 向下
+2. 向右 -> 向下 -> 向右
+3. 向下 -> 向右 -> 向右
+
+```
+
+**示例 1**
+
+```
+输入: m = 7, n = 3
+输出: 28
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/unique-paths/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-06-20_triangleNumber.js)
+
+### 前 K 个高频单词
+
+> 2020 年 06 月 26 日
+
+给一非空的单词列表，返回前 k 个出现次数最多的单词。
+
+返回的答案应该按单词出现频率由高到低排序。如果不同的单词有相同出现频率，按字母顺序排序。
+
+**示例 1**
+
+```
+输入: ["i", "love", "leetcode", "i", "love", "coding"], k = 2
+输出: ["i", "love"]
+解析: "i" 和 "love" 为出现次数最多的两个单词，均为2次。
+    注意，按字母顺序 "i" 在 "love" 之前。
+
+```
+
+**示例 1**
+
+```
+输入: ["the", "day", "is", "sunny", "the", "the", "the", "sunny", "is", "is"], k = 4
+输出: ["the", "is", "sunny", "day"]
+解析: "the", "is", "sunny" 和 "day" 是出现次数最多的四个单词，
+    出现次数依次为 4, 3, 2 和 1 次。
+
+```
+
+注意：
+
+假定 k 总为有效值， 1 ≤ k ≤ 集合元素数。
+输入的单词均由小写字母组成。
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/top-k-frequent-words/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-06-20_triangleNumber.js)
+
+### 有效三角形的个数
+
+> 2020 年 06 月 20 日
+
+给定一个包含非负整数的数组，你的任务是统计其中可以组成三角形三条边的三元组个数。
+
+**示例 1**
+
+```
+输入: [2,2,3,4]
+输出: 3
+解释:
+有效的组合是:
+2,3,4 (使用第一个 2)
+2,3,4 (使用第二个 2)
+2,2,3
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/valid-triangle-number/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-06-20_triangleNumber.js)
+
 ### 汇总区间
 
 > 2020 年 06 月 14 日
@@ -29,12 +288,11 @@
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-06-14_summaryRanges.js)
 
-
 ### 供暖器
 
 > 2020 年 06 月 12 日
 
-冬季已经来临。 你的任务是设计一个有固定加热半径的供暖器向所有房屋供暖。
+冬季已经来临。  你的任务是设计一个有固定加热半径的供暖器向所有房屋供暖。
 
 现在，给出位于一条水平线上的房屋和供暖器的位置，找到可以覆盖所有房屋的最小加热半径。
 
@@ -61,7 +319,6 @@
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-06-12_findRadius.js)
 
-
 ### 密钥格式化
 
 > 2020 年 06 月 09 日
@@ -71,7 +328,6 @@
 给你一个数字 K，请你重新格式化字符串，除了第一个分组以外，每个分组要包含 K 个字符；而第一个分组中，至少要包含 1 个字符。两个分组之间需要用 '-'（破折号）隔开，并且将所有的小写字母转换为大写字母。
 
 给定非空字符串 S 和数字 K，按照上面描述的规则进行格式化。
-
 
 **示例 1**
 
@@ -93,8 +349,6 @@
 [原题 leetcode 链接](https://leetcode-cn.com/problems/license-key-formatting/)
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-06-09_licenseKeyFormatting.js)
-
-
 
 ### 只出现一次的数字 II
 
@@ -119,10 +373,10 @@
 输入: [0,1,0,1,0,1,99]
 输出: 99
 ```
+
 [原题 leetcode 链接](https://leetcode-cn.com/problems/single-number-ii/)
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-06-05_singleNumber.js)
-
 
 > 2020 年 05 月 28 日
 
@@ -130,8 +384,7 @@
 
 给定一个代表每个房屋存放金额的非负整数数组，计算你在不触动警报装置的情况下，能够偷窃到的最高金额。
 
-
-**示例1**
+**示例 1**
 
 ```
 输入: [2,3,2]
@@ -139,7 +392,7 @@
 解释: 你不能先偷窃 1 号房屋（金额 = 2），然后偷窃 3 号房屋（金额 = 2）, 因为他们是相邻的。
 ```
 
-**示例2**
+**示例 2**
 
 ```
 输入: [1,2,3,1]
@@ -153,8 +406,6 @@
 [原题 leetcode 链接](https://leetcode-cn.com/problems/house-robber-ii/)
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-06-02_inorderTraversal.js)
-
-
 
 ### 二叉树的中序遍历
 
@@ -174,10 +425,10 @@
 
 输出: [1,3,2]
 ```
+
 [原题 leetcode 链接](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/)
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-05/20-05-22_combinationSum3.js)
-
 
 > 2020 年 05 月 28 日
 
@@ -185,8 +436,7 @@
 
 给定一个代表每个房屋存放金额的非负整数数组，计算你在不触动警报装置的情况下，能够偷窃到的最高金额。
 
-
-**示例1**
+**示例 1**
 
 ```
 输入: [2,3,2]
@@ -194,7 +444,7 @@
 解释: 你不能先偷窃 1 号房屋（金额 = 2），然后偷窃 3 号房屋（金额 = 2）, 因为他们是相邻的。
 ```
 
-**示例2**
+**示例 2**
 
 ```
 输入: [1,2,3,1]
@@ -209,8 +459,6 @@
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-05/20-05-22_combinationSum3.js)
 
-
-
 ### 组合总和 III
 
 > 2020 年 05 月 22 日
@@ -222,7 +470,7 @@
 你可以假设胃口值为正。
 一个小朋友最多只能拥有一块饼干。
 
-**示例1**
+**示例 1**
 
 ```
 输入: k = 3, n = 7
@@ -230,7 +478,7 @@
 
 ```
 
-**示例2**
+**示例 2**
 
 ```
 输入: k = 3, n = 9
@@ -242,41 +490,39 @@
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-05/20-05-22_combinationSum3.js)
 
-
-
 ### 分发饼干
 
 > 2020 年 05 月 21 日
 
-假设你是一位很棒的家长，想要给你的孩子们一些小饼干。但是，每个孩子最多只能给一块饼干。对每个孩子 i ，都有一个胃口值 gi ，这是能让孩子们满足胃口的饼干的最小尺寸；并且每块饼干 j ，都有一个尺寸 sj 。如果 sj >= gi ，我们可以将这个饼干 j 分配给孩子 i ，这个孩子会得到满足。你的目标是尽可能满足越多数量的孩子，并输出这个最大数值。
+假设你是一位很棒的家长，想要给你的孩子们一些小饼干。但是，每个孩子最多只能给一块饼干。对每个孩子 i ，都有一个胃口值  gi ，这是能让孩子们满足胃口的饼干的最小尺寸；并且每块饼干 j ，都有一个尺寸 sj 。如果 sj >= gi ，我们可以将这个饼干 j 分配给孩子 i ，这个孩子会得到满足。你的目标是尽可能满足越多数量的孩子，并输出这个最大数值。
 
 注意：
 
 你可以假设胃口值为正。
 一个小朋友最多只能拥有一块饼干。
 
-**示例1**
+**示例 1**
 
 ```
 输入: [1,2,3], [1,1]
 
 输出: 1
 
-解释: 
+解释:
 你有三个孩子和两块小饼干，3个孩子的胃口值分别是：1,2,3。
 虽然你有两块小饼干，由于他们的尺寸都是1，你只能让胃口值是1的孩子满足。
 所以你应该输出1。
 
 ```
 
-**示例2**
+**示例 2**
 
 ```
 输入: [1,2], [1,2,3]
 
 输出: 2
 
-解释: 
+解释:
 你有两个孩子和三块小饼干，2个孩子的胃口值分别是1,2。
 你拥有的饼干数量和尺寸都足以让所有孩子满足。
 所以你应该输出2.
@@ -287,37 +533,38 @@
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-05/20-05-16_superEggDrop.js)
 
-
 ### 简化路径
 
 > 2020 年 05 月 19 日
 
 以 Unix 风格给出一个文件的绝对路径，你需要简化它。或者换句话说，将其转换为规范路径。
 
-在 Unix 风格的文件系统中，一个点（.）表示当前目录本身；此外，两个点 （..） 表示将目录切换到上一级（指向父目录）；两者都可以是复杂相对路径的组成部分。更多信息请参阅：Linux / Unix中的绝对路径 vs 相对路径
+在 Unix 风格的文件系统中，一个点（.）表示当前目录本身；此外，两个点 （..）  表示将目录切换到上一级（指向父目录）；两者都可以是复杂相对路径的组成部分。更多信息请参阅：Linux / Unix 中的绝对路径 vs 相对路径
 
 请注意，返回的规范路径必须始终以斜杠 / 开头，并且两个目录名之间必须只有一个斜杠 /。最后一个目录名（如果存在）不能以 / 结尾。此外，规范路径必须是表示绝对路径的最短字符串。
 
-**示例1**
+**示例 1**
 
 输入："/home/"
 输出："/home"
 解释：注意，最后一个目录名后面没有斜杠。
 
-**示例2**
+**示例 2**
 
 ```
 输入："/../"
 输出："/"
 解释：从根目录向上一级是不可行的，因为根是你可以到达的最高级。
 ```
-**示例3**
+
+**示例 3**
 
 ```
 输入："/home//foo/"
 输出："/home/foo"
 解释：在规范路径中，多个连续斜杠需要用一个斜杠替换。
 ```
+
 **示例**
 
 ```
@@ -329,15 +576,14 @@
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-05/20-05-16_superEggDrop.js)
 
-
 ### 课程表 II
 
 > 2020 年 05 月 17 日
 
 > 待搞清楚
-现在你总共有 n 门课需要选，记为 0 到 n-1。
+> 现在你总共有 n 门课需要选，记为  0  到  n-1。
 
-在选修某些课程之前需要一些先修课程。 例如，想要学习课程 0 ，你需要先完成课程 1 ，我们用一个匹配来表示他们: [0,1]
+在选修某些课程之前需要一些先修课程。  例如，想要学习课程 0 ，你需要先完成课程  1 ，我们用一个匹配来表示他们: [0,1]
 
 给定课程总量以及它们的先决条件，返回你为了学完所有课程所安排的学习顺序。
 
@@ -350,7 +596,7 @@
 **示例 1**
 
 ```
-输入: 2, [[1,0]] 
+输入: 2, [[1,0]]
 输出: [0,1]
 解释: 总共有 2 门课程。要学习课程 1，你需要先完成课程 0。因此，正确的课程顺序为 [0,1] 。
 ```
@@ -364,6 +610,7 @@
      因此，一个正确的课程顺序是 [0,1,2,3] 。另一个正确的排序是 [0,2,1,3] 。
 
 ```
+
 **说明:**
 
 输入的先决条件是由边缘列表表示的图形，而不是邻接矩阵。详情请参见图的表示法。
@@ -372,13 +619,12 @@
 **提示:**
 
 这个问题相当于查找一个循环是否存在于有向图中。如果存在循环，则不存在拓扑排序，因此不可能选取所有课程进行学习。
-通过 DFS 进行拓扑排序 - 一个关于Coursera的精彩视频教程（21分钟），介绍拓扑排序的基本概念。
-拓扑排序也可以通过 BFS 完成。
+通过 DFS 进行拓扑排序 - 一个关于 Coursera 的精彩视频教程（21 分钟），介绍拓扑排序的基本概念。
+拓扑排序也可以通过  BFS  完成。
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/course-schedule-ii/)
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-05/20-05-17_findOrder.js)
-
 
 ### 鸡蛋掉落
 
