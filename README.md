@@ -2,6 +2,32 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+### 组合
+
+> 2020 年 07 月 11 日
+
+给定两个整数 n 和 k，返回 1 ... n 中所有可能的 k 个数的组合。
+
+**示例 1**
+
+```
+输入: n = 4, k = 2
+输出:
+[
+  [2,4],
+  [3,4],
+  [2,3],
+  [1,2],
+  [1,3],
+  [1,4],
+]
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/combinations/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-07-07_reorganizeString)
+
+
 ### 重构字符串
 
 > 2020 年 07 月 08 日
@@ -26,7 +52,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/reorganize-string/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-07-01_checkValidString)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-07-07_reorganizeString)
 
 ### 对角线遍历
 
