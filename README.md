@@ -37,7 +37,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/pattern-matching-lcci/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-07-11_combine)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-07-19_patternMatching)
 
 
 
