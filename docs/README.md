@@ -2,6 +2,132 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+
+### 可能的二分法
+
+> 2020 年 07 月 29 日
+
+给定一个数组 A，将其划分为两个不相交（没有公共元素）的连续子数组 left 和 right， 使得：
+
+left 中的每个元素都小于或等于 right 中的每个元素。
+left 和 right 都是非空的。
+left 要尽可能小。
+在完成这样的分组后返回 left 的长度。可以保证存在这样的划分方法。
+
+**示例 1**
+
+```
+输入：[5,0,3,8,6]
+输出：3
+解释：left = [5,0,3]，right = [8,6]
+```
+
+**示例 2**
+
+```
+输入：[1,1,1,0,6,12]
+输出：4
+解释：left = [1,1,1,0]，right = [6,12]
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/partition-array-into-disjoint-intervals/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/)
+ 
+
+### 可能的二分法
+
+> 2020 年 07 月 25 日
+
+给定一组  N  人（编号为  1, 2, ..., N），  我们想把每个人分进任意大小的两组。
+
+每个人都可能不喜欢其他人，那么他们不应该属于同一组。
+
+形式上，如果 dislikes[i] = [a, b]，表示不允许将编号为 a 和 b 的人归入同一组。
+
+当可以用这种方法将每个人分进两组时，返回 true；否则返回 false。
+
+**示例 1**
+
+```
+输入：N = 4, dislikes = [[1,2],[1,3],[2,4]]
+输出：true
+解释：group1 [1,4], group2 [2,3]
+```
+
+**示例 2**
+
+```
+输入： pattern = "abba", value = "dogcatcatfish"
+输出： false
+```
+
+**示例 3**
+
+```
+输入：N = 3, dislikes = [[1,2],[1,3],[2,3]]
+输出：false
+```
+
+**示例 4**
+
+```
+输入：N = 5, dislikes = [[1,2],[2,3],[3,4],[4,5],[1,5]]
+输出：false
+```
+
+提示：
+
+1 <= N <= 2000
+0 <= dislikes.length <= 10000
+dislikes[i].length == 2
+1 <= dislikes[i][j] <= N
+dislikes[i][0] < dislikes[i][1]
+对于 dislikes[i] == dislikes[j] 不存在 i != j
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/possible-bipartition/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-07-19_patternMatching)
+
+### 面试题 16.18. 模式匹配
+
+> 2020 年 07 月 19 日
+
+你有两个字符串，即 pattern 和 value。 pattern 字符串由字母"a"和"b"组成，用于描述字符串中的模式。例如，字符串"catcatgocatgo"匹配模式"aabab"（其中"cat"是"a"，"go"是"b"），该字符串也匹配像"a"、"ab"和"b"这样的模式。但需注意"a"和"b"不能同时表示相同的字符串。编写一个方法判断 value 字符串是否匹配 pattern 字符串。
+
+**示例 1**
+
+```
+输入： pattern = "abba", value = "dogcatcatdog"
+输出： true
+```
+
+**示例 2**
+
+```
+输入： pattern = "abba", value = "dogcatcatfish"
+输出： false
+```
+
+**示例 3**
+
+```
+输入： pattern = "aaaa", value = "dogcatcatdog"
+输出： false
+```
+
+**示例 4**
+
+```
+输入： pattern = "abba", value = "dogdogdogdog"
+输出： true
+解释： "a"="dogdog",b=""，反之也符合规则
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/pattern-matching-lcci/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-07-19_patternMatching)
+
 ### 组合
 
 > 2020 年 07 月 11 日
@@ -25,14 +151,13 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/combinations/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-07-07_reorganizeString)
-
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-07-11_combine)
 
 ### 重构字符串
 
 > 2020 年 07 月 08 日
 
-给定一个字符串S，检查是否能重新排布其中的字母，使得两相邻的字符不同。
+给定一个字符串 S，检查是否能重新排布其中的字母，使得两相邻的字符不同。
 
 若可行，输出任意可行的结果。若不可行，返回空字符串。
 
@@ -60,7 +185,6 @@
 
 给定一个含有 M x N 个元素的矩阵（M 行，N 列），请以对角线遍历的顺序返回这个矩阵中的所有元素，对角线遍历如下图所示。
 
-
 **示例 1**
 
 ```
@@ -74,13 +198,12 @@
 输出:  [1,2,4,7,5,3,6,8,9]
 
 ```
-![](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/10/12/diagonal_traverse.png)
 
+![](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/10/12/diagonal_traverse.png)
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/diagonal-traverse/)
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-07-01_checkValidString)
-
 
 ### 二叉树着色游戏
 
@@ -120,7 +243,6 @@
 输入: "(*)"
 输出: True
 ```
-
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/binary-tree-coloring-game/)
 
