@@ -3,7 +3,34 @@
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
 
-### 可能的二分法
+### 丑数 II
+
+> 2020 年 08 月 15 日
+
+编写一个程序，找出第 n 个丑数。
+
+丑数就是质因数只包含 2, 3, 5 的正整数。
+
+**示例 1**
+
+```
+输入: n = 10
+输出: 12
+解释: 1, 2, 3, 4, 5, 6, 8, 9, 10, 12 是前 10 个丑数。
+```
+
+说明:  
+
+1 是丑数。
+n 不超过1690。
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/ugly-number-ii/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-08/)
+ 
+
+
+### 分割数组
 
 > 2020 年 07 月 29 日
 
