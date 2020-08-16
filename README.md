@@ -26,7 +26,7 @@ n 不超过1690。
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/ugly-number-ii/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-08/)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-08/20-08-15_nthUglyNumber)
  
 
 
