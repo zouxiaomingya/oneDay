@@ -4,20 +4,20 @@
  */
 var nthUglyNumber = function (n) {
   let ret = [1];
-  let p2 = 0;
-  let p3 = 0;
-  let p5 = 0;
+  let num2 = 0;
+  let num3 = 0;
+  let num5 = 0;
   while (n > 0) {
-    let temp = Math.min(ret[p2] * 2, ret[p3] * 3, ret[p5] * 5);
+    let temp = Math.min(ret[num2] * 2, ret[num3] * 3, ret[num5] * 5);
     ret.push(temp);
-    if (ret[p2] * 2 == temp) {
-      p2++;
+    if (ret[num2] * 2 == temp) {
+      num2++;
     }
-    if (ret[p3] * 3 == temp) {
-      p3++;
+    if (ret[num3] * 3 == temp) {
+      num3++;
     }
-    if (ret[p5] * 5 == temp) {
-      p5++;
+    if (ret[num5] * 5 == temp) {
+      num5++;
     }
     n--;
   }
