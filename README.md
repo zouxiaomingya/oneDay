@@ -54,7 +54,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-08/20-08-15_nthUglyNumber)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-08-26_longestSubarray)
  
 
 ### 丑数 II
