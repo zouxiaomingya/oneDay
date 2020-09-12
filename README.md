@@ -2,15 +2,13 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
-
 ### 有效的完全平方数
 
 > 2020 年 09 月 12 日
 
 给定一个正整数 num，编写一个函数，如果 num 是一个完全平方数，则返回 True，否则返回 False。
 
-说明：不要使用任何内置的库函数，如  sqrt。
-
+说明：不要使用任何内置的库函数，如   sqrt。
 
 **示例 1**
 
@@ -29,7 +27,6 @@
 [原题 leetcode 链接](https://leetcode-cn.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-08-26_longestSubarray)
- 
 
 ### 绝对差不超过限制的最长连续子数组
 
@@ -43,10 +40,10 @@
 
 ```
 输入：nums = [8,2,4,7], limit = 4
-输出：2 
+输出：2
 解释：所有子数组如下：
 [8] 最大绝对差 |8-8| = 0 <= 4.
-[8,2] 最大绝对差 |8-2| = 6 > 4. 
+[8,2] 最大绝对差 |8-2| = 6 > 4.
 [8,2,4] 最大绝对差 |8-2| = 6 > 4.
 [8,2,4,7] 最大绝对差 |8-2| = 6 > 4.
 [2] 最大绝对差 |2-2| = 0 <= 4.
@@ -54,7 +51,7 @@
 [2,4,7] 最大绝对差 |2-7| = 5 > 4.
 [4] 最大绝对差 |4-4| = 0 <= 4.
 [4,7] 最大绝对差 |4-7| = 3 <= 4.
-[7] 最大绝对差 |7-7| = 0 <= 4. 
+[7] 最大绝对差 |7-7| = 0 <= 4.
 因此，满足题意的最长子数组的长度为 2 。
 
 ```
@@ -63,10 +60,11 @@
 
 ```
 输入：nums = [10,1,2,4,7,2], limit = 5
-输出：4 
+输出：4
 解释：满足题意的最长子数组是 [2,4,7,2]，其最大绝对差 |2-7| = 5 <= 5 。
 
 ```
+
 **示例 3**
 
 ```
@@ -74,7 +72,8 @@
 输出：3
 
 ```
-说明:  
+
+说明:
 
 1 <= nums.length <= 10^5
 1 <= nums[i] <= 10^9
@@ -83,7 +82,6 @@
 [原题 leetcode 链接](https://leetcode-cn.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-08-26_longestSubarray)
- 
 
 ### 丑数 II
 
@@ -101,27 +99,25 @@
 解释: 1, 2, 3, 4, 5, 6, 8, 9, 10, 12 是前 10 个丑数。
 ```
 
-说明:  
+说明:
 
 1 是丑数。
-n 不超过1690。
+n 不超过 1690。
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/ugly-number-ii/)
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-08/20-08-15_nthUglyNumber)
- 
-
 
 ### 分割数组
 
 > 2020 年 07 月 29 日
 
-给定一个数组 A，将其划分为两个不相交（没有公共元素）的连续子数组 left 和 right， 使得：
+给定一个数组  A，将其划分为两个不相交（没有公共元素）的连续子数组  left  和  right，  使得：
 
-left 中的每个元素都小于或等于 right 中的每个元素。
-left 和 right 都是非空的。
-left 要尽可能小。
-在完成这样的分组后返回 left 的长度。可以保证存在这样的划分方法。
+left  中的每个元素都小于或等于  right  中的每个元素。
+left 和  right  都是非空的。
+left  要尽可能小。
+在完成这样的分组后返回  left  的长度。可以保证存在这样的划分方法。
 
 **示例 1**
 
@@ -142,7 +138,6 @@ left 要尽可能小。
 [原题 leetcode 链接](https://leetcode-cn.com/problems/partition-array-into-disjoint-intervals/)
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/)
- 
 
 ### 可能的二分法
 
