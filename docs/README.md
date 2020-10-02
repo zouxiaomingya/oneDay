@@ -2,17 +2,156 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+### 有效的完全平方数
 
-### 可能的二分法
+> 2020 年 10 月 02 日
+
+有两个容量分别为 x升 和 y升 的水壶以及无限多的水。请判断能否通过使用这两个水壶，从而可以得到恰好 z升 的水？
+
+如果可以，最后请用以上水壶中的一或两个来盛放取得的 z升 水。
+
+你允许：
+
+装满任意一个水壶
+清空任意一个水壶
+从一个水壶向另外一个水壶倒水，直到装满或者倒空
+
+**示例 1**
+
+```
+输入: x = 3, y = 5, z = 4
+输出: True
+
+```
+
+**示例 2**
+
+```
+输入: x = 2, y = 6, z = 5
+输出: False
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/water-and-jug-problem/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-10/20-10-02_canMeasureWater.js)
+
+
+### 有效的完全平方数
+
+> 2020 年 09 月 12 日
+
+给定一个正整数 num，编写一个函数，如果 num 是一个完全平方数，则返回 True，否则返回 False。
+
+说明：不要使用任何内置的库函数，如   sqrt。
+
+**示例 1**
+
+```
+输入：16
+输出：True
+```
+
+**示例 2**
+
+```
+输入：14
+输出：False
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-09/20-09-12_longestSubarray.js)
+
+### 绝对差不超过限制的最长连续子数组
+
+> 2020 年 08 月 26 日
+
+给你一个整数数组 nums ，和一个表示限制的整数 limit，请你返回最长连续子数组的长度，该子数组中的任意两个元素之间的绝对差必须小于或者等于 limit 。
+
+如果不存在满足条件的子数组，则返回 0 。
+
+**示例 1**
+
+```
+输入：nums = [8,2,4,7], limit = 4
+输出：2
+解释：所有子数组如下：
+[8] 最大绝对差 |8-8| = 0 <= 4.
+[8,2] 最大绝对差 |8-2| = 6 > 4.
+[8,2,4] 最大绝对差 |8-2| = 6 > 4.
+[8,2,4,7] 最大绝对差 |8-2| = 6 > 4.
+[2] 最大绝对差 |2-2| = 0 <= 4.
+[2,4] 最大绝对差 |2-4| = 2 <= 4.
+[2,4,7] 最大绝对差 |2-7| = 5 > 4.
+[4] 最大绝对差 |4-4| = 0 <= 4.
+[4,7] 最大绝对差 |4-7| = 3 <= 4.
+[7] 最大绝对差 |7-7| = 0 <= 4.
+因此，满足题意的最长子数组的长度为 2 。
+
+```
+
+**示例 2**
+
+```
+输入：nums = [10,1,2,4,7,2], limit = 5
+输出：4
+解释：满足题意的最长子数组是 [2,4,7,2]，其最大绝对差 |2-7| = 5 <= 5 。
+
+```
+
+**示例 3**
+
+```
+输入：nums = [4,2,2,2,4,4,2,2], limit = 0
+输出：3
+
+```
+
+说明:
+
+1 <= nums.length <= 10^5
+1 <= nums[i] <= 10^9
+0 <= limit <= 10^9
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-08/20-08-26_longestSubarray.js)
+
+### 丑数 II
+
+> 2020 年 08 月 15 日
+
+编写一个程序，找出第 n 个丑数。
+
+丑数就是质因数只包含 2, 3, 5 的正整数。
+
+**示例 1**
+
+```
+输入: n = 10
+输出: 12
+解释: 1, 2, 3, 4, 5, 6, 8, 9, 10, 12 是前 10 个丑数。
+```
+
+说明:
+
+1 是丑数。
+n 不超过 1690。
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/ugly-number-ii/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-08/2020-08/20-08-15_nthUglyNumber.js)
+
+### 分割数组
 
 > 2020 年 07 月 29 日
 
-给定一个数组 A，将其划分为两个不相交（没有公共元素）的连续子数组 left 和 right， 使得：
+给定一个数组  A，将其划分为两个不相交（没有公共元素）的连续子数组  left  和  right，  使得：
 
-left 中的每个元素都小于或等于 right 中的每个元素。
-left 和 right 都是非空的。
-left 要尽可能小。
-在完成这样的分组后返回 left 的长度。可以保证存在这样的划分方法。
+left  中的每个元素都小于或等于  right  中的每个元素。
+left 和  right  都是非空的。
+left  要尽可能小。
+在完成这样的分组后返回  left  的长度。可以保证存在这样的划分方法。
 
 **示例 1**
 
@@ -32,8 +171,7 @@ left 要尽可能小。
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/partition-array-into-disjoint-intervals/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/)
- 
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-07/20-07-29_partitionDisjoint.js)
 
 ### 可能的二分法
 
@@ -87,7 +225,7 @@ dislikes[i][0] < dislikes[i][1]
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/possible-bipartition/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-07-19_patternMatching)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-07/20-07-19_patternMatching.js)
 
 ### 面试题 16.18. 模式匹配
 
@@ -126,7 +264,7 @@ dislikes[i][0] < dislikes[i][1]
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/pattern-matching-lcci/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-07-19_patternMatching)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-07/20-07-19_patternMatching.js)
 
 ### 组合
 
@@ -151,7 +289,7 @@ dislikes[i][0] < dislikes[i][1]
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/combinations/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-07-11_combine)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-07/20-07-11_combine.js)
 
 ### 重构字符串
 
@@ -177,7 +315,7 @@ dislikes[i][0] < dislikes[i][1]
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/reorganize-string/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-07-07_reorganizeString)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-07-07_reorganizeString.js)
 
 ### 对角线遍历
 
@@ -203,7 +341,7 @@ dislikes[i][0] < dislikes[i][1]
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/diagonal-traverse/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-07-01_checkValidString)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-07/20-07-06_.js)
 
 ### 二叉树着色游戏
 
@@ -246,7 +384,7 @@ dislikes[i][0] < dislikes[i][1]
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/binary-tree-coloring-game/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-07/20-07-05_btreeGameWinningMove)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-07/20-07-05_btreeGameWinningMove.js)
 
 ### 有效的括号字符串
 
@@ -288,7 +426,7 @@ dislikes[i][0] < dislikes[i][1]
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/valid-parenthesis-string/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-07/20-07-01_checkValidString)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-07/20-07-01_checkValidString.js)
 
 ### 不同路径
 
