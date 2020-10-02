@@ -4,6 +4,40 @@
 
 ### 有效的完全平方数
 
+> 2020 年 10 月 02 日
+
+有两个容量分别为 x升 和 y升 的水壶以及无限多的水。请判断能否通过使用这两个水壶，从而可以得到恰好 z升 的水？
+
+如果可以，最后请用以上水壶中的一或两个来盛放取得的 z升 水。
+
+你允许：
+
+装满任意一个水壶
+清空任意一个水壶
+从一个水壶向另外一个水壶倒水，直到装满或者倒空
+
+**示例 1**
+
+```
+输入: x = 3, y = 5, z = 4
+输出: True
+
+```
+
+**示例 2**
+
+```
+输入: x = 2, y = 6, z = 5
+输出: False
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/water-and-jug-problem/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-10/20-10-02_canMeasureWater.js)
+
+
+### 有效的完全平方数
+
 > 2020 年 09 月 12 日
 
 给定一个正整数 num，编写一个函数，如果 num 是一个完全平方数，则返回 True，否则返回 False。
@@ -26,7 +60,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-08-26_longestSubarray)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-09/20-09-12_longestSubarray.js)
 
 ### 绝对差不超过限制的最长连续子数组
 
@@ -81,7 +115,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-08-26_longestSubarray)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-08/20-08-26_longestSubarray.js)
 
 ### 丑数 II
 
@@ -106,7 +140,7 @@ n 不超过 1690。
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/ugly-number-ii/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-08/20-08-15_nthUglyNumber)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-08/2020-08/20-08-15_nthUglyNumber.js)
 
 ### 分割数组
 
@@ -137,7 +171,7 @@ left  要尽可能小。
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/partition-array-into-disjoint-intervals/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-07/20-07-29_partitionDisjoint.js)
 
 ### 可能的二分法
 
@@ -191,7 +225,7 @@ dislikes[i][0] < dislikes[i][1]
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/possible-bipartition/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-07-19_patternMatching)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-07/20-07-19_patternMatching.js)
 
 ### 面试题 16.18. 模式匹配
 
@@ -230,7 +264,7 @@ dislikes[i][0] < dislikes[i][1]
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/pattern-matching-lcci/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-07-19_patternMatching)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-07/20-07-19_patternMatching.js)
 
 ### 组合
 
@@ -255,7 +289,7 @@ dislikes[i][0] < dislikes[i][1]
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/combinations/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/20-07-11_combine)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-07/20-07-11_combine.js)
 
 ### 重构字符串
 
@@ -281,7 +315,7 @@ dislikes[i][0] < dislikes[i][1]
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/reorganize-string/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-07-07_reorganizeString)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-07-07_reorganizeString.js)
 
 ### 对角线遍历
 
@@ -307,7 +341,7 @@ dislikes[i][0] < dislikes[i][1]
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/diagonal-traverse/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-07-01_checkValidString)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-07/20-07-06_.js)
 
 ### 二叉树着色游戏
 
@@ -350,7 +384,7 @@ dislikes[i][0] < dislikes[i][1]
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/binary-tree-coloring-game/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-07/20-07-05_btreeGameWinningMove)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-07/20-07-05_btreeGameWinningMove.js)
 
 ### 有效的括号字符串
 
@@ -392,7 +426,7 @@ dislikes[i][0] < dislikes[i][1]
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/valid-parenthesis-string/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-07/20-07-01_checkValidString)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-07/20-07-01_checkValidString.js)
 
 ### 不同路径
 
