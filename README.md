@@ -22,7 +22,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-10/20-10-02_canMeasureWater.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-10/20-10-06_translateNum.js)
 
 ### 有效的完全平方数
 
