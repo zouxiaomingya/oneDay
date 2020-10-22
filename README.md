@@ -2,6 +2,14 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+### 按姓名笔画排序的功能
+
+> 2020 年 10 月 10 日
+
+```
+相同的笔画的姓氏用拼音排序
+```
+
 ### 剑指 Offer 46. 把数字翻译成字符串
 
 > 2020 年 10 月 06 日
