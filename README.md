@@ -2,6 +2,42 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+
+### 甲板上的战舰
+
+> 2020 年 10 月 31 日
+
+给定一个二维的甲板， 请计算其中有多少艘战舰。 战舰用 'X'表示，空位用 '.'表示。 你需要遵守以下规则：
+
+给你一个有效的甲板，仅由战舰或者空位组成。
+战舰只能水平或者垂直放置。换句话说,战舰只能由 1xN (1 行, N 列)组成，或者 Nx1 (N 行, 1 列)组成，其中N可以是任意大小。
+两艘战舰之间至少有一个水平或垂直的空位分隔 - 即没有相邻的战舰。
+
+**示例**
+
+```
+X..X
+...X
+...X
+```
+在上面的甲板中有2艘战舰。
+
+**提示：**
+```
+...X
+XXXX
+...X
+```
+0 <= num < 231
+
+你不会收到这样的无效甲板 - 因为战舰之间至少会有一个空位将它们分开。
+
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/battleships-in-a-board/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-10/20-10-31_countBattleships)
+
+
 ### 按姓名笔画排序的功能
 
 > 2020 年 10 月 10 日
