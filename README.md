@@ -43,7 +43,7 @@ A = [1, 2, 3, 4]
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/arithmetic-slices/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-11/220-11-15_arrayNesting.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-11/20-11-22_numberOfArithmeticSlices.js)
 
 ### 565. 数组嵌套
 
