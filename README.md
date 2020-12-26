@@ -884,7 +884,7 @@ dislikes[i][0] < dislikes[i][1]
 
 ### 二叉树的中序遍历
 
-> 2020 年 06 月 01 日
+> 2020 年 06 月 02 日
 
 给定一个二叉树，返回它的中序 遍历。
 
@@ -903,7 +903,7 @@ dislikes[i][0] < dislikes[i][1]
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-05/20-05-22_combinationSum3.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-06-02_inorderTraversal.js)
 
 > 2020 年 05 月 28 日
 
