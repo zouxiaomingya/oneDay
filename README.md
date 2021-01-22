@@ -2,6 +2,51 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+### 565. 等差子数组
+
+> 2021 年 01 月 22 日
+
+给定二叉树，按垂序遍历返回其结点值。
+
+对位于  (X, Y)  的每个结点而言，其左右子结点分别位于  (X-1, Y-1)  和  (X+1, Y-1)。
+
+把一条垂线从  X = -infinity  移动到  X = +infinity ，每当该垂线与结点接触时，我们按从上到下的顺序报告结点的值（ Y  坐标递减）。
+
+如果两个结点位置相同，则首先报告的结点值较小。
+
+按  X  坐标顺序返回非空报告的列表。每个报告都有一个结点值列表。
+
+**示例 1**
+
+![](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2019/02/02/1236_example_1.PNG)
+
+```
+输入：[3,9,20,null,null,15,7]
+输出：[[9],[3,15],[20],[7]]
+解释：
+在不丧失其普遍性的情况下，我们可以假设根结点位于 (0, 0)：
+然后，值为 9 的结点出现在 (-1, -1)；
+值为 3 和 15 的两个结点分别出现在 (0, 0) 和 (0, -2)；
+值为 20 的结点出现在 (1, -1)；
+值为 7 的结点出现在 (2, -2)。
+```
+
+**示例 2**
+
+![](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2019/02/23/tree2.png)
+
+```
+输入：[1,2,3,4,5,6,7]
+输出：[[4],[2],[1,5,6],[3],[7]]
+解释：
+根据给定的方案，值为 5 和 6 的两个结点出现在同一位置。
+然而，在报告 "[1,5,6]" 中，结点值 5 排在前面，因为 5 小于 6。
+
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/vertical-order-traversal-of-a-binary-tree/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2021-01/21-01-22_verticalTraversal)
 
 ### 565. 等差子数组
 
@@ -22,9 +67,10 @@
 1, 1, 2, 5, 7
 
 ```
+
 给你一个由 n 个整数组成的数组 nums，和两个由 m 个整数组成的数组 l 和 r，后两个数组表示 m 组范围查询，其中第 i 个查询对应范围 [l[i], r[i]] 。所有数组的下标都是 从 0 开始 的。
 
-返回 boolean 元素构成的答案列表 answer 。如果子数组 nums[l[i]], nums[l[i]+1], ... , nums[r[i]] 可以 重新排列 形成 等差数列 ，answer[i] 的值就是 true；否则answer[i] 的值就是 false 。
+返回 boolean 元素构成的答案列表 answer 。如果子数组 nums[l[i]], nums[l[i]+1], ... , nums[r[i]] 可以 重新排列 形成 等差数列 ，answer[i] 的值就是 true；否则 answer[i] 的值就是 false 。
 
 **示例 1**
 
@@ -72,11 +118,11 @@
 
 ```
 
-数组 A 包含 N 个数，且索引从0开始。数组 A 的一个子数组划分为数组 (P, Q)，P 与 Q 是整数且满足 0<=P<Q<N 。
+数组 A 包含 N 个数，且索引从 0 开始。数组 A 的一个子数组划分为数组 (P, Q)，P 与 Q 是整数且满足 0<=P<Q<N 。
 
 如果满足以下条件，则称子数组(P, Q)为等差数组：
 
-元素 A[P], A[p + 1], ..., A[Q - 1], A[Q] 是等差的。并且 P + 1 < Q 。
+元素 A[P], A[p + 1], ..., A[Q - 1], A[Q] 是等差的。并且  P + 1 < Q 。
 
 函数要返回数组 A 中所有为等差数组的子数组个数。
 
