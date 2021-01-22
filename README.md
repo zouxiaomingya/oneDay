@@ -2,6 +2,164 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+
+### 565. 等差子数组
+
+> 2020 年 11 月 28 日
+
+如果一个数列由至少两个元素组成，且每两个连续元素之间的差值都相同，那么这个序列就是 等差数列 。更正式地，数列 s 是等差数列，只需要满足：对于每个有效的 i ， s[i+1] - s[i] == s[1] - s[0] 都成立。
+
+```
+1, 3, 5, 7, 9
+7, 7, 7, 7
+3, -1, -5, -9
+
+```
+
+以下数列不是等差数列。
+
+```
+1, 1, 2, 5, 7
+
+```
+给你一个由 n 个整数组成的数组 nums，和两个由 m 个整数组成的数组 l 和 r，后两个数组表示 m 组范围查询，其中第 i 个查询对应范围 [l[i], r[i]] 。所有数组的下标都是 从 0 开始 的。
+
+返回 boolean 元素构成的答案列表 answer 。如果子数组 nums[l[i]], nums[l[i]+1], ... , nums[r[i]] 可以 重新排列 形成 等差数列 ，answer[i] 的值就是 true；否则answer[i] 的值就是 false 。
+
+**示例 1**
+
+```
+输入：nums = [4,6,5,9,3,7], l = [0,0,2], r = [2,3,5]
+输出：[true,false,true]
+解释：
+第 0 个查询，对应子数组 [4,6,5] 。可以重新排列为等差数列 [6,5,4] 。
+第 1 个查询，对应子数组 [4,6,5,9] 。无法重新排列形成等差数列。
+第 2 个查询，对应子数组 [5,9,3,7] 。可以重新排列为等差数列 [3,5,7,9] 。
+
+```
+
+**示例 2**
+
+```
+输入：nums = [-12,-9,-3,-12,-6,15,20,-25,-20,-15,-10], l = [0,1,6,4,8,7], r = [4,4,9,7,9,10]
+输出：[false,true,false,false,true,true]
+
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/arithmetic-subarrays/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-11/20-11-28_checkArithmeticSubarrays.js)
+
+### 565. 等差数列划分
+
+> 2020 年 11 月 22 日
+
+如果一个数列至少有三个元素，并且任意两个相邻元素之差相同，则称该数列为等差数列。
+
+例如，以下数列为等差数列:
+
+```
+1, 3, 5, 7, 9
+7, 7, 7, 7
+3, -1, -5, -9
+
+```
+
+以下数列不是等差数列。
+
+```
+1, 1, 2, 5, 7
+
+```
+
+数组 A 包含 N 个数，且索引从0开始。数组 A 的一个子数组划分为数组 (P, Q)，P 与 Q 是整数且满足 0<=P<Q<N 。
+
+如果满足以下条件，则称子数组(P, Q)为等差数组：
+
+元素 A[P], A[p + 1], ..., A[Q - 1], A[Q] 是等差的。并且 P + 1 < Q 。
+
+函数要返回数组 A 中所有为等差数组的子数组个数。
+
+**示例**
+
+```
+A = [1, 2, 3, 4]
+
+返回: 3, A 中有三个子等差数组: [1, 2, 3], [2, 3, 4] 以及自身 [1, 2, 3, 4]。
+
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/arithmetic-slices/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-11/20-11-22_numberOfArithmeticSlices.js)
+
+### 565. 数组嵌套
+
+> 2020 年 11 月 15 日
+
+索引从 0 开始长度为 N 的数组 A，包含 0 到 N - 1 的所有整数。找到最大的集合 S 并返回其大小，其中 S[i] = {A[i], A[A[i]], A[A[A[i]]], ... }且遵守以下的规则。
+
+假设选择索引为 i 的元素 A[i]为 S 的第一个元素，S 的下一个元素应该是 A[A[i]]，之后是 A[A[A[i]]]... 以此类推，不断添加直到 S 出现重复的元素。
+
+**示例**
+
+```
+输入: A = [5,4,0,3,1,6,2]
+输出: 4
+解释:
+A[0] = 5, A[1] = 4, A[2] = 0, A[3] = 3, A[4] = 1, A[5] = 6, A[6] = 2.
+
+其中一种最长的 S[K]:
+S[0] = {A[0], A[5], A[6], A[2]} = {5, 6, 2, 0}
+
+```
+
+**提示：**
+
+N 是[1, 20,000]之间的整数。
+A 中不含有重复的元素。
+A 中的元素大小在[0, N-1]之间。
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/array-nesting/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-11/220-11-15_arrayNesting.js)
+
+### 甲板上的战舰
+
+> 2020 年 10 月 31 日
+
+给定一个二维的甲板， 请计算其中有多少艘战舰。  战舰用  'X'表示，空位用  '.'表示。  你需要遵守以下规则：
+
+给你一个有效的甲板，仅由战舰或者空位组成。
+战舰只能水平或者垂直放置。换句话说,战舰只能由  1xN (1 行, N 列)组成，或者  Nx1 (N 行, 1 列)组成，其中 N 可以是任意大小。
+两艘战舰之间至少有一个水平或垂直的空位分隔  - 即没有相邻的战舰。
+
+**示例**
+
+```
+X..X
+...X
+...X
+```
+
+在上面的甲板中有 2 艘战舰。
+
+**提示：**
+
+```
+...X
+XXXX
+...X
+```
+
+0 <= num < 231
+
+你不会收到这样的无效甲板 - 因为战舰之间至少会有一个空位将它们分开。
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/battleships-in-a-board/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-10/20-10-31_countBattleships.js)
+
 ### 按姓名笔画排序的功能
 
 > 2020 年 10 月 10 日
@@ -726,7 +884,7 @@ dislikes[i][0] < dislikes[i][1]
 
 ### 二叉树的中序遍历
 
-> 2020 年 06 月 01 日
+> 2020 年 06 月 02 日
 
 给定一个二叉树，返回它的中序 遍历。
 
@@ -745,7 +903,7 @@ dislikes[i][0] < dislikes[i][1]
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-05/20-05-22_combinationSum3.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-06-02_inorderTraversal.js)
 
 > 2020 年 05 月 28 日
 

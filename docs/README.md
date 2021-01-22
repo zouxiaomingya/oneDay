@@ -2,13 +2,138 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+### 565. 数组嵌套
+
+> 2020 年 11 月 15 日
+
+索引从 0 开始长度为 N 的数组 A，包含 0 到 N - 1 的所有整数。找到最大的集合 S 并返回其大小，其中 S[i] = {A[i], A[A[i]], A[A[A[i]]], ... }且遵守以下的规则。
+
+假设选择索引为 i 的元素 A[i]为 S 的第一个元素，S 的下一个元素应该是 A[A[i]]，之后是 A[A[A[i]]]... 以此类推，不断添加直到 S 出现重复的元素。
+
+**示例**
+
+```
+输入: A = [5,4,0,3,1,6,2]
+输出: 4
+解释:
+A[0] = 5, A[1] = 4, A[2] = 0, A[3] = 3, A[4] = 1, A[5] = 6, A[6] = 2.
+
+其中一种最长的 S[K]:
+S[0] = {A[0], A[5], A[6], A[2]} = {5, 6, 2, 0}
+
+```
+
+**提示：**
+
+N 是[1, 20,000]之间的整数。
+A 中不含有重复的元素。
+A 中的元素大小在[0, N-1]之间。
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/array-nesting/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-11/220-11-15_arrayNesting.js)
+
+### 甲板上的战舰
+
+> 2020 年 10 月 31 日
+
+给定一个二维的甲板， 请计算其中有多少艘战舰。  战舰用  'X'表示，空位用  '.'表示。  你需要遵守以下规则：
+
+给你一个有效的甲板，仅由战舰或者空位组成。
+战舰只能水平或者垂直放置。换句话说,战舰只能由  1xN (1 行, N 列)组成，或者  Nx1 (N 行, 1 列)组成，其中 N 可以是任意大小。
+两艘战舰之间至少有一个水平或垂直的空位分隔  - 即没有相邻的战舰。
+
+**示例**
+
+```
+X..X
+...X
+...X
+```
+
+在上面的甲板中有 2 艘战舰。
+
+**提示：**
+
+```
+...X
+XXXX
+...X
+```
+
+0 <= num < 231
+
+你不会收到这样的无效甲板 - 因为战舰之间至少会有一个空位将它们分开。
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/battleships-in-a-board/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-10/20-10-31_countBattleships.js)
+
+### 按姓名笔画排序的功能
+
+> 2020 年 10 月 10 日
+
+```
+相同的笔画的姓氏用拼音排序
+```
+
+### 剑指 Offer 46. 把数字翻译成字符串
+
+> 2020 年 10 月 06 日
+
+给定一个数字，我们按照如下规则把它翻译为字符串：0 翻译成 “a” ，1 翻译成 “b”，……，11 翻译成 “l”，……，25 翻译成 “z”。一个数字可能有多个翻译。请编程实现一个函数，用来计算一个数字有多少种不同的翻译方法。
+
+**示例 1**
+
+```
+输入: 12258
+输出: 5
+解释: 12258有5种不同的翻译，分别是"bccfi", "bwfi", "bczi", "mcfi"和"mzi"
+```
+
+提示：
+
+0 <= num < 231
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-10/20-10-06_translateNum.js)
+
+### 有效的完全平方数
+
+> 2020 年 10 月 04 日
+
+给定一个包含 n 个整数的数组 nums 和一个目标值 target，判断 nums 中是否存在四个元素 a，b，c 和 d ，使得 a + b + c + d 的值与 target 相等？找出所有满足条件且不重复的四元组。
+
+注意：
+
+答案中不可以包含重复的四元组。
+
+**示例 1**
+
+```
+给定数组 nums = [1, 0, -1, 0, -2, 2]，和 target = 0。
+
+满足要求的四元组集合为：
+[
+  [-1,  0, 0, 1],
+  [-2, -1, 1, 2],
+  [-2,  0, 0, 2]
+]
+
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/4sum/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-10/20-10-04_fourSum.js)
+
 ### 有效的完全平方数
 
 > 2020 年 10 月 02 日
 
-有两个容量分别为 x升 和 y升 的水壶以及无限多的水。请判断能否通过使用这两个水壶，从而可以得到恰好 z升 的水？
+有两个容量分别为  x 升 和 y 升 的水壶以及无限多的水。请判断能否通过使用这两个水壶，从而可以得到恰好  z 升 的水？
 
-如果可以，最后请用以上水壶中的一或两个来盛放取得的 z升 水。
+如果可以，最后请用以上水壶中的一或两个来盛放取得的  z 升   水。
 
 你允许：
 
@@ -34,7 +159,6 @@
 [原题 leetcode 链接](https://leetcode-cn.com/problems/water-and-jug-problem/)
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-10/20-10-02_canMeasureWater.js)
-
 
 ### 有效的完全平方数
 
