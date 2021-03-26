@@ -38,7 +38,7 @@ points[i].length == 2
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/widest-vertical-area-between-two-points-containing-no-points/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2021-03/21-03-26_videoStitching.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2021-03/21-03-26_maxWidthOfVerticalArea.js)
 
 
 ### 565. 等差子数组
