@@ -10,11 +10,13 @@
 
 <body>
   <video controls="controls" id="videoData" oncanplaythrough="geTime(this)"></video>
-  <input type="file" onchange="changeFile(this)" />
+  <input type="file" multiple onchange="changeFile(this)" />
 </body>
 
 <script type="text/JavaScript">
   function geTime(ele) {
+    console.log(ele.duration, 'ele.duration>>>>>>');
+    
       var hour = parseInt((ele.duration)/3600);
       var minute = parseInt((ele.duration%3600)/60);
       var second = Math.ceil(ele.duration%60);
@@ -22,6 +24,8 @@
     }
 
     function changeFile(ele){
+      console.log(ele.files, 'ele>>>>>>');
+      
       var video = ele.files[0];
       var url = URL.createObjectURL(video);
       console.log(url);
