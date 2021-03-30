@@ -2,6 +2,356 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+### 检查单词是否为句中其他单词的前缀
+
+> 2021 年 03 月 30 日
+
+给你一个字符串 sentence 作为句子并指定检索词为 searchWord ，其中句子由若干用 单个空格 分隔的单词组成。
+
+请你检查检索词 searchWord 是否为句子 sentence 中任意单词的前缀。
+
+如果 searchWord 是某一个单词的前缀，则返回句子 sentence 中该单词所对应的下标（下标从 1 开始）。
+如果 searchWord 是多个单词的前缀，则返回匹配的第一个单词的下标（最小下标）。
+如果 searchWord 不是任何单词的前缀，则返回 -1 。
+字符串 S 的 前缀 是 S 的任何前导连续子字符串。
+
+**示例 1**
+
+```
+输入：sentence = "i love eating burger", searchWord = "burg"
+输出：4
+解释："burg" 是 "burger" 的前缀，而 "burger" 是句子中第 4 个单词。
+```
+
+**示例 2**
+
+```
+输入：sentence = "this problem is an easy problem", searchWord = "pro"
+输出：2
+解释："pro" 是 "problem" 的前缀，而 "problem" 是句子中第 2 个也是第 6 个单词，但是应该返回最小下标 2 。
+```
+
+**示例 3**
+
+```
+输入：sentence = "i am tired", searchWord = "you"
+输出：-1
+解释："you" 不是句子中任何单词的前缀。
+```
+
+**示例 3**
+```
+输入：sentence = "i am tired", searchWord = "you"
+输出：-1
+解释："you" 不是句子中任何单词的前缀。
+```
+
+**示例 4**
+```
+输入：sentence = "i use triple pillow", searchWord = "pill"
+输出：4
+```
+
+**示例 4**
+```
+输入：sentence = "hello from the other side", searchWord = "they"
+输出：-1
+```
+
+提示：
+
+1 <= sentence.length <= 100
+1 <= searchWord.length <= 10
+sentence 由小写英文字母和空格组成。
+searchWord 由小写英文字母组成。
+前缀就是紧密附着于词根的语素，中间不能插入其它成分，并且它的位置是固定的——-位于词根之前。（引用自 前缀_百度百科 ）
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2021-03/21-03-30_isPrefixOfWord.js)
+
+### 565. 等差子数组
+
+> 2021 年 03 月 26 日
+给你 n 个二维平面上的点 points ，其中 points[i] = [xi, yi] ，请你返回两点之间内部不包含任何点的 最宽垂直面积 的宽度。
+
+垂直面积 的定义是固定宽度，而 y 轴上无限延伸的一块区域（也就是高度为无穷大）。 最宽垂直面积 为宽度最大的一个垂直面积。
+
+请注意，垂直区域 边上 的点 不在 区域内。
+
+**示例 1**
+
+```
+输入：points = [[8,7],[9,9],[7,4],[9,7]]
+输出：1
+解释：红色区域和蓝色区域都是最优区域。
+
+```
+
+**示例 2**
+
+```
+输入：points = [[3,1],[9,0],[1,0],[1,4],[5,3],[8,8]]
+输出：3
+```
+
+提示：
+
+n == points.length
+2 <= n <= 105
+points[i].length == 2
+0 <= xi, yi <= 109
+
+
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/widest-vertical-area-between-two-points-containing-no-points/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2021-03/21-03-26_maxWidthOfVerticalArea.js)
+
+
+### 565. 等差子数组
+
+> 2021 年 03 月 04 日
+> 用字符串数组作为井字游戏的游戏板  board。当且仅当在井字游戏过程中，玩家有可能将字符放置成游戏板所显示的状态时，才返回 true。
+
+你将会获得一系列视频片段，这些片段来自于一项持续时长为  T  秒的体育赛事。这些片段可能有所重叠，也可能长度不一。
+
+视频片段  clips[i]  都用区间进行表示：开始于  clips[i][0]  并于  clips[i][1]  结束。我们甚至可以对这些片段自由地再剪辑，例如片段  [0, 7]  可以剪切成  [0, 1] + [1, 3] + [3, 7]  三部分。
+
+我们需要将这些片段进行再剪辑，并将剪辑后的内容拼接成覆盖整个运动过程的片段（[0, T]）。返回所需片段的最小数目，如果无法完成该任务，则返回  -1 。
+
+**示例 1**
+
+```
+输入：clips = [[0,2],[4,6],[8,10],[1,9],[1,5],[5,9]], T = 10
+输出：3
+解释：
+我们选中 [0,2], [8,10], [1,9] 这三个片段。
+然后，按下面的方案重制比赛片段：
+将 [1,9] 再剪辑为 [1,2] + [2,8] + [8,9] 。
+现在我们手上有 [0,2] + [2,8] + [8,10]，而这些涵盖了整场比赛 [0, 10]。
+
+```
+
+**示例 2**
+
+```
+
+输入：clips = [[0,1],[1,2]], T = 5
+输出：-1
+解释：
+我们无法只用 [0,1] 和 [1,2] 覆盖 [0,5] 的整个过程。
+```
+
+**示例 3**
+
+```
+输入：clips = [[0,1],[6,8],[0,2],[5,6],[0,4],[0,3],[6,7],[1,3],[4,7],[1,4],[2,5],[2,6],[3,4],[4,5],[5,7],[6,9]], T = 9
+输出：3
+解释：
+我们选取片段 [0,4], [4,7] 和 [6,9] 。
+```
+
+**示例 4**
+
+```
+输入：clips = [[0,4],[2,8]], T = 5
+输出：2
+解释：
+注意，你可能录制超过比赛结束时间的视频。
+
+```
+
+提示：
+
+1 <= clips.length <= 100
+0 <= clips[i][0] <= clips[i][1] <= 100
+0 <= T <= 100
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/video-stitching/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2021-03/21-03-04_videoStitching.js)
+
+### 565. 等差子数组
+
+> 2021 年 02 月 06 日
+> 用字符串数组作为井字游戏的游戏板  board。当且仅当在井字游戏过程中，玩家有可能将字符放置成游戏板所显示的状态时，才返回 true。
+
+该游戏板是一个 3 x 3 数组，由字符  " "，"X"  和  "O"  组成。字符  " "  代表一个空位。
+
+以下是井字游戏的规则：
+
+玩家轮流将字符放入空位（" "）中。
+第一个玩家总是放字符 “X”，且第二个玩家总是放字符 “O”。
+“X” 和 “O” 只允许放置在空位中，不允许对已放有字符的位置进行填充。
+当有 3 个相同（且非空）的字符填充任何行、列或对角线时，游戏结束。
+当所有位置非空时，也算为游戏结束。
+如果游戏结束，玩家不允许再放置字符。
+
+**示例 1**
+
+```
+示例 1:
+输入: board = ["O  ", "   ", "   "]
+输出: false
+解释: 第一个玩家总是放置“X”。
+
+示例 2:
+输入: board = ["XOX", " X ", "   "]
+输出: false
+解释: 玩家应该是轮流放置的。
+
+示例 3:
+输入: board = ["XXX", "   ", "OOO"]
+输出: false
+
+示例 4:
+输入: board = ["XOX", "O O", "XOX"]
+输出: true
+
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/valid-tic-tac-toe-state/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2021-02/21-02-06_validTicTacToe.js)
+
+### 565. 等差子数组
+
+> 2021 年 01 月 22 日
+
+给定二叉树，按垂序遍历返回其结点值。
+
+对位于  (X, Y)  的每个结点而言，其左右子结点分别位于  (X-1, Y-1)  和  (X+1, Y-1)。
+
+把一条垂线从  X = -infinity  移动到  X = +infinity ，每当该垂线与结点接触时，我们按从上到下的顺序报告结点的值（ Y  坐标递减）。
+
+如果两个结点位置相同，则首先报告的结点值较小。
+
+按  X  坐标顺序返回非空报告的列表。每个报告都有一个结点值列表。
+
+**示例 1**
+
+![](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2019/02/02/1236_example_1.PNG)
+
+```
+输入：[3,9,20,null,null,15,7]
+输出：[[9],[3,15],[20],[7]]
+解释：
+在不丧失其普遍性的情况下，我们可以假设根结点位于 (0, 0)：
+然后，值为 9 的结点出现在 (-1, -1)；
+值为 3 和 15 的两个结点分别出现在 (0, 0) 和 (0, -2)；
+值为 20 的结点出现在 (1, -1)；
+值为 7 的结点出现在 (2, -2)。
+```
+
+**示例 2**
+
+![](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2019/02/23/tree2.png)
+
+```
+输入：[1,2,3,4,5,6,7]
+输出：[[4],[2],[1,5,6],[3],[7]]
+解释：
+根据给定的方案，值为 5 和 6 的两个结点出现在同一位置。
+然而，在报告 "[1,5,6]" 中，结点值 5 排在前面，因为 5 小于 6。
+
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/vertical-order-traversal-of-a-binary-tree/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2021-01/21-01-22_verticalTraversal.js)
+
+### 565. 等差子数组
+
+> 2020 年 11 月 28 日
+
+如果一个数列由至少两个元素组成，且每两个连续元素之间的差值都相同，那么这个序列就是 等差数列 。更正式地，数列 s 是等差数列，只需要满足：对于每个有效的 i ， s[i+1] - s[i] == s[1] - s[0] 都成立。
+
+```
+1, 3, 5, 7, 9
+7, 7, 7, 7
+3, -1, -5, -9
+
+```
+
+以下数列不是等差数列。
+
+```
+1, 1, 2, 5, 7
+
+```
+
+给你一个由 n 个整数组成的数组 nums，和两个由 m 个整数组成的数组 l 和 r，后两个数组表示 m 组范围查询，其中第 i 个查询对应范围 [l[i], r[i]] 。所有数组的下标都是 从 0 开始 的。
+
+返回 boolean 元素构成的答案列表 answer 。如果子数组 nums[l[i]], nums[l[i]+1], ... , nums[r[i]] 可以 重新排列 形成 等差数列 ，answer[i] 的值就是 true；否则 answer[i] 的值就是 false 。
+
+**示例 1**
+
+```
+输入：nums = [4,6,5,9,3,7], l = [0,0,2], r = [2,3,5]
+输出：[true,false,true]
+解释：
+第 0 个查询，对应子数组 [4,6,5] 。可以重新排列为等差数列 [6,5,4] 。
+第 1 个查询，对应子数组 [4,6,5,9] 。无法重新排列形成等差数列。
+第 2 个查询，对应子数组 [5,9,3,7] 。可以重新排列为等差数列 [3,5,7,9] 。
+
+```
+
+**示例 2**
+
+```
+输入：nums = [-12,-9,-3,-12,-6,15,20,-25,-20,-15,-10], l = [0,1,6,4,8,7], r = [4,4,9,7,9,10]
+输出：[false,true,false,false,true,true]
+
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/arithmetic-subarrays/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-11/20-11-28_checkArithmeticSubarrays.js)
+
+### 565. 等差数列划分
+
+> 2020 年 11 月 22 日
+
+如果一个数列至少有三个元素，并且任意两个相邻元素之差相同，则称该数列为等差数列。
+
+例如，以下数列为等差数列:
+
+```
+1, 3, 5, 7, 9
+7, 7, 7, 7
+3, -1, -5, -9
+
+```
+
+以下数列不是等差数列。
+
+```
+1, 1, 2, 5, 7
+
+```
+
+数组 A 包含 N 个数，且索引从 0 开始。数组 A 的一个子数组划分为数组 (P, Q)，P 与 Q 是整数且满足 0<=P<Q<N 。
+
+如果满足以下条件，则称子数组(P, Q)为等差数组：
+
+元素 A[P], A[p + 1], ..., A[Q - 1], A[Q] 是等差的。并且  P + 1 < Q 。
+
+函数要返回数组 A 中所有为等差数组的子数组个数。
+
+**示例**
+
+```
+A = [1, 2, 3, 4]
+
+返回: 3, A 中有三个子等差数组: [1, 2, 3], [2, 3, 4] 以及自身 [1, 2, 3, 4]。
+
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/arithmetic-slices/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-11/20-11-22_numberOfArithmeticSlices.js)
+
 ### 565. 数组嵌套
 
 > 2020 年 11 月 15 日
@@ -793,7 +1143,7 @@ dislikes[i][0] < dislikes[i][1]
 
 ### 二叉树的中序遍历
 
-> 2020 年 06 月 01 日
+> 2020 年 06 月 02 日
 
 给定一个二叉树，返回它的中序 遍历。
 
@@ -812,7 +1162,7 @@ dislikes[i][0] < dislikes[i][1]
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-05/20-05-22_combinationSum3.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-06/20-06-02_inorderTraversal.js)
 
 > 2020 年 05 月 28 日
 
@@ -4150,7 +4500,6 @@ S 只包含 '(' 和 ')' 字符。
 
 说明: 叶子节点是指没有子节点的节点。
 
-[原题 leetcode 链接](https://leetcode-cn.com/problems/reverse-linked-list/)
 
 **示例:**
 给定二叉树 [3,9,20,null,null,15,7]，
@@ -4165,9 +4514,7 @@ S 只包含 '(' 和 ')' 字符。
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/19-12-18_maxDepth)
-
-### 阶乘后面的零
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2019-12/19-12-18_maxDepth.js)
 
 > 2019 年 12 月 17 日
 
@@ -4192,7 +4539,6 @@ S 只包含 '(' 和 ')' 字符。
 说明: 你算法的时间复杂度应为 O(log n) 。
 **示例 3:**
 
-[原题 leetcode 链接](https://leetcode-cn.com/problems/factorial-trailing-zeroes/)
 
 #### 解题思路
 
@@ -4212,7 +4558,9 @@ S 只包含 '(' 和 ')' 字符。
 
 所以根据这样的方法来寻找可以分解多少个 5 来看有多少个 0
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2019-12/19-12-16_trailingZeroes.js)
+[原题 leetcode 链接](https://leetcode-cn.com/problems/factorial-trailing-zeroes/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2019-12/19-12-17_trailingZeroes.js)
 
 ### 无重复字符的最长子串
 
