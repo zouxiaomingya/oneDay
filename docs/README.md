@@ -108,8 +108,7 @@ points[i].length == 2
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2021-03/21-03-26_maxWidthOfVerticalArea.js)
 
-
-### 565. 等差子数组
+### 两点之间不包含任何点的最宽垂直面积
 
 > 2021 年 03 月 04 日
 > 用字符串数组作为井字游戏的游戏板  board。当且仅当在井字游戏过程中，玩家有可能将字符放置成游戏板所显示的状态时，才返回 true。
@@ -172,7 +171,7 @@ points[i].length == 2
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2021-03/21-03-04_videoStitching.js)
 
-### 565. 等差子数组
+### 有效的井字游戏
 
 > 2021 年 02 月 06 日
 > 用字符串数组作为井字游戏的游戏板  board。当且仅当在井字游戏过程中，玩家有可能将字符放置成游戏板所显示的状态时，才返回 true。
@@ -215,7 +214,7 @@ points[i].length == 2
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2021-02/21-02-06_validTicTacToe.js)
 
-### 565. 等差子数组
+### 有效的井字游戏
 
 > 2021 年 01 月 22 日
 
@@ -261,7 +260,7 @@ points[i].length == 2
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2021-01/21-01-22_verticalTraversal.js)
 
-### 565. 等差子数组
+### 
 
 > 2020 年 11 月 28 日
 
