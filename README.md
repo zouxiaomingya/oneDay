@@ -4500,7 +4500,6 @@ S 只包含 '(' 和 ')' 字符。
 
 说明: 叶子节点是指没有子节点的节点。
 
-[原题 leetcode 链接](https://leetcode-cn.com/problems/reverse-linked-list/)
 
 **示例:**
 给定二叉树 [3,9,20,null,null,15,7]，
