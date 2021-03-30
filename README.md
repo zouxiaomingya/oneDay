@@ -68,7 +68,7 @@ searchWord 由小写英文字母组成。
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2021-03/21-03-04_isPrefixOfWord.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2021-03/21-03-30_isPrefixOfWord.js)
 
 ### 565. 等差子数组
 
