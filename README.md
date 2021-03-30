@@ -70,7 +70,7 @@ searchWord 由小写英文字母组成。
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2021-03/21-03-30_isPrefixOfWord.js)
 
-### 565. 等差子数组
+### 等差子数组
 
 > 2021 年 03 月 26 日
 给你 n 个二维平面上的点 points ，其中 points[i] = [xi, yi] ，请你返回两点之间内部不包含任何点的 最宽垂直面积 的宽度。
@@ -308,7 +308,7 @@ points[i].length == 2
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-11/20-11-28_checkArithmeticSubarrays.js)
 
-### 565. 等差数列划分
+### 等差数列划分
 
 > 2020 年 11 月 22 日
 
@@ -351,7 +351,7 @@ A = [1, 2, 3, 4]
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-11/20-11-22_numberOfArithmeticSlices.js)
 
-### 565. 数组嵌套
+### 数组嵌套
 
 > 2020 年 11 月 15 日
 
