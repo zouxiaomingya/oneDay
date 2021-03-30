@@ -4514,9 +4514,7 @@ S 只包含 '(' 和 ')' 字符。
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/19-12-18_maxDepth)
-
-### 阶乘后面的零
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2019-12/19-12-18_maxDepth.js)
 
 > 2019 年 12 月 17 日
 
@@ -4541,7 +4539,6 @@ S 只包含 '(' 和 ')' 字符。
 说明: 你算法的时间复杂度应为 O(log n) 。
 **示例 3:**
 
-[原题 leetcode 链接](https://leetcode-cn.com/problems/factorial-trailing-zeroes/)
 
 #### 解题思路
 
@@ -4561,7 +4558,9 @@ S 只包含 '(' 和 ')' 字符。
 
 所以根据这样的方法来寻找可以分解多少个 5 来看有多少个 0
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2019-12/19-12-16_trailingZeroes.js)
+[原题 leetcode 链接](https://leetcode-cn.com/problems/factorial-trailing-zeroes/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2019-12/19-12-17_trailingZeroes.js)
 
 ### 无重复字符的最长子串
 
