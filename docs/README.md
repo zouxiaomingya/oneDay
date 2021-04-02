@@ -214,7 +214,7 @@ points[i].length == 2
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2021-02/21-02-06_validTicTacToe.js)
 
-### 有效的井字游戏
+### 二叉树的垂序遍历
 
 > 2021 年 01 月 22 日
 
@@ -448,7 +448,7 @@ XXXX
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-10/20-10-06_translateNum.js)
 
-### 有效的完全平方数
+### 四数之和
 
 > 2020 年 10 月 04 日
 
@@ -476,7 +476,7 @@ XXXX
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2020-10/20-10-04_fourSum.js)
 
-### 有效的完全平方数
+### 水壶问题
 
 > 2020 年 10 月 02 日
 
