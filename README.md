@@ -35,7 +35,7 @@ i 能被第 i 位上的数字整除
 1. N 是一个正整数，并且不会超过15。
 [原题 leetcode 链接](https://leetcode-cn.com/problems/beautiful-arrangement/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2021-03/21-03-30_isPrefixOfWord.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2021-04/21-04-02_countArrangement.js)
 
 ### 高铁路上复习一些正则吧
 
