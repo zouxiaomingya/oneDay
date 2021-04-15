@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <input type="file" id='video'>
+</body>
+
+<script>
+  const toThumbFile = blob => new File([blob], '图片.png')
+  const videoFileChangeImgFile = (file) => {
+    return new Promise(function (resolve, reject) {
+      const videoElem = document.createElement('video')
+      const dataUrl = URL.createObjectURL(file)
+      // 设置 auto 预加载数据， 否则会出现截图为黑色图片的情况
+      videoElem.setAttribute('preload', 'auto')
+      videoElem.src = dataUrl
+
+      // 当前帧的数据是可用的
+      videoElem.onloadeddata = function () {
+        const canvasElem = document.createElement('canvas')
+        const {videoWidth, videoHeight} = videoElem
+        canvasElem.getContext('2d').drawImage(videoElem, 0, 0, videoWidth, videoHeight)
+
+        // 导出成blob文件
+        canvasElem.toBlob(blob => {
+          // 将blob文件转换成png文件
+          const imgFile = toThumbFile(blob)
+          resolve(imgFile)
+        }, 'image/png')
+      }
+      videoElem.onerror = function () {
+        reject('video 后台加载失败')
+      }
+    })
+  }
+  const dom = document.getElementById('video')
+  dom.onchange = (res) => {
+    const file = dom.files[0]
+    videoFileChangeImgFile(file).then((res)=>{
+      console.log(res, '图片file>>>>>>');
+    })
+  }
+
+</script>
+
+</html>
