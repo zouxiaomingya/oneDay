@@ -2,6 +2,46 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+
+### 和相同的二元子数组
+
+> 2021 年 04 月 15 日
+
+视频 file 截图第一帧转化成 img file
+
+### 和相同的二元子数组
+
+> 2021 年 04 月 12 日
+
+在由若干 0 和 1  组成的数组 A 中，有多少个和为 S 的非空子数组。
+
+**示例 **
+
+```
+输入：A = [1,0,1,0,1], S = 2
+输出：4
+解释：
+如下面黑体所示，有 4 个满足题目要求的子数组：
+[1,0,1]
+[1,0,1,0]
+[0,1,0,1]
+[1,0,1]
+
+```
+
+提示：
+
+提示：
+
+A.length <= 30000
+0 <= S <= A.length
+A[i] 为 0 或 1
+
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/binary-subarrays-with-sum/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2021-04/21-04-12_numSubarraysWithSum.js)
+
 ### 缀点成线
 
 > 2021 年 04 月 11 日
@@ -26,8 +66,6 @@
 
 ```
 
-
-
 提示：
 
 2 <= coordinates.length <= 1000
@@ -38,7 +76,7 @@ coordinates 中不含重复的点
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/check-if-it-is-a-straight-line/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2021-04/21-04-02_countArrangement.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2021-04/21-04-11_checkStraightLine.js)
 
 ### 优美的排列
 
