@@ -8,16 +8,35 @@
   <title>Document</title>
 </head>
 
+<style>
+  img {
+    width: 100px;
+    height: 100px;
+  }
+</style>
+
 <body>
   <input type="file" id='video'>
+
+  <img id='img' src="" alt="">
+
+  <li id='li'></li>
 </body>
 
 <script>
   const toThumbFile = blob => new File([blob], '图片.png')
+  const imgDom = document.getElementById('img')
+  const liDom = document.getElementById('li')
+
+
   const videoFileChangeImgFile = (file) => {
     return new Promise(function (resolve, reject) {
       const videoElem = document.createElement('video')
       const dataUrl = URL.createObjectURL(file)
+      console.log(dataUrl, 'dataUrl>>>>>>');
+
+      // imgDom.src = FileReader.readAsDataURL(file)
+
       // 设置 auto 预加载数据， 否则会出现截图为黑色图片的情况
       videoElem.setAttribute('preload', 'auto')
       videoElem.src = dataUrl
@@ -25,13 +44,31 @@
       // 当前帧的数据是可用的
       videoElem.onloadeddata = function () {
         const canvasElem = document.createElement('canvas')
-        const {videoWidth, videoHeight} = videoElem
-        canvasElem.getContext('2d').drawImage(videoElem, 0, 0, videoWidth, videoHeight)
+        const {
+          videoWidth,
+          videoHeight
+        } = videoElem
+
+        canvasElem.width = videoWidth;
+        canvasElem.height = videoHeight;
+        canvasElem.getContext('2d').drawImage(videoElem, 0, 0)
+
+        // liDom.appendChild(canvasElem);
+
+        // canvasElem.toDataURL 生成 url
+        var img = document.createElement("img");
+        img.src = canvasElem.toDataURL();
+        liDom.appendChild(img);
+
 
         // 导出成blob文件
         canvasElem.toBlob(blob => {
           // 将blob文件转换成png文件
           const imgFile = toThumbFile(blob)
+          var img = document.createElement("img");
+          img.src = URL.createObjectURL(blob);
+          liDom.appendChild(img);
+
           resolve(imgFile)
         }, 'image/png')
       }
@@ -43,11 +80,10 @@
   const dom = document.getElementById('video')
   dom.onchange = (res) => {
     const file = dom.files[0]
-    videoFileChangeImgFile(file).then((res)=>{
+    videoFileChangeImgFile(file).then((res) => {
       console.log(res, '图片file>>>>>>');
     })
   }
-
 </script>
 
 </html>
