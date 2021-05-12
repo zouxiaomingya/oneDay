@@ -59,7 +59,7 @@
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/video-stitching/)
 
-[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2021-04/21-04-12_numSubarraysWithSum.js)
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2021-05/21-05-12_videoStitching.js)
 
 
 ### 和相同的二元子数组
