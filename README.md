@@ -3,6 +3,34 @@
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
 
+### 字符串的排列
+
+> 2021 年 05 月 13 日
+
+输入一个字符串，打印出该字符串中字符的所有排列。
+
+你可以以任意顺序返回这个字符串数组，但里面不能有重复元素。
+ 
+**示例1 **
+
+```
+输入：s = "abc"
+输出：["abc","acb","bac","bca","cab","cba"]
+```
+
+**示例2 **
+
+```
+限制：
+1 <= s 的长度 <= 8
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/zi-fu-chuan-de-pai-lie-lcof/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2021-05/21-05-13_permutation.js)
+
+
+
 ### 视频拼接
 
 > 2021 年 05 月 12 日
