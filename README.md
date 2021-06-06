@@ -2,8 +2,38 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
-
 ### 和相同的二元子数组
+
+> 2021 年 06 月 06 日
+
+给定两个字符串 s1 和 s2，请编写一个程序，确定其中一个字符串的字符重新排列后，能否变成另一个字符串。
+
+**示例1 **
+
+```
+输入: s1 = "abc", s2 = "bca"
+输出: true 
+```
+
+**示例2 **
+
+```
+输入: s1 = "abc", s2 = "bad"
+输出: false
+```
+
+说明：
+
+0 <= len(s1) <= 100
+0 <= len(s2) <= 100
+
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/check-permutation-lcci/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2021-04/21-04-12_numSubarraysWithSum.js)
+
+
+### 业务上的记录
 
 > 2021 年 04 月 15 日
 
