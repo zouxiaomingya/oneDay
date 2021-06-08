@@ -3,6 +3,25 @@
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
 
+### 实现快速解析url，拆分出所有参数，数组等形式
+
+> 2021 年 06 月 08 日
+
+const testURL = 'https://www.baidu.com?name=coder&age=20&callback=https%3A%2F%2Fbaidu.com%3Fname%3Dtest&list[]=a&list[]=b&json=%7B%22str%22%3A%22abc%22,%22num%22%3A123%7D&illegal=C%9E5%H__a100373__b4';
+
+// 实现解析 url 方法，达到如下的要求
+function parseQueryString(url) {}
+
+parseQueryString(testURL)  
+// 解析之后得到如下， 如果 JSON 格式错误，需要捕获错误，并且错误的过滤掉
+{
+  name: 'coder',
+  age: '20'.
+  callback: 'https://baidu.com?name=test',
+  list: [a, b],
+  json: {str: "abc", num: 123},
+}
+
 ### 正则匹配 - 反向引用
 
 > 2021 年 05 月 29 日
