@@ -2,8 +2,14 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+### 实现快速解析 url，拆分出所有参数，数组等形式
 
-### 实现快速解析url，拆分出所有参数，数组等形式
+> 2021 年 06 月 09 日
+
+限制最大并发请求数量的 Promise.all
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2021-06/21-06-09_asyncPool.js)
+### 实现快速解析 url，拆分出所有参数，数组等形式
 
 > 2021 年 06 月 08 日
 
@@ -15,12 +21,14 @@ function parseQueryString(url) {}
 parseQueryString(testURL)  
 // 解析之后得到如下， 如果 JSON 格式错误，需要捕获错误，并且错误的过滤掉
 {
-  name: 'coder',
-  age: '20'.
-  callback: 'https://baidu.com?name=test',
-  list: [a, b],
-  json: {str: "abc", num: 123},
+name: 'coder',
+age: '20'.
+callback: 'https://baidu.com?name=test',
+list: [a, b],
+json: {str: "abc", num: 123},
 }
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2021-06/21-06-08_parseQueryString.js)
 
 ### 正则匹配 - 反向引用
 
@@ -33,15 +41,15 @@ parseQueryString(testURL)
 输入一个字符串，打印出该字符串中字符的所有排列。
 
 你可以以任意顺序返回这个字符串数组，但里面不能有重复元素。
- 
-**示例1 **
+
+**示例 1 **
 
 ```
 输入：s = "abc"
 输出：["abc","acb","bac","bca","cab","cba"]
 ```
 
-**示例2 **
+**示例 2 **
 
 ```
 限制：
@@ -52,19 +60,17 @@ parseQueryString(testURL)
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2021-05/21-05-13_permutation.js)
 
-
-
 ### 视频拼接
 
 > 2021 年 05 月 12 日
 
-你将会获得一系列视频片段，这些片段来自于一项持续时长为 T 秒的体育赛事。这些片段可能有所重叠，也可能长度不一。
+你将会获得一系列视频片段，这些片段来自于一项持续时长为  T  秒的体育赛事。这些片段可能有所重叠，也可能长度不一。
 
-视频片段 clips[i] 都用区间进行表示：开始于 clips[i][0] 并于 clips[i][1] 结束。我们甚至可以对这些片段自由地再剪辑，例如片段 [0, 7] 可以剪切成 [0, 1] + [1, 3] + [3, 7] 三部分。
+视频片段  clips[i]  都用区间进行表示：开始于  clips[i][0]  并于  clips[i][1]  结束。我们甚至可以对这些片段自由地再剪辑，例如片段  [0, 7]  可以剪切成  [0, 1] + [1, 3] + [3, 7]  三部分。
 
-我们需要将这些片段进行再剪辑，并将剪辑后的内容拼接成覆盖整个运动过程的片段（[0, T]）。返回所需片段的最小数目，如果无法完成该任务，则返回 -1 。
+我们需要将这些片段进行再剪辑，并将剪辑后的内容拼接成覆盖整个运动过程的片段（[0, T]）。返回所需片段的最小数目，如果无法完成该任务，则返回  -1 。
 
-**示例1 **
+**示例 1 **
 
 ```
 输入：clips = [[0,2],[4,6],[8,10],[1,9],[1,5],[5,9]], T = 10
@@ -77,7 +83,7 @@ parseQueryString(testURL)
 
 ```
 
-**示例2 **
+**示例 2 **
 
 ```
 输入：clips = [[0,1],[1,2]], T = 5
@@ -86,14 +92,17 @@ parseQueryString(testURL)
 我们无法只用 [0,1] 和 [1,2] 覆盖 [0,5] 的整个过程。
 ```
 
-**示例3 **
+**示例 3 **
+
 ```
 输入：clips = [[0,1],[6,8],[0,2],[5,6],[0,4],[0,3],[6,7],[1,3],[4,7],[1,4],[2,5],[2,6],[3,4],[4,5],[5,7],[6,9]], T = 9
 输出：3
-解释： 
+解释：
 我们选取片段 [0,4], [4,7] 和 [6,9] 。
 ```
-**示例4 **
+
+**示例 4 **
+
 ```
 输入：clips = [[0,4],[2,8]], T = 5
 输出：2
@@ -107,11 +116,9 @@ parseQueryString(testURL)
 0 <= clips[i][0] <= clips[i][1] <= 100
 0 <= T <= 100
 
-
 [原题 leetcode 链接](https://leetcode-cn.com/problems/video-stitching/)
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2021-05/21-05-12_videoStitching.js)
-
 
 ### 和相同的二元子数组
 
@@ -123,7 +130,7 @@ parseQueryString(testURL)
 
 > 2021 年 04 月 12 日
 
-在由若干 0 和 1  组成的数组 A 中，有多少个和为 S 的非空子数组。
+在由若干 0 和 1 组成的数组 A 中，有多少个和为 S 的非空子数组。
 
 **示例 **
 
@@ -147,7 +154,6 @@ A.length <= 30000
 0 <= S <= A.length
 A[i] 为 0 或 1
 
-
 [原题 leetcode 链接](https://leetcode-cn.com/problems/binary-subarrays-with-sum/)
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2021-04/21-04-12_numSubarraysWithSum.js)
@@ -156,7 +162,7 @@ A[i] 为 0 或 1
 
 > 2021 年 04 月 11 日
 
-在一个 XY 坐标系中有一些点，我们用数组 coordinates 来分别记录它们的坐标，其中 coordinates[i] = [x, y] 表示横坐标为 x、纵坐标为 y 的点。
+在一个  XY 坐标系中有一些点，我们用数组  coordinates  来分别记录它们的坐标，其中  coordinates[i] = [x, y]  表示横坐标为 x、纵坐标为 y  的点。
 
 请你来判断，这些点是否在该坐标系中属于同一条直线上，是则返回 true，否则请返回 false。
 
@@ -181,8 +187,7 @@ A[i] 为 0 或 1
 2 <= coordinates.length <= 1000
 coordinates[i].length == 2
 -10^4 <= coordinates[i][0], coordinates[i][1] <= 10^4
-coordinates 中不含重复的点
-
+coordinates  中不含重复的点
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/check-if-it-is-a-straight-line/)
 
@@ -192,9 +197,9 @@ coordinates 中不含重复的点
 
 > 2021 年 04 月 02 日
 
-假设有从 1 到 N 的 N 个整数，如果从这 N 个数字中成功构造出一个数组，使得数组的第 i 位 (1 <= i <= N) 满足如下两个条件中的一个，我们就称这个数组为一个优美的排列。条件：
+假设有从 1 到 N 的  N  个整数，如果从这  N  个数字中成功构造出一个数组，使得数组的第 i  位 (1 <= i <= N) 满足如下两个条件中的一个，我们就称这个数组为一个优美的排列。条件：
 
-第 i 位的数字能被 i 整除
+第  i  位的数字能被  i  整除
 i 能被第 i 位上的数字整除
 现在给定一个整数 N，请问可以构造多少个优美的排列？
 
@@ -203,7 +208,7 @@ i 能被第 i 位上的数字整除
 ```
 输入: 2
 输出: 2
-解释: 
+解释:
 
 第 1 个优美的排列是 [1, 2]:
   第 1 个位置（i=1）上的数字是1，1能被 i（i=1）整除
@@ -215,18 +220,16 @@ i 能被第 i 位上的数字整除
 
 ```
 
-
 提示：
 
-1. N 是一个正整数，并且不会超过15。
-[原题 leetcode 链接](https://leetcode-cn.com/problems/beautiful-arrangement/)
+1. N 是一个正整数，并且不会超过 15。
+   [原题 leetcode 链接](https://leetcode-cn.com/problems/beautiful-arrangement/)
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2021-04/21-04-02_countArrangement.js)
 
 ### 高铁路上复习一些正则吧
 
 > 2021 年 04 月 01 日
-
 
 ### 检查单词是否为句中其他单词的前缀
 
@@ -236,7 +239,7 @@ i 能被第 i 位上的数字整除
 
 请你检查检索词 searchWord 是否为句子 sentence 中任意单词的前缀。
 
-如果 searchWord 是某一个单词的前缀，则返回句子 sentence 中该单词所对应的下标（下标从 1 开始）。
+如果  searchWord 是某一个单词的前缀，则返回句子  sentence 中该单词所对应的下标（下标从 1 开始）。
 如果 searchWord 是多个单词的前缀，则返回匹配的第一个单词的下标（最小下标）。
 如果 searchWord 不是任何单词的前缀，则返回 -1 。
 字符串 S 的 前缀 是 S 的任何前导连续子字符串。
@@ -266,6 +269,7 @@ i 能被第 i 位上的数字整除
 ```
 
 **示例 3**
+
 ```
 输入：sentence = "i am tired", searchWord = "you"
 输出：-1
@@ -273,12 +277,14 @@ i 能被第 i 位上的数字整除
 ```
 
 **示例 4**
+
 ```
 输入：sentence = "i use triple pillow", searchWord = "pill"
 输出：4
 ```
 
 **示例 4**
+
 ```
 输入：sentence = "hello from the other side", searchWord = "they"
 输出：-1
@@ -290,7 +296,7 @@ i 能被第 i 位上的数字整除
 1 <= searchWord.length <= 10
 sentence 由小写英文字母和空格组成。
 searchWord 由小写英文字母组成。
-前缀就是紧密附着于词根的语素，中间不能插入其它成分，并且它的位置是固定的——-位于词根之前。（引用自 前缀_百度百科 ）
+前缀就是紧密附着于词根的语素，中间不能插入其它成分，并且它的位置是固定的——-位于词根之前。（引用自 前缀\_百度百科 ）
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence/)
 
@@ -299,11 +305,11 @@ searchWord 由小写英文字母组成。
 ### 等差子数组
 
 > 2021 年 03 月 26 日
-给你 n 个二维平面上的点 points ，其中 points[i] = [xi, yi] ，请你返回两点之间内部不包含任何点的 最宽垂直面积 的宽度。
+> 给你  n  个二维平面上的点 points ，其中  points[i] = [xi, yi] ，请你返回两点之间内部不包含任何点的   最宽垂直面积   的宽度。
 
-垂直面积 的定义是固定宽度，而 y 轴上无限延伸的一块区域（也就是高度为无穷大）。 最宽垂直面积 为宽度最大的一个垂直面积。
+垂直面积 的定义是固定宽度，而 y 轴上无限延伸的一块区域（也就是高度为无穷大）。 最宽垂直面积   为宽度最大的一个垂直面积。
 
-请注意，垂直区域 边上 的点 不在 区域内。
+请注意，垂直区域   边上   的点   不在   区域内。
 
 **示例 1**
 
@@ -327,8 +333,6 @@ n == points.length
 2 <= n <= 105
 points[i].length == 2
 0 <= xi, yi <= 109
-
-
 
 [原题 leetcode 链接](https://leetcode-cn.com/problems/widest-vertical-area-between-two-points-containing-no-points/)
 
@@ -486,7 +490,7 @@ points[i].length == 2
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2021-01/21-01-22_verticalTraversal.js)
 
-### 
+###
 
 > 2020 年 11 月 28 日
 
@@ -4725,7 +4729,6 @@ S 只包含 '(' 和 ')' 字符。
 
 说明: 叶子节点是指没有子节点的节点。
 
-
 **示例:**
 给定二叉树 [3,9,20,null,null,15,7]，
 
@@ -4763,7 +4766,6 @@ S 只包含 '(' 和 ')' 字符。
 
 说明: 你算法的时间复杂度应为 O(log n) 。
 **示例 3:**
-
 
 #### 解题思路
 
