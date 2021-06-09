@@ -2,11 +2,10 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
-### 实现快速解析 url，拆分出所有参数，数组等形式
+### 限制最大并发请求数量的 Promise.all
 
 > 2021 年 06 月 09 日
 
-限制最大并发请求数量的 Promise.all
 
 [javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2021-06/21-06-09_asyncPool.js)
 ### 实现快速解析 url，拆分出所有参数，数组等形式

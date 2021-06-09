@@ -18,7 +18,7 @@ function asyncPool(poolLimit, array, iteratorFn) {
     // 插入executing数字，表示正在执行的promise
     executing.push(e);
 
-    // 使用Promise.rece，每当executing数组中promise数量低于poolLimit，就实例化新的promise并执行
+    // 使用Promise.race，每当executing数组中promise数量低于poolLimit，就实例化新的promise并执行
     let r = Promise.resolve();
     if (executing.length >= poolLimit) {
       r = Promise.race(executing);
