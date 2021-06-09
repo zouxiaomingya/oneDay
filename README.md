@@ -2,6 +2,115 @@
 <p align="center">每天记录一点</p>
 <p align="center"><a href='https://zouxiaomingya.github.io/oneDay'>题目地址--方便阅读</a></p>
 
+### 实现快速解析url，拆分出所有参数，数组等形式
+
+> 2021 年 06 月 08 日
+
+const testURL = 'https://www.baidu.com?name=coder&age=20&callback=https%3A%2F%2Fbaidu.com%3Fname%3Dtest&list[]=a&list[]=b&json=%7B%22str%22%3A%22abc%22,%22num%22%3A123%7D&illegal=C%9E5%H__a100373__b4';
+
+// 实现解析 url 方法，达到如下的要求
+function parseQueryString(url) {}
+
+parseQueryString(testURL)  
+// 解析之后得到如下， 如果 JSON 格式错误，需要捕获错误，并且错误的过滤掉
+{
+  name: 'coder',
+  age: '20'.
+  callback: 'https://baidu.com?name=test',
+  list: [a, b],
+  json: {str: "abc", num: 123},
+}
+
+### 正则匹配 - 反向引用
+
+> 2021 年 05 月 29 日
+
+### 字符串的排列
+
+> 2021 年 05 月 13 日
+
+输入一个字符串，打印出该字符串中字符的所有排列。
+
+你可以以任意顺序返回这个字符串数组，但里面不能有重复元素。
+ 
+**示例1 **
+
+```
+输入：s = "abc"
+输出：["abc","acb","bac","bca","cab","cba"]
+```
+
+**示例2 **
+
+```
+限制：
+1 <= s 的长度 <= 8
+```
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/zi-fu-chuan-de-pai-lie-lcof/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2021-05/21-05-13_permutation.js)
+
+
+### 视频拼接
+
+> 2021 年 05 月 12 日
+
+你将会获得一系列视频片段，这些片段来自于一项持续时长为 T 秒的体育赛事。这些片段可能有所重叠，也可能长度不一。
+
+视频片段 clips[i] 都用区间进行表示：开始于 clips[i][0] 并于 clips[i][1] 结束。我们甚至可以对这些片段自由地再剪辑，例如片段 [0, 7] 可以剪切成 [0, 1] + [1, 3] + [3, 7] 三部分。
+
+我们需要将这些片段进行再剪辑，并将剪辑后的内容拼接成覆盖整个运动过程的片段（[0, T]）。返回所需片段的最小数目，如果无法完成该任务，则返回 -1 。
+
+**示例1 **
+
+```
+输入：clips = [[0,2],[4,6],[8,10],[1,9],[1,5],[5,9]], T = 10
+输出：3
+解释：
+我们选中 [0,2], [8,10], [1,9] 这三个片段。
+然后，按下面的方案重制比赛片段：
+将 [1,9] 再剪辑为 [1,2] + [2,8] + [8,9] 。
+现在我们手上有 [0,2] + [2,8] + [8,10]，而这些涵盖了整场比赛 [0, 10]。
+
+```
+
+**示例2 **
+
+```
+输入：clips = [[0,1],[1,2]], T = 5
+输出：-1
+解释：
+我们无法只用 [0,1] 和 [1,2] 覆盖 [0,5] 的整个过程。
+```
+
+**示例3 **
+```
+输入：clips = [[0,1],[6,8],[0,2],[5,6],[0,4],[0,3],[6,7],[1,3],[4,7],[1,4],[2,5],[2,6],[3,4],[4,5],[5,7],[6,9]], T = 9
+输出：3
+解释： 
+我们选取片段 [0,4], [4,7] 和 [6,9] 。
+```
+**示例4 **
+```
+输入：clips = [[0,4],[2,8]], T = 5
+输出：2
+解释：
+注意，你可能录制超过比赛结束时间的视频。
+```
+
+提示：
+
+1 <= clips.length <= 100
+0 <= clips[i][0] <= clips[i][1] <= 100
+0 <= T <= 100
+
+
+[原题 leetcode 链接](https://leetcode-cn.com/problems/video-stitching/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2021-05/21-05-12_videoStitching.js)
+
+
 ### 和相同的二元子数组
 
 > 2021 年 06 月 06 日
