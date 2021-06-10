@@ -11,7 +11,8 @@ function asyncPool(poolLimit, array, iteratorFn) {
     const p = Promise.resolve().then(() => iteratorFn(item, array));
     // 放入promises数组
     ret.push(p);
-    // promise执行完毕，从executing数组中删除
+
+    // 当 promise 执行完毕，从 executing 中删除该 promise
     const e = p.then(() => {
       return executing.splice(executing.indexOf(e), 1);
     });
@@ -26,11 +27,16 @@ function asyncPool(poolLimit, array, iteratorFn) {
     // 递归，直到遍历完array
     return r.then(() => enqueue());
   };
+
   return enqueue().then(() => Promise.all(ret));
 }
 
 const timeout = (i) =>
-  new Promise((resolve) => setTimeout(() => resolve(i), i));
+  new Promise((resolve) =>
+    setTimeout(() => {
+      resolve(i);
+    }, i)
+  );
 
 asyncPool(2, [1000, 5000, 3000, 2000], timeout).then((results) => {
   console.log(results, "results>>>>>>");
