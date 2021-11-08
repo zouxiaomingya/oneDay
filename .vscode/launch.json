@@ -9,7 +9,7 @@
       "request": "launch",
       "name": "Launch Chrome against localhost",
       "url": "http://localhost:8080",
-      "webRoot": "${workspaceFolder}"
+      "webRoot": "/Users/zouming/project/oneDay/answer/2021-06/21-06-09_asyncPool.js"
     }
   ]
 }
