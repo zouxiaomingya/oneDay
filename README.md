@@ -4,6 +4,45 @@
 
 ### 删除有序数组中的重复项 II
 
+> 2022 年 09 月 30 日
+
+给定一个候选人编号的集合 candidates 和一个目标数 target ，找出 candidates 中所有可以使数字和为 target 的组合。
+
+candidates 中的每个数字在每个组合中只能使用 一次 。
+
+注意：解集不能包含重复的组合。 
+
+**示例 1 **
+```
+输入: candidates = [10,1,2,7,6,1,5], target = 8,
+输出:
+[
+[1,1,6],
+[1,2,5],
+[1,7],
+[2,6]
+]
+
+```
+
+**示例 2 **
+
+```
+输入: candidates = [2,5,2,1,2], target = 5,
+输出:
+[
+[1,2,2],
+[5]
+]
+```
+
+[原题 leetcode 链接](https://leetcode.cn/problems/combination-sum-ii/)
+
+[javaScript 代码实现答案](https://github.com/zouxiaomingya/oneDay/blob/master/answer/2022-09/22-09-30_combinationSum2.js)
+
+
+### 删除有序数组中的重复项 II
+
 > 2021 年 11 月 08 日
 
 给你一个有序数组 nums ，请你 原地 删除重复出现的元素，使每个元素 最多出现两次 ，返回删除后数组的新长度。
